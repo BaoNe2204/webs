@@ -81,3 +81,47 @@
     }
   }, { passive: true });
 })();
+(function () {
+  const isGH = location.hostname.endsWith('github.io');
+  const repo = isGH ? location.pathname.split('/')[1] : '';
+  const BASE = isGH && repo ? `/${repo}/` : '/';
+
+  // Chuẩn hoá đường dẫn
+  function absolutize(el, attr) {
+    const val = el.getAttribute(attr);
+    if (!val) return;
+    // Bỏ qua link tuyệt đối, anchor, tel, mailto
+    if (/^(https?:)?\/\//.test(val) || val.startsWith('mailto:') || val.startsWith('tel:') || val.startsWith('#')) return;
+
+    const cleaned = val.replace(/^\.\//, ''); // bỏ "./"
+    el.setAttribute(attr, BASE + cleaned.replace(/^\//, ''));
+  }
+
+  function applyBase() {
+    // <a data-href="...">
+    document.querySelectorAll('a[data-href]').forEach(a => {
+      a.setAttribute('href', a.getAttribute('data-href'));
+      absolutize(a, 'href');
+    });
+
+    // <img data-src="...">
+    document.querySelectorAll('img[data-src]').forEach(img => {
+      img.setAttribute('src', img.getAttribute('data-src'));
+      absolutize(img, 'src');
+    });
+
+    // <link data-href="..."> (CSS)
+    document.querySelectorAll('link[data-href]').forEach(link => {
+      link.setAttribute('href', link.getAttribute('data-href'));
+      absolutize(link, 'href');
+    });
+
+    // <script data-src="..."> (JS)
+    document.querySelectorAll('script[data-src]').forEach(s => {
+      s.setAttribute('src', s.getAttribute('data-src'));
+      absolutize(s, 'src');
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', applyBase);
+})();
