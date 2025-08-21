@@ -539,28 +539,28 @@
       ]
     },
     {
-      "id": "pc-gaming-009",
-      "title": "PC AI Workstation Intel i9-14900K | RTX 4090 | 128GB | 4TB SSD",
-      "price": "129.990.000đ",
-      "oldPrice": "139.990.000đ",
-      "discount": "-7%",
-      "image": "./assets/img/products/pc9.jpg",
+      "id": "pc-build-i9-14900kf-rtx3060",
+      "title": "PC ĐỒ HỌA Core I9 14900KF | Ram 32G | RTX 3060 12G | NVME 500GB",
+      "price": "31.849.000đ",
+      "oldPrice": "32.990.000đ",
+      "discount": "-4%",
+      "image": "https://hoanglongcomputer.vn/media/product/250-6148-6122-screenshot-2025-08-12-091306.jpg",
       "score": "5.0",
-      "sold": "320",
+      "sold": "10.0k",
       "tags": [
         "AI",
         "Premium"
       ]
     },
     {
-      "id": "pc-gaming-010",
-      "title": "PC Gaming AMD Ryzen 7 7800X3D | RTX 4080 Super | 32GB | 2TB SSD",
-      "price": "62.990.000đ",
-      "oldPrice": "68.990.000đ",
-      "discount": "-9%",
-      "image": "./assets/img/products/pc10.jpg",
+      "id": "pc-build-ryzen5-5600x-rtx2060super",
+      "title": "PC Gaming Ryzen 5 5600X | RTX 2060 Super 8G | Ram 16G | NVME 256GB ",
+      "price": "13.208.000đ",
+      "oldPrice": "13.800.000đ",
+      "discount": "-5%",
+      "image": "https://hoanglongcomputer.vn/media/product/250-4778-z6324872730805_769ffcbf8249cd99d6dc392a0c5eaf22.jpg",
       "score": "4.9",
-      "sold": "780",
+      "sold": "4.6k",
       "tags": [
         "Gaming",
         "Flagship"
@@ -569,12 +569,17 @@
   ],
   "slide8": [
     {
-      "id": "laptop-gaming-001",
-      "title": "ASUS ROG Strix G15 | Ryzen 7 6800H | RTX 3060 | 16GB | 512GB SSD",
-      "price": "29.990.000đ",
-      "oldPrice": "33.990.000đ",
-      "discount": "-12%",
-      "image": "./assets/img/products/laptop1.jpg",
+      "id": "laptop-i7-12700h-rtx3050",
+      "title": "Laptop Asus TUF Gaming FX507ZC - HN124W",
+      "price": "21.990.000 ₫",
+      "oldPrice": "31.490.000 ₫",
+      "discount": "-30%",
+      "image": "https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2022/07/25/image-removebg-preview-10.png",
+      "images": ["https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2022/07/25/image-removebg-preview-10.png",
+      "https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2022/07/25/image-removebg-preview-11.png",
+      "https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2022/07/25/image-removebg-preview-12.png",
+      "https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2022/07/25/image-removebg-preview-13.png"
+    ],
       "score": "4.8",
       "sold": "5,3k",
       "tags": [
@@ -583,12 +588,17 @@
       ]
     },
     {
-      "id": "laptop-gaming-002",
-      "title": "MSI Katana 15 | i7-13620H | RTX 4050 | 16GB | 1TB SSD",
-      "price": "32.490.000đ",
-      "oldPrice": "35.990.000đ",
-      "discount": "-10%",
-      "image": "./assets/img/products/laptop2.jpg",
+      "id": "laptop-r7-6800h-rtx3050",
+      "title": "Laptop Gaming Asus Rog Strix G15 G513RC HN038W",
+      "price": "19.990.000 ₫ ",
+      "oldPrice": "29.990.000 ₫",
+      "discount": "-33%",
+      "image": "https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2022/08/10/image-removebg-preview-3_637957422088528878.png",
+      "images": ["https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2022/08/10/image-removebg-preview-3_637957422088528878.png",
+      "https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2022/08/10/image-removebg-preview.png",
+      "https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2022/08/10/image-removebg-preview-1_637957422088528878.png",
+      "https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2022/08/10/image-removebg-preview-2_637957422088528878.png"
+    ],
       "score": "4.7",
       "sold": "4,1k",
       "tags": [
@@ -597,12 +607,17 @@
       ]
     },
     {
-      "id": "laptop-gaming-003",
-      "title": "Lenovo Legion 5 | Ryzen 5 7640HS | RTX 4060 | 16GB | 512GB SSD",
-      "price": "31.990.000đ",
-      "oldPrice": "34.990.000đ",
-      "discount": "-9%",
-      "image": "./assets/img/products/laptop3.jpg",
+      "id": "laptop-r5-7535hs-rx6550m",
+      "title": "Laptop Gaming MSI Bravo 15 B7ED-010VN",
+      "price": "13.990.000 ₫",
+      "oldPrice": "18.490.000 ₫",
+      "discount": "-24%",
+      "image": "https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2023/10/06/010vn-1.png",
+      "images": ["https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2023/10/06/010vn-1.png",
+      "https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2023/10/06/010vn-3.png",
+      "https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2023/10/06/010vn-4.png",
+      "https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2023/10/06/010vn-5.png"
+    ],
       "score": "4.9",
       "sold": "3,6k",
       "tags": [
@@ -610,12 +625,22 @@
       ]
     },
     {
-      "id": "laptop-gaming-004",
-      "title": "Acer Nitro 5 | i5-12500H | RTX 3050Ti | 16GB | 512GB SSD",
-      "price": "25.990.000đ",
-      "oldPrice": "28.490.000đ",
-      "discount": "-9%",
-      "image": "./assets/img/products/laptop4.jpg",
+      "id": "laptop-i5-12450hx-rtx4050",
+      "title": "Laptop Gaming Lenovo LOQ 15IRX9 (83DV00D5VN) ",
+      "price": "22,990,000 ₫",
+      "oldPrice": "27,990,000 ₫",
+      "discount": "-18%",
+      "image": "https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2024/10/24/83gs000rvn-1.png",
+      "images": [
+      "https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2024/10/24/83gs000rvn-1.png",
+      "https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2024/10/24/83gs000rvn-2.png",
+      "https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2024/10/24/83gs000rvn-3.png",
+      "https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2024/10/24/83gs000rvn-4.png",
+      "https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2024/10/24/83gs000rvn-5.png",
+      "https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2024/10/24/83gs000rvn-6.png",
+      "https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2024/10/24/83gs000rvn-7.png"
+      
+    ],
       "score": "4.7",
       "sold": "6,2k",
       "tags": [
@@ -624,26 +649,43 @@
       ]
     },
     {
-      "id": "laptop-gaming-005",
-      "title": "ASUS TUF Gaming A15 | Ryzen 7 7735HS | RTX 4070 | 16GB | 1TB SSD",
-      "price": "36.990.000đ",
-      "oldPrice": "39.990.000đ",
-      "discount": "-8%",
-      "image": "./assets/img/products/laptop5.jpg",
+      "id": "laptop-i5-11260h-rtx2050",
+      "title": "Laptop ASUS TUF Gaming F15 FX506HF-HN078W",
+      "price": "15.990.000 ₫ ",
+      "oldPrice": "20.990.000 ₫",
+      "discount": "-24%",
+      "image": "https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2023/12/22/fx506hf-1.png",
+      "images": [
+      "https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2023/12/22/fx506hf-1.png",
+      "https://cdn.hoanghamobile.vn/i/preview-h-V2/Uploads/2023/12/22/fx506hf-2.png",
+      "https://cdn.hoanghamobile.vn/i/preview-h-V2/Uploads/2023/12/22/fx506hf-3.png",
+      "https://cdn.hoanghamobile.vn/i/preview-h-V2/Uploads/2023/12/22/fx506hf-4.png",
+      "https://cdn.hoanghamobile.vn/i/preview-h-V2/Uploads/2023/12/22/fx506hf-5.png",
+      "https://cdn.hoanghamobile.vn/i/preview-h-V2/Uploads/2023/12/22/fx506hf-6.png",
+      "https://cdn.hoanghamobile.vn/i/preview-h-V2/Uploads/2023/12/22/fx506hf-8.png"
+    ],
       "score": "4.9",
-      "sold": "2,7k",
+      "sold": "9,7k",
       "tags": [
         "Hot",
         "Gaming"
       ]
     },
     {
-      "id": "laptop-gaming-006",
-      "title": "Gigabyte Aorus 15 | i7-13700H | RTX 4080 | 32GB | 1TB SSD",
-      "price": "58.990.000đ",
-      "oldPrice": "63.990.000đ",
-      "discount": "-8%",
-      "image": "./assets/img/products/laptop6.jpg",
+      "id": "laptop-r5-5500h-rtx2050",
+      "title": "Laptop Lenovo IdeaPad Gaming 3 15ACH6-82K2027QVN ",
+      "price": "14.290.000 ₫",
+      "oldPrice": "17.990.000 ₫",
+      "discount": "-21%",
+      "image": "https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2023/11/09/82k2027qvn-1.png",
+      "images": [
+      "https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2023/11/09/82k2027qvn-1.png",
+      "https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2023/11/09/82k2027qvn-2.png",
+      "https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2023/11/09/82k2027qvn-3.png",
+      "https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2023/11/09/82k2027qvn-4.png",
+      "https://cdn.hoanghamobile.vn/i/preview-h-V2/Uploads/2023/11/09/82k2027qvn-6.png",
+      "https://cdn.hoanghamobile.vn/i/preview-h-V2/Uploads/2023/11/09/82k2027qvn-7.png"
+    ],
       "score": "5.0",
       "sold": "890",
       "tags": [
@@ -652,12 +694,21 @@
       ]
     },
     {
-      "id": "laptop-gaming-007",
-      "title": "Razer Blade 15 | i9-13900H | RTX 4070 | 32GB | 1TB SSD",
-      "price": "72.990.000đ",
-      "oldPrice": "78.990.000đ",
-      "discount": "-7%",
-      "image": "./assets/img/products/laptop7.jpg",
+      "id": "laptop-i7-13650hx-rtx3050",
+      "title": "Laptop Dell Gaming G15 5530 (71045030) (i7-13650HX/16GB/512GB/RTX 3050)",
+      "price": "35.490.000 ₫",
+      "oldPrice": "36.990.000 ₫",
+      "discount": "-4%",
+      "image": "https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2024/10/17/71045030-1.png",
+      "images": [
+      "https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2024/10/17/71045030-1.png",
+      "https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2024/10/17/71045030-2.png",
+      "https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2024/10/17/71045030-3.png",
+      "https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2024/10/17/71045030-4.png",
+      "https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2024/10/17/71045030-5.png",
+      "https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2024/10/17/71045030-6.png",
+      "https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2024/10/17/71045030-7.png"
+    ],
       "score": "5.0",
       "sold": "430",
       "tags": [
@@ -665,12 +716,21 @@
       ]
     },
     {
-      "id": "laptop-gaming-008",
-      "title": "HP Omen 16 | Ryzen 9 7845HX | RTX 4080 | 32GB | 1TB SSD",
-      "price": "65.990.000đ",
-      "oldPrice": "70.990.000đ",
-      "discount": "-7%",
-      "image": "./assets/img/products/laptop8.jpg",
+      "id": "laptop-i7-12650h-rtx3050",
+      "title": "Laptop Acer Gaming Aspire 7 A715-59G-73LB",
+      "price": "21.990.000 ₫ ",
+      "oldPrice": "24.399.000 ₫",
+      "discount": "-10%",
+      "image": "https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2025/05/12/a715-59g-57tu-1.png",
+      "images": [
+      "https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2025/05/12/a715-59g-57tu-1.png",
+      "https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2025/05/12/a715-59g-57tu-2.png",
+      "https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2025/05/12/a715-59g-57tu-3.png",
+      "https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2025/05/12/a715-59g-57tu-4.png",
+      "https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2025/05/12/a715-59g-57tu-5.png",
+      "https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2025/05/12/a715-59g-57tu-6.png",
+      "https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2025/05/12/a715-59g-57tu-7.png"
+    ],
       "score": "4.9",
       "sold": "1,2k",
       "tags": [
@@ -679,12 +739,21 @@
       ]
     },
     {
-      "id": "laptop-gaming-009",
-      "title": "Dell Alienware m16 | i9-13980HX | RTX 4090 | 64GB | 2TB SSD",
-      "price": "115.990.000đ",
-      "oldPrice": "124.990.000đ",
-      "discount": "-7%",
-      "image": "./assets/img/products/laptop9.jpg",
+      "id": "laptop-i5-13500h-rtx4050",
+      "title": "Laptop Gaming GIGABYTE G5 MF5-52VN383SH",
+      "price": "19.490.000 ₫",
+      "oldPrice": "23.490.000 ₫",
+      "discount": "-14%",
+      "image": "https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2025/02/13/mf5-52vn383sh-1.png",
+      "images": [
+        "https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2025/02/13/mf5-52vn383sh-1.png",
+        "https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2025/02/13/mf5-52vn383sh-2.png",
+        "https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2025/02/13/mf5-52vn383sh-3.png",
+        "https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2025/02/13/mf5-52vn383sh-4.png",
+        "https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2025/02/13/mf5-52vn383sh-5.png",
+        "https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2025/02/13/mf5-52vn383sh-6.png",
+        "https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2025/02/13/mf5-52vn383sh-7.png"
+      ],
       "score": "5.0",
       "sold": "260",
       "tags": [
@@ -693,12 +762,19 @@
       ]
     },
     {
-      "id": "laptop-gaming-010",
-      "title": "ASUS Zephyrus G14 | Ryzen 9 7940HS | RTX 4070 | 32GB | 1TB SSD",
-      "price": "49.990.000đ",
-      "oldPrice": "54.990.000đ",
-      "discount": "-9%",
-      "image": "./assets/img/products/laptop10.jpg",
+      "id": "laptop-i5-12450h-rtx2050",
+      "title": "ALaptop Gaming HP Victus 15-fa1155TX (952R1PA) ",
+      "price": "16.890.000 ₫",
+      "oldPrice": "23.490.000 ₫",
+      "discount": "-28%",
+      "image": "https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2023/12/22/hp-victus-15-black-1.png",
+      "images": [
+      "https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2023/12/22/hp-victus-15-black-1.png",
+      "https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2023/12/22/hp-victus-15-black-2.png",
+      "https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2023/12/22/hp-victus-15-black-3.png",
+      "https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2023/12/22/hp-victus-15-black-4.png",
+      "https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2023/12/22/hp-victus-15-black-5.png"
+    ],
       "score": "4.9",
       "sold": "1,9k",
       "tags": [
