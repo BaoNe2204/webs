@@ -1,0 +1,121 @@
+.product-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 16px;
+    border-radius: 20px;
+    gap: 8px;
+
+    background: var(--product-card-bg);
+
+    // box-shadow: 0px 20px 60px 10px var(--product-card-shadow);
+    &__tag {
+        display: flex;
+        gap: 12px;
+
+        p {
+            height: 20px;
+            display: flex; // đổi từ block sang flex
+            align-items: center; // canh giữa theo chiều dọc
+            justify-content: center; // canh giữa theo chiều ngang
+            font-size: 1.2rem;
+            background-color: #f2f4f7;
+            color: #667085;
+            padding: 0 8px; // để chữ không sát viền
+            border-radius: 4px; // tuỳ chọn, cho bo tròn
+        }
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &:hover &__thumb {
+        transform: translateY(-5px); // dịch ảnh lên 5px khi hover
+    }
+
+    &__img-wrap {
+        position: relative;
+        padding-top: 100%;
+    }
+
+    &__thumb {
+        position: absolute;
+        top: 5px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        transition: transform 0.3s ease;
+    }
+
+    &__like-btn {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+
+    &__title {
+        margin-top: 10px;
+        text-align: left;
+    }
+
+    &__title,
+    &__price,
+    &__score {
+        font-size: 1.4rem;
+        font-weight: 600;
+    }
+
+    &__price {
+        margin: 2px 0;
+        color: #d0021c;
+        font-size: 1.8rem;
+        line-height: 146.667%;
+        text-align: left;
+        font-weight: 600;
+    }
+
+    &__list-old {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+
+        .percent {
+            color: red;
+            font-size: 1.3rem;
+        }
+    }
+
+    &__price-old {
+        text-align: left;
+        color: #98a2b3;
+        font-size: 1.4rem;
+        text-decoration: line-through;
+
+
+    }
+
+    &__row {
+        display: flex;
+        align-items: center; 
+        gap: 4px; 
+        flex-wrap: wrap;
+    }
+
+    &__star {
+        display: inline-flex;
+        text-align: left;
+        align-items: center;
+        justify-content: center;
+        height: 18px;
+        width: 18px;
+    }
+}
+
+.vote-txt {
+     display: inline-flex; 
+    font-size: 1.2rem;
+    color: #999;
+    margin-left: 4px; 
+}

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Grocery Mart</title>
+
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" sizes="76x76"
+            href="./assets/favicon/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32"
+            href="./assets/favicon/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16"
+            href="./assets/favicon/favicon-16x16.png" />
+        <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+        <meta name="msapplication-TileColor" content="#da532c" />
+        <meta name="theme-color" content="#ffffff" />
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="./assets/fonts/stylesheet.css" />
+
+        <!-- Styles -->
+        <style>
+            .slidezy-slide {
+                text-align: center;
+            }
+        </style>
+        <link rel="stylesheet" href="./assets/css/slidezy.css">
+        <link rel="stylesheet" href="./assets/css/main.css" />
+
+        <!-- Scripts -->
+
+        <script src="./assets/js/scripts.js"></script>
+    </head>
+    <body>
+        <div class="snowflakes" aria-hidden="true">
+            <div class="snowflake">🌸</div>
+            <div class="snowflake">🌸</div>
+            <div class="snowflake">🌸</div>
+            <div class="snowflake">🌸</div>
+            <div class="snowflake">🌸</div>
+            <div class="snowflake">🌸</div>
+            <div class="snowflake">🌸</div>
+            <div class="snowflake">🌸</div>
+            <div class="snowflake">🌸</div>
+            <div class="snowflake">🌸</div>
+            <div class="snowflake">🌸</div>
+            <div class="snowflake">🌸</div>
+        </div>
+        <!-- Header -->
+        <div class="navbar-sticky" id="navbar" data-sticky>
+            <div id="header-top"></div>
+            <header id="header" class="header"></header>
+        </div>
+        <script>
+            load("#header-top", "./templates/header-top.html");
+        </script>
+        <script>
+            load("#header", "./templates/header.html");
+        </script>
+
+        <!-- MAIN -->
+        <main class="container home">
+            <!-- Slideshow -->
+
+            <div class="home__container">
+                <div class="slideshow">
+                    <div class="slideshow__inner">
+                        <div id="my-slider">
+                            <div class="slide-1">
+                                <img src="./assets/img/slide/slide1.jpg" alt>
+                            </div>
+                            <div class="slide-2">
+                                <img src="./assets/img/slide/slide2.jpg" alt>
+                            </div>
+                            <div class="slide-3">
+                                <img src="./assets/img/slide/slide3.jpg" alt>
+                            </div>
+                            <div class="slide-4">
+                                <img src="./assets/img/slide/slide4.jpg" alt>
+                            </div>
+                            <div class="slide-5">
+                                <img src="./assets/img/slide/slide5.jpg" alt>
+                            </div>
+                            <div class="slide-6">
+                                <img src="./assets/img/slide/slide6.jpg" alt>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slideshow__footer"></div>
+                </div>
+            </div>
+            <div class="home__container">
+                <div class="hotdeal">
+                    <div class="hotdeal__wrap">'
+                        <h2 class="hotdeal__titlemain">ƯU ĐÃI HÓT</h2>
+                        <div class="hotdeal__list">
+                            <a href><div class="hotdeal__item">
+                                    <img src="./assets/icons/unnamed.gif" alt
+                                        class="hotdeal__item-gif">
+                                    <p class="hotdeal__title">GIỜ VÀNG GIÁ
+                                        SỐC</p>
+                                </div></a>
+                            <a href><div class="hotdeal__item">
+                                    <img src="./assets/icons/250k.gif" alt
+                                        class="hotdeal__item-gif">
+                                    <p class="hotdeal__title">TẢI APP</p>
+                                </div></a>
+
+                            <a href><div class="hotdeal__item">
+                                    <img src="./assets/icons/Ai.gif" alt
+                                        class="hotdeal__item-gif">
+                                    <p class="hotdeal__title">LAPTOP AI</p>
+                                </div></a>
+
+                            <a href><div class="hotdeal__item">
+                                    <img src="./assets/icons/trả gop.gif" alt
+                                        class="hotdeal__item-gif">
+                                    <p class="hotdeal__title">TRẢ GÓP 0%</p>
+                                </div></a>
+
+                            <a href><div class="hotdeal__item">
+                                    <img src="./assets/icons/apple.gif" alt
+                                        class="hotdeal__item-gif">
+                                    <p class="hotdeal__title">APPLE
+                                        EDUCATION</p>
+                                </div></a>
+
+                            <a href><div class="hotdeal__item">
+                                    <img src="./assets/icons/free.gif" alt
+                                        class="hotdeal__item-gif">
+                                    <p class="hotdeal__title">FREE SHIP</p>
+                                </div></a>
+
+                            <a href> <div class="hotdeal__item">
+                                    <img src="./assets/icons/đoiiem.gif" alt
+                                        class="hotdeal__item-gif">
+                                    <p class="hotdeal__title">ĐỔI ĐIỂM THPT
+                                        2025</p>
+                                </div></a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="flashsales">
+                    <div class="flashsales__row">
+                        <div class="flashsales-wrap">
+                            <div class="sample-3">
+                                <div class="tabzy-wrapper">
+                                    <ul id="sliding-tabs"
+                                        class="tabzy-tabs sliding">
+                                        <li><a href="#slide1">Laptop
+                                                <br><span>Giảm đến
+                                                    40%</span></a></li>
+                                        <li><a href="#slide2">Linh
+                                                Kiện<br><span>Giảm đến
+                                                    40%</span></a></li>
+                                        <li><a href="#slide3">Màn
+                                                Hình<br><span>Giảm đến
+                                                    40%</span></a></li>
+                                        <li><a href="#slide4">Phím
+                                                Chuột<br><span>Giảm đến
+                                                    40%</span></a></li>
+                                        <li><a href="#slide5">Camera - Thiết bị
+                                                Mạng<br><span>Giảm đến
+                                                    40%</span></a></li>
+                                        <li><a href="#slide6">Loa - Phụ
+                                                Kiện<br><span>Giảm đến
+                                                    40%</span></a></li>
+                                    </ul>
+                                    <div class="active-line"></div>
+                                    <div id="slide1" class="tabzy-panel">
+                                        <div id="my-slider1"
+                                            class="slidezy-container"></div>
+                                    </div>
+                                    <div id="slide2" class="tabzy-panel" hidden>
+                                        <div id="my-slider2"
+                                            class="slidezy-container"></div>
+                                    </div>
+                                    <div id="slide3" class="tabzy-panel" hidden>
+                                        <div id="my-slider3"
+                                            class="slidezy-container"></div>
+                                    </div>
+                                    <div id="slide4" class="tabzy-panel" hidden>
+                                        <div id="my-slider4"
+                                            class="slidezy-container"></div>
+                                    </div>
+                                    <div id="slide5" class="tabzy-panel" hidden>
+                                        <div id="my-slider5"
+                                            class="slidezy-container"></div>
+                                    </div>
+                                    <div id="slide6" class="tabzy-panel" hidden>
+                                        <div id="my-slider6"
+                                            class="slidezy-container"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <section class="product-showcase product-showcase--pc">
+                    <h2 class="product-showcase__heading">PC</h2>
+                    <div id="my-slider7">
+                    </div>
+                </section>
+                <section class="product-showcase product-showcase--Laptop">
+                    <h2 class="product-showcase__heading">Laptop Gaming</h2>
+                    <div id="my-slider8">
+                    </div>
+                </section>
+                <section class="product-showcase product-showcase--manhinh">
+                    <h2 class="product-showcase__heading">Màn Hình</h2>
+                    <div id="my-slider9">
+                    </div>
+                </section>
+                <section class="product-showcase product-showcase--ram">
+                    <h2 class="product-showcase__heading">RAM</h2>
+                    <div id="my-slider10">
+                    </div>
+                </section>
+                <section class="product-showcase product-showcase--vga">
+                    <h2 class="product-showcase__heading">VGA</h2>
+                    <div id="my-slider11">
+                    </div>
+                </section>
+                <section class="product-showcase product-showcase--banphim">
+                    <h2 class="product-showcase__heading">Bàn Phím</h2>
+                    <div id="my-slider12">
+                    </div>
+                </section>
+
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer id="footer" class="footer"></footer>
+        <script>
+            load("#footer", "./templates/footer.html");
+        </script>
+
+        <script src="./assets/highlight/highlight.js"></script>
+        <script src="./assets/js/tabzy.min.js"></script>
+        <script src="./assets/js/app.js"></script>
+        <script src="./assets/js/slidezy.js"></script>
+        <script src="./assets/js/my-slider.js"></script>
+        <script src="./assets/js/checkout.js"></script>
+        <script src="./assets/js/sticky.js"></script>
+
+    </body>
+</html>

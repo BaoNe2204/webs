@@ -1,0 +1,39 @@
+.hotdeal {
+
+  &__wrap {
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    outline: none;
+    border: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px 20px 10px;
+  }
+
+  &__item {
+    text-align: center;
+    &:hover {
+      color: rgb(24, 117, 255);
+    }
+    &-gif {
+      width: 56px;
+      height: 56px;
+    }
+  }
+
+  &__titlemain {
+    padding: 10px 20px;
+    font-size: 1.7rem;
+    font-weight: 900;
+  }
+
+  &__title {
+    padding-top: 10px;
+    font-size: 1.4rem;
+  }
+}

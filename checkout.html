@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Checkout | Grocery Mart</title>
+
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" sizes="76x76"
+            href="./assets/favicon/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32"
+            href="./assets/favicon/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16"
+            href="./assets/favicon/favicon-16x16.png" />
+        <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+        <meta name="msapplication-TileColor" content="#da532c" />
+        <meta name="theme-color" content="#ffffff" />
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="./assets/fonts/stylesheet.css" />
+
+        <!-- Styles -->
+        <link rel="stylesheet" href="./assets/css/main.css" />
+
+        <!-- Scripts -->
+        <script src="./assets/js/scripts.js"></script>
+    </head>
+    <body>
+        <!-- Header -->
+        <div id="header-top"></div>
+        <header id="header" class="header"></header>
+        <script>
+            load("#header-top", "./templates/header-top.html");
+        </script>
+        <script>
+            load("#header", "./templates/header.html");
+        </script>
+
+        <!-- MAIN -->
+        <main class="checkout-page">
+            <div class="container">
+                <!-- Search bar -->
+                <div class="checkout-container">
+                    <div class="search-bar d-none d-md-flex">
+                        <input type="text" name id placeholder="Search for item"
+                            class="search-bar__input" />
+                        <button class="search-bar__submit">
+                            <img src="./assets/icons/search.svg" alt
+                                class="search-bar__icon icon" />
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Breadcrumbs -->
+                <div class="checkout-container">
+                    <ul class="breadcrumbs checkout-page__breadcrumbs">
+                        <li>
+                            <a href="./" class="breadcrumbs__link">
+                                Trang chủ
+                                <img src="./assets/icons/arrow-right.svg" alt />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#!"
+                                class="breadcrumbs__link breadcrumbs__link--current">Giỏ
+                                Hàng</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Checkout content -->
+                <div class="checkout-container">
+                    <div class="row gy-xl-3">
+                        <div class="col-8 col-xl-12">
+                            <div class="cart-info">
+                                <div class="cart-info__list"></div>
+                                <div class="cart-info__bottom d-md-none">
+                                    <div class="row">
+                                        <div class="col-8 col-xxl-7">
+                                            <div class="cart-info__continue">
+                                                <a href="./"
+                                                    class="cart-info__continue-link">
+                                                    <img
+                                                        class="cart-info__continue-icon icon"
+                                                        src="./assets/icons/arrow-down-2.svg"
+                                                        alt>
+                                                    Tiếp tục mua sắm
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-4 col-xxl-5">
+                                            <div class="cart-info__row">
+                                                <span>Mặt Hàng:</span>
+                                                <span
+                                                    id="coSubtotalMobile">0đ</span>
+                                            </div>
+                                            <div class="cart-info__row">
+                                                <span>Phí vận chuyển:</span>
+                                                <span
+                                                    id="coShippingMobile">0đ</span>
+                                            </div>
+                                            <div
+                                                class="cart-info__separate"></div>
+                                            <div
+                                                class="cart-info__row cart-info__row--bold">
+                                                <span>Tổng:</span>
+                                                <span
+                                                    id="coTotalMobile">0đ</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 col-xl-12">
+                            <div class="cart-info">
+                                <div class="cart-info__row">
+                                    <span>Mặt Hàng <span
+                                            class="cart-info__sub-label"></span></span>
+                                    <span id="coSubtotalItems">0</span>
+                                </div>
+                                <div class="cart-info__row">
+                                    <span>Giá <span
+                                            class="cart-info__sub-label"></span></span>
+                                    <span id="coSubtotalPrice">0đ</span>
+                                </div>
+                                <div class="cart-info__row">
+                                    <span>Phí Vận Chuyển</span>
+                                    <span id="coShipping">0đ</span>
+                                </div>
+                                <div class="cart-info__separate"></div>
+                                <div class="cart-info__row">
+                                    <span>Tổng</span>
+                                    <span id="coEstimatedTotal">0đ</span>
+                                </div>
+                                <a href="./shipping.html"
+                                    class="cart-info__next-btn btn btn--primary btn--rounded">
+                                    Tiếp Tục Thanh Toán
+                                </a>
+                            </div>
+
+                            <div class="cart-info">
+                                <a href="#!">
+                                    <article class="gift-item">
+                                        <div class="gift-item__icon-wrap">
+                                            <img src="./assets/icons/gift.svg"
+                                                alt class="gift-item__icon" />
+                                        </div>
+                                        <div class="gift-item__content">
+                                            <h3 class="gift-item__title">Gửi
+                                                đơn hàng này như một món
+                                                quà.</h3>
+                                            <p class="gift-item__desc">
+                                                Các mặt hàng có sẵn sẽ được
+                                                chuyển đến người nhận quà của
+                                                bạn.
+                                            </p>
+                                        </div>
+                                    </article>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer id="footer" class="footer"></footer>
+        <script>
+            load("#footer", "./templates/footer.html");
+        </script>
+
+        <!-- Modal: confirm remove shopping cart item -->
+        <div id="delete-confirm" class="modal modal--small hide">
+            <div class="modal__content">
+                <p class="modal__text">Do you want to remove this item from
+                    shopping cart?</p>
+                <div class="modal__bottom">
+                    <button
+                        class="btn btn--small btn--outline modal__btn js-toggle"
+                        toggle-target="#delete-confirm">
+                        Cancel
+                    </button>
+                    <button
+                        class="btn btn--small btn--danger btn--primary modal__btn btn--no-margin js-toggle"
+                        toggle-target="#delete-confirm">
+                        Delete
+                    </button>
+                </div>
+            </div>
+            <div class="modal__overlay js-toggle"
+                toggle-target="#delete-confirm"></div>
+        </div>
+    </body>
+    <script src="./assets/js/checkout.js?v=1"></script>
+
+</html>
