@@ -1273,6 +1273,19 @@
         "ROG",
         "Gaming"
       ]
+    },{
+      "id": "kb-010",
+      "title": "Asus ROG Strix Scope RX",
+      "price": "2.690.000đ",
+      "oldPrice": "2.990.000đ",
+      "discount": "-10%",
+      "image": "./assets/img/products/kb10.jpg",
+      "score": "4.9",
+      "sold": "2,7k",
+      "tags": [
+        "ROG",
+        "Gaming"
+      ]
     }
   ]
 }

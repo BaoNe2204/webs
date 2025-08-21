@@ -8,6 +8,15 @@
     (n || 0).toLocaleString("vi-VN", { style: "currency", currency: "VND" });
   const TAX_RATE = 0.10;
 
+  // Chuẩn hoá phần trăm -> số thập phân (5%|"-5%"|5|0.05 -> 0.05|-0.05)
+  const parsePercent = (v) => {
+    if (v == null) return 0;
+    if (typeof v === "number") return v > 1 ? v / 100 : v;
+    const m = String(v).trim().match(/-?\d+(\.\d+)?/);
+    if (!m) return 0;
+    return parseFloat(m[0]) / 100;
+  };
+
   const slugify = (str = "") =>
     String(str)
       .normalize("NFD")
@@ -52,7 +61,6 @@
     }
   }
 
-  // ===== Mô tả sản phẩm (Description) =====
   async function renderDescription(pid) {
     const el = document.getElementById("descContent");
     if (!el) return;
@@ -63,12 +71,11 @@
       if (!res.ok) throw new Error("HTTP " + res.status);
 
       const map = await res.json();
-      // thử nhiều key: nguyên văn, slug, ...
       const keys = [pid, slugify(pid || "")].filter(Boolean);
       const arr =
         map[keys[0]] ||
         map[keys[1]] ||
-        []; // nếu chưa có -> mảng rỗng
+        [];
 
       el.innerHTML = arr.length ? arr.join("") : "<p>Chưa có mô tả cho sản phẩm này.</p>";
     } catch (err) {
@@ -107,13 +114,13 @@
     localStorage.setItem("lastProductId", pid);
 
     // DOM hooks
-    const listBig = $(".prod-preview__list");
+    const listBig   = $(".prod-preview__list");
     const listThumb = $(".prod-preview__thumbs");
-    const titleEl = $(".prod-info__heading");
-    const  totalEl = $(".prod-info__price");
-    const taxEl = $(".prod-info__tax");
-    const priceEl = $(".prod-info__total-price");
-    const addBtn = $(".prod-info__add-to-cart");
+    const titleEl   = $(".prod-info__heading");
+    const totalEl   = $(".prod-info__price");        // Tổng sau thuế
+    const taxEl     = $(".prod-info__tax");          // % Thuế
+    const priceEl   = $(".prod-info__total-price");  // Giá sau giảm (trước thuế)
+    const addBtn    = $(".prod-info__add-to-cart");
 
     // Lấy dữ liệu sản phẩm
     let data;
@@ -154,9 +161,7 @@
       listThumb.innerHTML = gallery
         .map(
           (src, i) => `
-        <img src="${src}" alt="" class="prod-preview__thumb-img ${
-          i === 0 ? "prod-preview__thumb-img--current" : ""
-        }" data-idx="${i}" />`
+        <img src="${src}" alt="" class="prod-preview__thumb-img ${i === 0 ? "prod-preview__thumb-img--current" : ""}" data-idx="${i}" />`
         )
         .join("");
 
@@ -175,12 +180,43 @@
       });
     }
 
-    // Giá & thuế
-    const priceNum = toNumber(prod.price);
+    // ===== Giá, giảm giá & thuế =====
+    const basePrice = toNumber(prod.price);
+
+    // Thuế: ưu tiên prod.tax nếu có, fallback TAX_RATE
+    const taxRate = (typeof prod.tax === "number") ? prod.tax : TAX_RATE;
+
+    // Giảm giá: chuẩn hoá; nếu data là "5%" (không dấu -) vẫn coi là giảm 5%
+    let discountRate = parsePercent(prod.discount);   // 0.05 | -0.05 | 0
+    if (discountRate > 0) discountRate = -Math.abs(discountRate);
+
+    // Giá sau giảm (trước thuế) & Tổng sau thuế
+    const priceAfterDiscount = Math.max(0, Math.round(basePrice * (1 + discountRate)));
+    const totalAfterTax = Math.round(priceAfterDiscount * (1 + taxRate));
+
+    // Gán UI
     titleEl && (titleEl.textContent = prod.title);
-    priceEl && (priceEl.textContent = moneyVND(priceNum));
-    taxEl && (taxEl.textContent = `${Math.round(TAX_RATE * 100)}%`);
-    totalEl && (totalEl.textContent = moneyVND(Math.round(priceNum * (1 + TAX_RATE))));
+    priceEl && (priceEl.textContent = moneyVND(priceAfterDiscount)); // trước thuế
+    taxEl   && (taxEl.textContent   = `${Math.round(taxRate * 100)}%`);
+    totalEl && (totalEl.textContent = moneyVND(totalAfterTax));      // sau thuế
+
+    // Badge % giảm (tự chèn nếu chưa có)
+    let discountEl = $(".prod-info__tax");
+    if (!discountEl && taxEl) {
+      discountEl = document.createElement("span");
+      discountEl.className = "prod-info__tax";
+      taxEl.parentNode.insertBefore(discountEl, taxEl);
+    }
+    if (discountEl) {
+      const disp = Math.round(discountRate * 100); // -5
+      if (disp) {
+        discountEl.textContent = `${disp}%`;
+        discountEl.classList.remove("pd-hide");
+      } else {
+        discountEl.textContent = "";
+        discountEl.classList.add("pd-hide");
+      }
+    }
 
     // Add to cart
     addBtn?.addEventListener("click", (e) => {
@@ -188,7 +224,7 @@
       window.cartStore?.add({
         id: prod._id,
         name: prod.title,
-        price: priceNum,
+        price: priceAfterDiscount, // thêm đúng giá đã giảm (trước thuế) vào giỏ
         img: prod.image || gallery[0],
         qty: 1,
       });
