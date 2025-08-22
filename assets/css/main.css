@@ -2254,7 +2254,7 @@ html {
   border-radius: 4px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   padding: 8px 0;
-  z-index: 99;
+  z-index: 999999;
 }
 .mainChild li a {
   display: block;
@@ -4342,6 +4342,264 @@ html {
   .policy__table td {
     font-size: 1.3rem;
     padding: 6px 8px;
+  }
+}
+.prod-info__card.specs-card {
+  --bd: #e5e7eb;
+  --primary: #1b6cff;
+  --chip-bg: #eef2ff;
+  --chip-bd: #c7d2fe;
+  --chip-tx: #3730a3;
+}
+.prod-info__card.specs-card .spec-card {
+  border: 1px solid var(--bd);
+  border-radius: 14px;
+  padding: 14px;
+  background: #fff;
+}
+.prod-info__card.specs-card .spec-card__title {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #0f172a;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.prod-info__card.specs-card .spec-list {
+  display: grid;
+  gap: 10px;
+  /* Input Từ/Đến */
+  /* Preset buttons */
+}
+.prod-info__card.specs-card .spec-list > div:first-child {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+.prod-info__card.specs-card .spec-list > div:first-child .search-bar__input {
+  height: 40px;
+  width: 100px;
+  border: 1px solid var(--bd);
+  border-radius: 10px;
+  padding: 0 12px;
+  font-size: 14px;
+  outline: none;
+}
+.prod-info__card.specs-card .spec-list > div:first-child .search-bar__input:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(27, 108, 255, 0.15);
+}
+.prod-info__card.specs-card .spec-list > div:nth-child(2) {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(96px, 1fr));
+  gap: 8px;
+  margin-top: 4px;
+}
+.prod-info__card.specs-card .spec-list > div:nth-child(2) .btn.btn--primary-blue {
+  border: 1px solid var(--chip-bd);
+  background: var(--chip-bg);
+  color: var(--chip-tx);
+  font-weight: 600;
+  font-size: 13px;
+  padding: 8px 12px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: filter 0.15s ease, transform 0.05s ease;
+}
+.prod-info__card.specs-card .spec-list > div:nth-child(2) .btn.btn--primary-blue:hover {
+  filter: brightness(0.97);
+}
+.prod-info__card.specs-card .spec-list > div:nth-child(2) .btn.btn--primary-blue:active {
+  transform: translateY(1px) scale(0.99);
+}
+@media (max-width: 575.98px) {
+  .prod-info__card.specs-card .spec-list > div:first-child {
+    grid-template-columns: 1fr;
+  }
+  .prod-info__card.specs-card .spec-list > div:nth-child(2) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6px;
+  }
+  .prod-info__card.specs-card .spec-list > div:nth-child(2) .btn.btn--primary-blue {
+    font-size: 12.5px;
+    padding: 8px 8px;
+  }
+}
+
+/* ==== Price slider (scoped trong card) ==== */
+.price-caption {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #82869e;
+  margin-bottom: 6px;
+}
+
+.price-slider {
+  position: relative;
+  height: 36px;
+  margin: 2px 2px 8px;
+}
+.price-slider .ps-track {
+  position: absolute;
+  inset: 0;
+  height: 6px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #f0f2f5;
+  border-radius: 999px;
+  overflow: hidden;
+}
+.price-slider .ps-track .ps-fill {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #dbe7ff;
+}
+.price-slider .ps-thumb {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 36px;
+  appearance: none;
+  -webkit-appearance: none;
+  background: none;
+  pointer-events: none; /* chặn thân, chỉ cho kéo nút */
+}
+.price-slider .ps-thumb::-webkit-slider-thumb {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #1b6cff;
+  border: 2px solid #fff;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.08);
+  pointer-events: auto; /* cho phép kéo */
+}
+.price-slider .ps-thumb::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #1b6cff;
+  border: 2px solid #fff;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.08);
+  pointer-events: auto;
+}
+.price-slider .ps-tip {
+  position: absolute;
+  top: -18px;
+  transform: translateX(-50%);
+  font-size: 11px;
+  padding: 2px 6px;
+  color: #fff;
+  background: #111827;
+  border-radius: 6px;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+#pager {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin: 24px 0;
+}
+#pager .btn {
+  min-width: 40px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  background: #fff;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+#pager .btn:hover {
+  background: #f1f5f9;
+}
+#pager .btn.btn--primary {
+  background: linear-gradient(180deg, #3b82f6, #2563eb);
+  color: #fff;
+  border-color: #2563eb;
+}
+#pager .btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* ===== CATEGORY ICONS ===== */
+:root {
+  --cat-radius: 16px;
+  --cat-gap: 14px;
+  --cat-padding: 12px;
+  --cat-shadow: 0 6px 18px rgba(0, 0, 0, .06);
+  --cat-border: 1px solid rgba(0, 0, 0, .06);
+}
+
+.cat-nav {
+  padding: 12px 0;
+}
+.cat-nav__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: var(--cat-gap);
+}
+.cat-nav__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: var(--cat-padding);
+  text-decoration: none;
+  border-radius: var(--cat-radius);
+  border: var(--cat-border);
+  background: #fff;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+}
+.cat-nav__item:focus-visible {
+  outline: 2px solid #0ea5e9;
+  outline-offset: 2px;
+}
+.cat-nav__item:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--cat-shadow);
+  border-color: rgba(0, 0, 0, 0.1);
+}
+.cat-nav__thumb {
+  width: 56px;
+  height: 56px;
+  border-radius: 12px;
+  overflow: hidden;
+  flex: 0 0 auto;
+}
+.cat-nav__thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.cat-nav__title {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.2;
+  text-align: center;
+  color: #111827;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 100%;
+}
+
+/* Dark mode (tuỳ chọn) */
+@media (prefers-color-scheme: dark) {
+  .cat-nav__item {
+    border-color: rgba(255, 255, 255, 0.08);
+  }
+  .cat-nav__title {
+    color: black;
   }
 }
 .home {
