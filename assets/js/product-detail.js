@@ -47,14 +47,14 @@
 
       list.innerHTML = spec
         ? Object.entries(spec)
-            .map(
-              ([k, v]) => `
+          .map(
+            ([k, v]) => `
           <li class="spec-item">
             <span class="spec-k">${k}:</span>
             <span class="spec-v">${v}</span>
           </li>`
-            )
-            .join("")
+          )
+          .join("")
         : '<li class="spec-item">Chưa có thông số cho sản phẩm này.</li>';
     } catch (e) {
       console.error("[specs] lỗi tải specs.json:", e);
@@ -100,6 +100,87 @@
       btn.textContent = expanded ? "Xem thêm ưu đãi khác" : "Thu gọn ưu đãi";
     });
   }
+  // ===== Helpers chung =====
+  // (giữ nguyên $ , toNumber , moneyVND , TAX_RATE , parsePercent , slugify ...)
+
+  // Thêm HÀM NÀY vào trong IIFE, phía trên "===== Main ====="
+  (function () {
+    // Helpers
+    const toNumber = (v) => parseInt(String(v || "").replace(/[^\d]/g, ""), 10) || 0;
+    const moneyVND = (n) => (n || 0).toLocaleString("vi-VN", { style: "currency", currency: "VND" });
+
+    // Lấy giá đang HIỂN THỊ (ưu tiên các ô giá trên trang)
+    function getCurrentProductPrice() {
+      const elMain1 = document.querySelector(".prod-info__total-price"); // giá chính (trước thuế/đã giảm)
+      const elMain2 = document.getElementById("total-price");            // fallback id cũ
+      const elAlt1 = document.querySelector(".prod-info__price");       // giá phụ (sau thuế)
+      const elAlt2 = document.getElementById("price");                  // fallback id cũ
+      const holder = document.getElementById("productHolder");          // dataset nếu có
+
+      const raw =
+        (elMain1 && elMain1.textContent) ||
+        (elMain2 && elMain2.textContent) ||
+        (elAlt1 && elAlt1.textContent) ||
+        (elAlt2 && elAlt2.textContent) ||
+        (holder && holder.dataset && holder.dataset.price) || "";
+
+      return toNumber(raw);
+    }
+
+    // Tính & gắn "Chỉ từ …/tháng" cho 2 nút trả góp
+    function updateInstallmentButtons() {
+      const price = getCurrentProductPrice();
+      if (!price) return;
+
+      document.querySelectorAll(".btn.btn--primary-blue.prod-info__buy").forEach((btn) => {
+        // Cho phép set số tháng riêng: data-months="6", mặc định 12
+        const months = parseInt(btn.getAttribute("data-months"), 10) || 12;
+        const perMonth = Math.ceil(price / months);
+
+        let sub = btn.querySelector(".button-title");
+        if (!sub) {
+          sub = document.createElement("span");
+          sub.className = "button-title";
+          btn.appendChild(sub);
+        }
+        sub.textContent = `Chỉ từ ${moneyVND(perMonth)}/tháng`;
+      });
+    }
+
+    // Chạy khi DOM sẵn sàng
+    document.addEventListener("DOMContentLoaded", updateInstallmentButtons);
+
+    // Nếu giá được cập nhật động sau khi fetch, theo dõi thay đổi text để cập nhật lại
+    const priceTargets = [
+      ".prod-info__total-price",
+      "#total-price",
+      ".prod-info__price",
+      "#price",
+    ];
+    const targetEl = priceTargets.map((s) => document.querySelector(s)).find(Boolean);
+    if (targetEl) {
+      const mo = new MutationObserver(updateInstallmentButtons);
+      mo.observe(targetEl, { childList: true, characterData: true, subtree: true });
+    }
+
+    // Cho phép nơi khác gọi lại khi bạn thay giá thủ công
+    window.updateInstallmentButtons = updateInstallmentButtons;
+  })();
+  // ===== Main =====
+  document.addEventListener("DOMContentLoaded", async () => {
+    // ... toàn bộ code hiện tại của bạn ...
+
+    // Gán UI giá:
+    titleEl && (titleEl.textContent = prod.title);
+    priceEl && (priceEl.textContent = moneyVND(priceAfterDiscount)); // trước thuế
+    taxEl && (taxEl.textContent = `${Math.round(taxRate * 100)}%`);
+    totalEl && (totalEl.textContent = moneyVND(totalAfterTax));      // sau thuế
+
+    // >>> THÊM DÒNG NÀY: cập nhật "Chỉ từ .../tháng" SAU khi giá đã render
+    updateInstallmentButtons();
+
+    // ... phần còn lại: addToCart, render specs/desc, bindOfferToggle ...
+  });
 
   // ===== Main =====
   document.addEventListener("DOMContentLoaded", async () => {
@@ -114,13 +195,13 @@
     localStorage.setItem("lastProductId", pid);
 
     // DOM hooks
-    const listBig   = $(".prod-preview__list");
+    const listBig = $(".prod-preview__list");
     const listThumb = $(".prod-preview__thumbs");
-    const titleEl   = $(".prod-info__heading");
-    const totalEl   = $(".prod-info__price");        // Tổng sau thuế
-    const taxEl     = $(".prod-info__tax");          // % Thuế
-    const priceEl   = $(".prod-info__total-price");  // Giá sau giảm (trước thuế)
-    const addBtn    = $(".prod-info__add-to-cart");
+    const titleEl = $(".prod-info__heading");
+    const totalEl = $(".prod-info__price");        // Tổng sau thuế
+    const taxEl = $(".prod-info__tax");          // % Thuế
+    const priceEl = $(".prod-info__total-price");  // Giá sau giảm (trước thuế)
+    const addBtn = $(".prod-info__add-to-cart");
 
     // Lấy dữ liệu sản phẩm
     let data;
@@ -197,7 +278,7 @@
     // Gán UI
     titleEl && (titleEl.textContent = prod.title);
     priceEl && (priceEl.textContent = moneyVND(priceAfterDiscount)); // trước thuế
-    taxEl   && (taxEl.textContent   = `${Math.round(taxRate * 100)}%`);
+    taxEl && (taxEl.textContent = `${Math.round(taxRate * 100)}%`);
     totalEl && (totalEl.textContent = moneyVND(totalAfterTax));      // sau thuế
 
     // Badge % giảm (tự chèn nếu chưa có)
@@ -221,13 +302,21 @@
     // Add to cart
     addBtn?.addEventListener("click", (e) => {
       e.preventDefault();
+
+      // Lấy số lượng từ input, ràng buộc tối thiểu 1
+      const qtyInput = document.getElementById("detailQty");
+      let qty = parseInt(qtyInput?.value, 10);
+      if (!Number.isFinite(qty) || qty < 1) qty = 1;
+
       window.cartStore?.add({
         id: prod._id,
         name: prod.title,
-        price: priceAfterDiscount, // thêm đúng giá đã giảm (trước thuế) vào giỏ
+        price: priceAfterDiscount,          // giá đã giảm (trước thuế)
         img: prod.image || gallery[0],
-        qty: 1,
+        qty,                                 // <-- dùng số lượng người dùng chọn
       });
+
+      // Cập nhật mini cart
       window.renderMiniCart?.();
     });
 
@@ -237,5 +326,92 @@
 
     // Toggle ưu đãi
     bindOfferToggleOnce();
+  });
+})();
+
+// Nút + / −
+document.addEventListener("click", (e) => {
+  const btn = e.target.closest("#detailQtyWrap .qty-btn");
+  if (!btn) return;
+
+  const delta = parseInt(btn.dataset.delta, 10) || 0;
+  const input = document.getElementById("detailQty");
+  if (!input) return;
+
+  let current = parseInt(input.value, 10) || 1;
+  current = Math.max(1, current + delta);
+  input.value = String(current);
+});
+
+// Chặn ký tự ngoài số & bỏ 0 đầu
+const qtyInput = document.getElementById("detailQty");
+qtyInput?.addEventListener("input", () => {
+  const cleaned = (qtyInput.value.match(/\d+/g) || ["1"]).join("");
+  qtyInput.value = String(Math.max(1, parseInt(cleaned, 10) || 1));
+});
+updateInstallmentButtons();
+(function () {
+  const $ = (s, r=document) => r.querySelector(s);
+  const slugify = (str = "") =>
+    String(str).normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+      .replace(/đ/g,"d").replace(/Đ/g,"D").toLowerCase()
+      .replace(/[^a-z0-9]+/g,"-").replace(/(^-|-$)/g,"");
+
+  function bumpViews(key) {
+    const LS_KEY = "productViews";
+    let map = {};
+    try { map = JSON.parse(localStorage.getItem(LS_KEY)) || {}; } catch {}
+    map[key] = (map[key] || 0) + 1;
+    localStorage.setItem(LS_KEY, JSON.stringify(map));
+    return map[key];
+  }
+
+  function renderMeta({ prod, pid }) {
+    const rateEl   = $("#metaRating");
+    const cmtEl    = $("#metaComments");
+    const viewsEl  = $("#metaViews");
+    const soldEl   = $("#metaSold");
+
+    // Rating
+    let score = 0;
+    if (prod.score) {
+      const s = String(prod.score).replace(",", ".").match(/[\d.]+/);
+      score = s ? parseFloat(s[0]) : 0;
+    }
+    if (rateEl) rateEl.textContent = score.toFixed(1).replace(".0", "");
+
+    // Comments (default 0)
+    if (cmtEl) cmtEl.textContent = prod.commentsCount ? String(prod.commentsCount) : "0";
+
+    // Views
+    const viewKey = "pv_" + (prod.id || pid || slugify(prod.title || ""));
+    const views = bumpViews(viewKey);
+    if (viewsEl) viewsEl.textContent = views.toLocaleString("vi-VN");
+
+    // Sold
+    if (soldEl) soldEl.textContent = prod.sold ? String(prod.sold) : "0";
+  }
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const params = new URLSearchParams(location.search);
+    let pid = params.get("id") || localStorage.getItem("lastProductId");
+    if (!pid) return;
+    pid = decodeURIComponent(pid);
+
+    if (window.__currentProduct) {
+      renderMeta({ prod: window.__currentProduct, pid });
+      return;
+    }
+
+    fetch("./products.json")
+      .then(r => r.json())
+      .then(data => {
+        const all = Object.values(data).flat();
+        const withId = all.map((p) => ({ ...p, _id: p.id || p.link || p.title }));
+        const prod = withId.find(p => p._id === pid) ||
+                     withId.find(p => slugify(p.title) === slugify(pid));
+        if (prod) renderMeta({ prod, pid });
+      })
+      .catch(() => {});
   });
 })();

@@ -38,15 +38,15 @@
 }
 .ads_gif {
   width: 100%;
-  overflow: hidden;       /* ẩn phần tràn ra ngoài */
-  display: flex;          /* dùng flex để căn giữa */
-  justify-content: center;/* căn giữa ngang */
-  background: #fff;       /* nền trắng (nếu muốn) */
+  overflow: hidden;      
+  display: flex;        
+  justify-content: center;
+  background: #fff;     
   
 }
 
 .ads_gif img {
-  max-width: 100%;  /* ảnh không vượt quá chiều ngang màn hình */
-  height: auto;     /* giữ tỉ lệ gốc */
+  max-width: 100%;  
+  height: auto;     
   display: block;
 }
