@@ -914,17 +914,23 @@
       "score": "4.9",
       "sold": "820",
       "tags": [
-        "UltraWide",
+        
         "Gaming"
       ]
     },
     {
-      "id": "monitor-007",
-      "title": "ASUS ProArt Display PA278QV 27'' IPS",
-      "price": "9.990.000đ",
-      "oldPrice": "10.990.000đ",
-      "discount": "-9%",
-      "image": "./assets/img/products/monitor7.jpg",
+      "id": "monitor-23-8inch-fhd-100hz",
+      "title": "Màn hình EDRA EGM24F100H (23.8 inch/FHD/IPS/100Hz/1ms) - Chính hãng",
+      "price": "1.650.000 ₫ ",
+      "oldPrice": "2.990.000 ₫",
+      "discount": "-45%",
+      "image": "https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2024/09/06/egm24f100h-4.png",
+      "images": [
+      "https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2024/09/06/egm24f100h-4.png",
+      "https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2024/09/06/egm24f100h-2.png",
+      "https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2024/09/06/egm24f100h-3.png",
+      "https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2024/09/06/egm24f100h-1.png"
+    ],
       "score": "5.0",
       "sold": "430",
       "tags": [
@@ -933,26 +939,41 @@
       ]
     },
     {
-      "id": "monitor-008",
-      "title": "LG 34WN80C-B 34'' UltraWide IPS",
-      "price": "15.490.000đ",
-      "oldPrice": "16.490.000đ",
-      "discount": "-6%",
-      "image": "./assets/img/products/monitor8.jpg",
+      "id": "monitor-32inch-qhd-165hz",
+      "title": "Màn hình Samsung Odyssey G5 G55C LS32CG552EEXXV (32 inch/QHD/VA/165Hz/1ms/Cong) - Chính hãng",
+      "price": "5.690.000 ₫",
+      "oldPrice": "8.836.000 ₫",
+      "discount": "-36%",
+      "image": "https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2024/12/02/ls32cg552eexxv-1.png",
+      "images": [
+        "https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2024/12/02/ls32cg552eexxv-1.png",
+        "https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2024/12/02/ls32cg552eexxv-2.png",
+        "https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2024/12/02/ls32cg552eexxv-3.png",
+        "https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2024/12/02/ls32cg552eexxv-4.png",
+        "https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2024/12/02/ls32cg552eexxv-5.png",
+        "https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2024/12/02/ls32cg552eexxv-6.png",
+        "https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2024/12/02/ls32cg552eexxv-7.png"
+      ],
       "score": "5.0",
-      "sold": "260",
+      "sold": "5k",
       "tags": [
         "UltraWide",
-        "Office"
+        "Gaming"
       ]
     },
     {
-      "id": "monitor-009",
-      "title": "BenQ EX2780Q 27'' QHD 144Hz",
-      "price": "10.490.000đ",
-      "oldPrice": "11.490.000đ",
-      "discount": "-8%",
-      "image": "./assets/img/products/monitor9.jpg",
+      "id": "monitor-24_5inch-fhd-180hz",
+      "title": "Màn hình VSP IP2518S4 (24.5 inch/FHD/Fast IPS/180Hz/1ms/USB-C) - Chính hãng",
+      "price": "2.580.000 ₫",
+      "oldPrice": "3.890.000 ₫",
+      "discount": "-34%",
+      "image": "https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2025/02/04/vsp-ip2518s4-1.png",
+      "images": [
+  "https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2025/02/04/vsp-ip2518s4-1.png",
+  "https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2025/02/04/vsp-ip2518s4-2.png",
+  "https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2025/02/04/vsp-ip2518s4-3.png",
+  "https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2025/02/04/vsp-ip2518s4-4.png"
+],
       "score": "4.8",
       "sold": "970",
       "tags": [
@@ -961,140 +982,194 @@
       ]
     },
     {
-      "id": "monitor-010",
-      "title": "ViewSonic VX3276-2K-MHD 32'' IPS",
-      "price": "6.490.000đ",
-      "oldPrice": "6.990.000đ",
-      "discount": "-7%",
-      "image": "./assets/img/products/monitor10.jpg",
+      "id": "monitor-34inch-2k-240hz",
+      "title": "Màn hình MSI MPG 341CQPX QD-OLED (34 inch/UWQHD/OLED/240Hz/0.03ms/Cong)",
+      "price": "26.490.000 ₫",
+      "oldPrice": "29.990.000 ₫",
+      "discount": "-12%",
+      "image": "https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2025/02/18/341cqpx-qd-oled-1.png",
+      "images": [
+  "https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2025/02/18/341cqpx-qd-oled-1.png",
+  "https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2025/02/18/341cqpx-qd-oled-4.png",
+  "https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2025/02/18/341cqpx-qd-oled.png",
+  "https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2025/02/18/341cqpx-qd-oled-3.png",
+  "https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2025/02/18/341cqpx-qd-oled-5.png"
+]
+,
       "score": "4.7",
       "sold": "1,4k",
       "tags": [
-        "Large",
-        "Office"
+        "OLED",
+        "2K"
       ]
     }
   ],
   "slide10": [
     {
-      "id": "ram-001",
-      "title": "Corsair Vengeance 16GB (2x8) DDR4 3200MHz",
-      "price": "1.690.000đ",
-      "oldPrice": "1.890.000đ",
-      "discount": "-11%",
-      "image": "./assets/img/products/ram1.jpg",
-      "score": "4.8",
+      "id": "ram-32gb-ddr5-4800mhz",
+      "title": "Ram Laptop Kingston (KVR48S40BD8-32) 32GB (1x32GB) DDR5 4800MHz ",
+      "price": "2.650.000 ₫",
+      "oldPrice": "3.899.000 ₫",
+      "discount": "-32%",
+      "image": "https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2024/09/13/kingston-kvr48s40bd8-32-1.png",
+      "images": [
+        "https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2024/09/13/kingston-kvr48s40bd8-32-1.png",
+       " https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2024/09/13/kingston-kvr48s40bd8-32-2.png"
+      ]
+      ,
       "sold": "5,2k",
       "tags": [
-        "DDR4",
-        "Corsair"
+        "DDR5",
+        "Laptop"
       ]
     },
     {
-      "id": "ram-002",
-      "title": "G.Skill Trident Z RGB 16GB DDR4 3600MHz",
-      "price": "2.190.000đ",
-      "oldPrice": "2.490.000đ",
-      "discount": "-12%",
-      "image": "./assets/img/products/ram2.jpg",
+      "id": "ram-16gb-ddr5-5600mhz",
+      "title": "RAM Laptop Lexar 16GB DDR5 5600MHz (LD5S16G56C46ST-BGS) ",
+      "price": "1.490.000 ₫ ",
+      "oldPrice": "2.682.000 ₫",
+      "discount": "-47%",
+      "image": "https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2024/03/11/80576-ram-laptop-lexar-ld5ds016g-b4800gsst-16gb-1x16gb-ddr5-4800mhz-1.png",
       "score": "4.9",
       "sold": "3,7k",
       "tags": [
-        "RGB",
-        "DDR4"
+        "16GB",
+        "DDR5"
       ]
     },
     {
-      "id": "ram-003",
-      "title": "Kingston Fury Beast 16GB DDR5 5200MHz",
-      "price": "2.990.000đ",
-      "oldPrice": "3.290.000đ",
-      "discount": "-9%",
-      "image": "./assets/img/products/ram3.jpg",
+      "id": "ram-kingston-8gb-ddr4-3200mhz",
+      "title": "Ram PC Kingston Fury Beast 8GB DDR4 3200Mhz (1x 8GB) (KF432C16BB/8)",
+      "price": "759,000₫",
+      "oldPrice": "790,000₫",
+      "discount": "-4%",
+      "image": "https://product.hstatic.net/200000420363/product/3_c36a8af4b0be442689e1bac910b05ce9_compact.jpg",
+     "images": [
+  "https://bizweb.dktcdn.net/thumb/grande/100/329/122/products/fury-beast-ddr4-black-02-068f083e-092e-4837-8fcb-d1b68411d01f-26381616-c8af-4971-977d-6ed14887ce4a-jpg-v-1695052993167.jpg?v=1740157247413",
+  "https://bizweb.dktcdn.net/thumb/1024x1024/100/329/122/products/fury-beast-ddr4-black-01-4a524fbe-fc12-4694-b195-cc30cee632e2-60e65f46-ceb5-4d47-a6a1-ce341fb952ae.jpg?v=1740157247570",
+  "https://bizweb.dktcdn.net/thumb/1024x1024/100/329/122/products/fury-beast-ddr4-black-03-2768bd00-feb2-443f-9f6f-3cdff7c3da7b-56a49c58-264d-47b5-a0d7-27de0de22636.jpg?v=1740157247570",
+  "https://bizweb.dktcdn.net/thumb/1024x1024/100/329/122/products/fury-beast-ddr4-black-04-a77c6e29-822a-4460-8f64-8a3da24ef085-b15bc5d7-38d2-40c1-9833-f560b5f5e829.jpg?v=1740157247570"
+]
+
+
+,
       "score": "4.8",
       "sold": "2,9k",
       "tags": [
-        "DDR5",
+        "DDR4",
         "Kingston"
       ]
     },
     {
-      "id": "ram-004",
-      "title": "Corsair Dominator Platinum RGB 32GB DDR5 6000MHz",
-      "price": "6.490.000đ",
-      "oldPrice": "6.990.000đ",
-      "discount": "-7%",
-      "image": "./assets/img/products/ram4.jpg",
+      "id": "ram-gskill-32gb-ddr4-3600mhz",
+      "title": "Ram PC G.SKILL Trident Z RGB 32GB 3600MHz DDR4 (16GBx2) F4-3600C18D",
+      "price": "2.300.000 ₫",
+      "oldPrice": "2.650.000 ₫",
+      "discount": "-13%",
+      "image": "https://bizweb.dktcdn.net/thumb/grande/100/329/122/products/trident-z-rgb-ddr4-01-11824290-9259-4c56-a542-f6ca5f77df0c-9324d08d-1200-4ea0-97b4-c48e88072f96-afc3b506-a982-4f37-96aa-38fe36ecdcd5.jpg?v=1746496826403",
+      "images": [
+  "https://bizweb.dktcdn.net/thumb/grande/100/329/122/products/trident-z-rgb-ddr4-01-11824290-9259-4c56-a542-f6ca5f77df0c-9324d08d-1200-4ea0-97b4-c48e88072f96-afc3b506-a982-4f37-96aa-38fe36ecdcd5.jpg?v=1746496826403",
+  "https://bizweb.dktcdn.net/thumb/1024x1024/100/329/122/products/trident-z-rgb-ddr4-02-10204b6b-7bb0-45f1-b2b1-2bb83a7525e7-ce0f5622-987d-43b3-8d0d-83a2cd5b9cb2.jpg?v=1746496826563",
+  "https://bizweb.dktcdn.net/thumb/1024x1024/100/329/122/products/trident-z-rgb-ddr4-03-e084b635-ec7f-4944-9477-7ad34979b438-933f8a15-89e9-4de8-ab50-1feba0512aea.jpg?v=1746496826563",
+  "https://bizweb.dktcdn.net/thumb/1024x1024/100/329/122/products/trident-z-rgb-ddr4-04-122b2cb7-a29a-4ccc-9081-1ccebec1356e-7f976767-cf8f-47b9-8561-a9a253e8f3ff.jpg?v=1746496826563"
+],
       "score": "5.0",
+
       "sold": "1,5k",
       "tags": [
         "Premium",
-        "DDR5"
+        "DDR4"
       ]
     },
     {
-      "id": "ram-005",
-      "title": "ADATA XPG Lancer RGB 16GB DDR5 5600MHz",
-      "price": "2.790.000đ",
-      "oldPrice": "2.990.000đ",
-      "discount": "-7%",
-      "image": "./assets/img/products/ram5.jpg",
+      "id": "ram-adata-16gb-ddr4-3200mhz",
+      "title": "RAM PC ADATA XPG D50 RGB 16GB (1x16GB) 3200MHz DDR4",
+      "price": "1.190.000đ",
+      "oldPrice": "1.990.000đ",
+      "discount": "-40%",
+      "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/p/r/productgallery215_2.png",
+      "images": [
+    "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/p/r/productgallery215_2.png",
+    "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/p/r/productgallery216_2.png",
+    "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/p/r/productgallery7422_1.png",
+    "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/p/r/productgallery7423_1.png"
+  ],
       "score": "4.8",
       "sold": "2,2k",
       "tags": [
-        "DDR5",
+        "DDR4",
         "RGB"
       ]
     },
     {
-      "id": "ram-006",
-      "title": "TeamGroup T-Force Delta RGB 16GB DDR5 6000MHz",
-      "price": "2.990.000đ",
-      "oldPrice": "3.190.000đ",
-      "discount": "-6%",
-      "image": "./assets/img/products/ram6.jpg",
+      "id": "ram-adata-16gb-ddr4-3200mhz-laptop",
+      "title": "Ram Laptop ADATA 3200Mhz DDR4 16GB - Chính hãng ",
+      "price": "950.000đ",
+      "oldPrice": "1.490.000đ",
+      "discount": "-36%",
+      "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/g/r/group_525_1_.png",
+      "images": [
+    "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/g/r/group_525_1_.png",
+    "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/t/e/text_ng_n_3__5_66_1.png",
+    "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/t/e/text_ng_n_6__2_101.png"
+   ],
       "score": "4.9",
       "sold": "1,9k",
       "tags": [
-        "DDR5",
-        "RGB"
+        "DDR4",
+        "16GB"
       ]
     },
     {
-      "id": "ram-007",
-      "title": "Kingston Fury Renegade 32GB DDR5 6400MHz",
-      "price": "6.990.000đ",
-      "oldPrice": "7.490.000đ",
-      "discount": "-7%",
-      "image": "./assets/img/products/ram7.jpg",
+      "id": "ram-gskill-64gb-ddr4-3600mhz",
+      "title": "RAM Desktop G.SKILL Trident Z RGB 64GB DDR4 3600MHz ",
+      "price": "4.799.000 đ",
+      "oldPrice": "5.299.000 đ",
+      "discount": "-10%",
+      "image": "https://anphat.com.vn/media/product/42606_ram_desktop_g_skill_trident_z_rgb_64gb_ddr4_3600mhz__f4_3600c18d_64gtzr___1_.jpg",
+      "images": [
+    "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/p/r/productgallery215_2.png",
+    "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/p/r/productgallery216_2.png",
+    "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/p/r/productgallery7422_1.png",
+    "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/p/r/productgallery7423_1.png"
+  ],
       "score": "5.0",
       "sold": "870",
       "tags": [
-        "High-End",
+        "64GB",
         "DDR5"
       ]
     },
     {
-      "id": "ram-008",
-      "title": "Corsair Vengeance RGB 32GB DDR5 5600MHz",
-      "price": "5.990.000đ",
-      "oldPrice": "6.490.000đ",
-      "discount": "-8%",
-      "image": "./assets/img/products/ram8.jpg",
+      "id": "ram-spearv-16gb-ddr5-4800mhz",
+      "title": "RAM GEIL SPEAR V DDR5 16GB BUSS 5200 BLACK (GASB516GB5200C38BSC)",
+      "price": "1.499.000 đ ",
+      "oldPrice": "1.600.000 đ",
+      "discount": "-7%",
+      "image": "https://anphat.com.vn/media/product/53176_a8b142d8da9e08600bd7c8e87f91969e.png",
+      "images" : [
+        "https://anphat.com.vn/media/product/53176_a8b142d8da9e08600bd7c8e87f91969e.png",
+        "https://pcmarket.vn/media/product/12850_ram_geil_spear_v_16gb_buss_5200mhz_ddr5_black_1.jpg"
+      ],
       "score": "4.9",
       "sold": "1,1k",
       "tags": [
-        "RGB",
+        "Tan nhiet",
         "DDR5"
       ]
     },
     {
-      "id": "ram-009",
-      "title": "Patriot Viper Venom RGB 16GB DDR5 6000MHz",
-      "price": "2.690.000đ",
-      "oldPrice": "2.990.000đ",
-      "discount": "-10%",
-      "image": "./assets/img/products/ram9.jpg",
+      "id": "ram-gskill-32gb-ddr5-6000mhz",
+      "title": "Ram Desktop Gskill RIPJAWS M5 RGB WHITE 32GB Bus 6000MHz DDR5",
+      "price": "3.390.000đ",
+      "oldPrice": "3.999.000đ",
+      "discount": "-15%",
+      "image": "https://pcmarket.vn/media/product/11636_ram_desktop_gskill_ripjaws_m5_rgb_white_f5_6000j3648d16gx2_rm5rw_32gb_2x16gb_ddr5_6000mhz_3.jpg",
+      "images": [
+    "https://pcmarket.vn/media/product/11636_ram_desktop_gskill_ripjaws_m5_rgb_white_f5_6000j3648d16gx2_rm5rw_32gb_2x16gb_ddr5_6000mhz_3.jpg",
+    "https://pcmarket.vn/media/product/250_11636_ram_desktop_gskill_ripjaws_m5_rgb_white_f5_6000j3648d16gx2_rm5rw_32gb_2x16gb_ddr5_6000mhz_1.jpg",
+    "https://pcmarket.vn/media/product/250_11636_ram_desktop_gskill_ripjaws_m5_rgb_white_f5_6000j3648d16gx2_rm5rw_32gb_2x16gb_ddr5_6000mhz_2.jpg"
+  ],
       "score": "4.7",
       "sold": "1,6k",
       "tags": [
@@ -1103,16 +1178,21 @@
       ]
     },
     {
-      "id": "ram-010",
-      "title": "G.Skill Ripjaws S5 16GB DDR5 6000MHz",
-      "price": "2.590.000đ",
-      "oldPrice": "2.890.000đ",
-      "discount": "-10%",
-      "image": "./assets/img/products/ram10.jpg",
+      "id": "ram-patriot-16gb-ddr4-3200mhz",
+      "title": "RAM Patriot Signature Premium 16GB (1x16GB) DDR5 5200MHz",
+      "price": "1.490.000đ",
+      "oldPrice": "1.990.000đ",
+      "discount": "-25%",
+      "image": "https://pcmarket.vn/media/product/12779_ram_pc_patriot_signature_premium_16gb_ddr5_bus_5200_1.jpg",
+      "images": [
+    "https://pcmarket.vn/media/product/12779_ram_pc_patriot_signature_premium_16gb_ddr5_bus_5200_1.jpg",
+    "https://pcmarket.vn/media/product/12779_ram_pc_patriot_signature_premium_16gb_ddr5_bus_5200_2.jpg",
+    "https://pcmarket.vn/media/product/12779_ram_pc_patriot_signature_premium_16gb_ddr5_bus_5200_3.jpg"
+  ],
       "score": "4.8",
       "sold": "1,8k",
       "tags": [
-        "Compact",
+        "Premium",
         "DDR5"
       ]
     }
