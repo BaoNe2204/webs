@@ -448,7 +448,161 @@
   "Thiết kế": "Viền siêu mỏng 3 cạnh, chân đế công thái học (nghiêng -5°~15°, xoay 90°, nâng 110mm)",
   "Tính năng": "HDR10, FreeSync, tương thích G-Sync, Dynamic Action Sync, Black Stabilizer, FPS Counter, Crosshair, chế độ đọc sách, OnScreen Control",
   "Kết nối": "DisplayPort 1.4, HDMI 2.0, Jack 3.5mm"
+},
+"monitor-23-8inch-fhd-100hz": {
+  "Màn hình": "23.8 inch, IPS, FHD (1920x1080), 100Hz, 1ms (MPRT), 250 nits, 1000:1, 16:9",
+  "Thiết kế": "Màu đen, chân đế cố định",
+  "Kết nối": "HDMI, VGA, Audio out, DC",
+  "Phụ kiện": "Cáp nguồn, Cáp HDMI"
+},
+"monitor-32inch-qhd-165hz": {
+  "Màn hình": "32 inch, VA, QHD (2560x1440), 165Hz, 1ms (MPRT), 300 nits, 2500:1, 16:9, cong 1000R",
+  "Thiết kế": "Màu đen, chân chữ V, nghiêng -2° ~ 18°, viền mỏng",
+  "Kết nối": "HDMI 2.0, DisplayPort 1.2, Jack 3.5mm",
+  "Tính năng": "HDR10, AMD FreeSync, Eye Saver Mode, Flicker-free, Auto Source Switch+, Black Equalizer",
+  "Nguồn điện": "59W tối đa, 100-240V ~ 50/60Hz",
+  "Kích thước & Trọng lượng": "SP: 710.1 x 439.4 x 135.9 mm, 4.8kg | Thùng: 793.0 x 197 x 494.0 mm, 7.5kg",
+  "Phụ kiện": "Adapter, cáp HDMI, cáp DisplayPort"
+},
+"monitor-24_5inch-fhd-180hz": {
+  "Màn hình": "24.5 inch, Fast IPS, FHD (1920x1080), 180Hz, 1ms (MPRT), 300 nits, 1000:1, 16:9",
+  "Thiết kế": "Màu đen, chân chữ V, nghiêng -5° ~ 15°",
+  "Kết nối": "2 x HDMI 1.4, 1 x DisplayPort 1.2, 1 x Audio out, 1 x Type-C (15W reverse charging)",
+  "Tính năng": "Color Temp (Cold/Warm/User), Low Blue Light, Joystick Buttons, DCR, FreeSync, Adaptive-Sync, FPS/RTS Mode, Overdrive (OD) Optional, HDR Optional",
+  "Nguồn điện": "100-240V ~ 50/60Hz / DC 12V-4A",
+  "Kích thước & Trọng lượng": "SP: 558 x 426 x 169 mm, 2.9kg",
+  "Phụ kiện": "Adapter, cáp HDMI"
+},
+"monitor-34inch-2k-240hz": {
+  "Màn hình": "34 inch, QD OLED, 2K (3440x1440), 240Hz, 0.03ms (GTG), 250 nits, 1500000:1, 21:9, cong",
+  "Thiết kế": "Màu đen, nghiêng -5° ~ 20°, xoay -30° ~ 30°, chuẩn VESA 100x100mm",
+  "Kết nối": "2 x HDMI 2.1, 1 x DisplayPort 1.4, 1 x USB-C 15W",
+  "Tính năng": "DCI-P3 99%, DisplayHDR True Black 400, Delta E<2, Khử nhấp nháy",
+  "Nguồn điện": "100-240V ~ 50/60Hz, công suất tối đa 50W",
+  "Kích thước & Trọng lượng": "SP: 812 x 130 x 361 mm, 8.9kg | Thùng: 633 x 318 x 371 mm, 12.7kg",
+  "Phụ kiện": "Dây nguồn, dây HDMI (tùy chọn), dây DisplayPort (tùy chọn)"
 }
+,
+"ram-32gb-ddr5-4800mhz": {
+  "Dung lượng": "32GB",
+  "Loại RAM": "DDR5",
+  "BUS": "4800MHz",
+  "Đèn LED": "Không"
+}
+,
+"ram-16gb-ddr5-5600mhz": {
+  "Dung lượng": "16GB",
+  "Loại RAM": "DDR5",
+  "BUS": "5600MHz",
+  "Đèn LED": "Không"
+},
+"ram-kingston-8gb-ddr4-3200mhz": {
+  "Thương hiệu": "Kingston",
+  "Dung lượng": "8GB",
+  "Loại RAM": "DDR4",
+  "Tần số": "3200MHz",
+  "Điện áp": "1.35V",
+  "CAS Latency": {
+    "Default (JEDEC)": "DDR4-2400 CL17-17-17 @ 1.2V",
+    "XMP Profile #1": "DDR4-3200 CL16-18-18 @ 1.35V",
+    "XMP Profile #2": "DDR4-3000 CL15-17-17 @ 1.35V"
+  },
+  "Chế độ": "Dual Channel",
+  "Tính năng khác": [
+    "Phù hợp với nhiều loại mainboard",
+    "Tương thích với Intel® XMP"
+  ]
+},
+"ram-gskill-32gb-ddr4-3600mhz": {
+  "Nhà sản xuất": "G.SKILL",
+  "Model": "F4-3600C18D-32GTZR",
+  "Loại RAM": "DDR4",
+  "Dung lượng": "32GB (2x16GB)",
+  "Tốc độ Bus": "3600 MHz",
+  "Overclock": "Intel XMP 2.0",
+  "Đèn nền": "LED RGB",
+  "Điện áp": "1.2V - 1.35V",
+  "CAS Latency": "CL 18-22-22-42",
+  "Bảo hành": "36 tháng chính hãng"
+},
+"ram-adata-16gb-ddr4-3200mhz": {
+  "Nhà sản xuất": "ADATA",
+  "Dung lượng": "16GB",
+  "Loại RAM": "DDR4",
+  "Bus RAM": "3200MHz",
+  "Hỗ trợ": "DIMM (PC, Desktop)",
+  "Điện áp": "1.35V - 1.5V",
+  "Kích thước": "133.35 x 40 x 8 mm",
+  "Trọng lượng": "46g"
+},
+"ram-adata-16gb-ddr4-3200mhz-laptop": {
+  "Nhà sản xuất": "ADATA",
+  "Dung lượng": "16GB",
+  "Bus RAM": "3200MHz",
+  "Hỗ trợ": "SO-DIMM (Laptop)",
+  "Voltage": "DDR4 STD 1.2V",
+  "Tính năng khác": "Không hỗ trợ LED"
+}
+,
+"ram-gskill-64gb-ddr4-3600mhz": {
+  "Nhà sản xuất": "G.SKILL",
+  "Model": "F4-3600C18D-64GTZR",
+  "Loại RAM": "DDR4",
+  "Dung lượng": "64GB (2x32GB)",
+  "Bus RAM": "3600MHz",
+  "CAS Latency": "CL 18-22-22-42",
+  "Điện áp": "1.35V",
+  "Tản nhiệt": "Có",
+  "Công nghệ RAM": "Non-ECC"
+}
+,
+"ram-spearv-16gb-ddr5-4800mhz": {
+  "Dòng sản phẩm": "SPEAR V",
+  "Form Factor": "LONG DIMM",
+  "Thế hệ DDR": "DDR5",
+  "Tốc độ (Frequency)": "4800 / 5200 (JEDEC / O.C.)",
+  "Dung lượng": "16GB",
+  "Độ trễ CAS (CL)": "CL 30 ~ 52",
+  "Điện áp hoạt động": "1.10V ~ 1.45V",
+  "Màu tản nhiệt": "Đen Đậm",
+  "Kích thước": "138 x 33.5 x 6.4 mm",
+  "Công nghệ bổ sung": "Intel® XMP 3.0 (Hỗ trợ ép xung)",
+  "Nhiệt độ hoạt động": "0°C ~ 70°C"
+}
+,
+"ram-gskill-32gb-ddr5-6000mhz": {
+  "Thương hiệu": "G.SKILL",
+  "Model": "F5-6000J3648D16GX2-RM5RW",
+  "Màu sắc": "Trắng",
+  "LED RGB": "Không",
+  "Loại RAM": "DDR5",
+  "Dung lượng": "32GB (2x16GB)",
+  "Bus RAM": "6000 MHz",
+  "Độ trễ CAS": "CL 36-48-48-96",
+  "Điện áp": "1.25V",
+  "ECC checking": "Non-ECC",
+  "Tốc độ SPD": "4800 MT/s",
+  "Đặc trưng": "Intel XMP 3.0 Ready"
+}
+,
+"ram-patriot-16gb-ddr4-3200mhz": {
+  "Loại sản phẩm": "RAM PC",
+  "Thương hiệu": "Patriot",
+  "Model": "Signature Premium (1 x 16GB | 3200MHz)",
+  "Chuẩn RAM": "DDR4",
+  "Dung lượng": "16GB (1 x 16GB)",
+  "Điện áp": "1.2V",
+  "Tốc độ": "3200MHz",
+  "Độ trễ CAS": "CL22"
+}
+
+
+
+
+
+
+
+
 
 
 
