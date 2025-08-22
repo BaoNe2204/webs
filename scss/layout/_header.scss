@@ -700,6 +700,13 @@
 #miniCart {
     display: none;
 }
+@media (max-width: 768px) {
+  .top-act__btn, 
+  #miniCart {
+    display: none !important;
+  }
+}
+
 
 /* Mở khi hover (desktop vẫn dùng được) */
 #cartToggle:hover+#miniCart,
@@ -725,71 +732,72 @@
 }
 
 /* biến .top-bar thành sticky */
-.top-bar {
-    @extend %flexItemsCenter;
+// .top-bar {
+//     @extend %flexItemsCenter;
 
-    position: sticky;
-    /* đổi từ relative -> sticky */
-    top: var(--sticky-top);
-    /* khoảng cách dính */
-    z-index: 2500;
-    /* để dropdown/mega menu nổi trên nội dung */
-    background: var(--header-bg-color);
-    padding: 20px 0;
-    transition: box-shadow .2s ease, background-color .2s ease;
+//     position: sticky;
+//     /* đổi từ relative -> sticky */
+//     top: var(--sticky-top);
+//     /* khoảng cách dính */
+//     z-index: 2500;
+//     /* để dropdown/mega menu nổi trên nội dung */
+//     background: var(--header-bg-color);
+//     padding: 20px 0;
+//     transition: box-shadow .2s ease, background-color .2s ease;
 
-    /* bóng khi đang dính */
-    &.is-stuck {
-        box-shadow: 0 12px 28px rgba(0, 0, 0, .08);
-        background: var(--header-bg-color);
-        /* chắc chắn không trong suốt */
-    }
+//     /* bóng khi đang dính */
+//     &.is-stuck {
+//         box-shadow: 0 12px 28px rgba(0, 0, 0, .08);
+//         background: var(--header-bg-color);
+//         /* chắc chắn không trong suốt */
+//     }
 
-    @include abstracts.screen(lg) {
-        padding: 20px 0;
-    }
+//     @include abstracts.screen(lg) {
+//         padding: 20px 0;
+//     }
 
-    @include abstracts.screen(md) {
-        justify-content: space-between;
-        padding: 16px 0;
-    }
-}
-.navbar-sticky,
+//     @include abstracts.screen(md) {
+//         justify-content: space-between;
+//         padding: 16px 0;
+//     }
+// }
+// .navbar-sticky,
 .header,
 .top-bar {
   position: relative;
   z-index: 50000; /* cao hơn mọi banner/slide */
 }
-.navbar-sticky {
-    position: relative;
-    will-change: transform;
-    transition: transform .25s ease, box-shadow .2s ease, background-color .2s ease;
-    background: var(--header-bg, #fff);
-}
+// .navbar-sticky {
+//   position: relative;
+//   will-change: transform;
+//   transition: transform .25s ease, box-shadow .2s ease, background-color .2s ease;
+//   background: var(--header-bg, #fff);
+//   z-index: 999; /* dưới dropdown header khác nếu cần */
+// }
 
-.navbar-sticky.is-sticky {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 9999;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, .06);
-    transform: translateY(0);
-    background: #fff;
-}
+// .navbar-sticky.is-sticky {
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     right: 0;
+//     z-index: 9999;
+//     box-shadow: 0 8px 24px rgba(0, 0, 0, .06);
+//     transform: translateY(0);
+//     background: #fff;
+// }
 
-.navbar-sticky.is-sticky.is-hidden {
-    transform: translateY(-100%);
-}
-
-
-body.has-sticky-offset {
-    padding-top: var(--navbar-height, 0px);
-}
+// .navbar-sticky.is-sticky.is-hidden {
+//     transform: translateY(-100%);
+// }
 
 
-@media (max-width: 768px) {
-    .navbar-sticky.is-sticky .header {
-        --h-pad-y: 6px;
-    }
-}
+// body.has-sticky-offset {
+//     padding-top: var(--navbar-height, 0px);
+// }
+
+
+// @media (max-width: 768px) {
+//     .navbar-sticky.is-sticky .header {
+//         --h-pad-y: 6px;
+//     }
+// }

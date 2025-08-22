@@ -1,22 +1,22 @@
 // assets/js/cart.js
 (() => {
   // Helpers
-  const toNumberVND = (s) => parseInt(String(s||'').replace(/[^\d]/g,''), 10) || 0;
-  const moneyVND = (n) => (n||0).toLocaleString('vi-VN', { style:'currency', currency:'VND' });
+  const toNumberVND = (s) => parseInt(String(s || '').replace(/[^\d]/g, ''), 10) || 0;
+  const moneyVND = (n) => (n || 0).toLocaleString('vi-VN', { style: 'currency', currency: 'VND' });
 
   // Store giỏ hàng (dùng chung)
   const CART_KEY = 'cart';
   const cartStore = {
-    get(){ try { return JSON.parse(localStorage.getItem(CART_KEY)) || []; } catch { return []; } },
-    set(c){ localStorage.setItem(CART_KEY, JSON.stringify(c)); },
-    add(item){
+    get() { try { return JSON.parse(localStorage.getItem(CART_KEY)) || []; } catch { return []; } },
+    set(c) { localStorage.setItem(CART_KEY, JSON.stringify(c)); },
+    add(item) {
       const c = this.get();
       const i = c.findIndex(x => x.id === item.id);
       if (i > -1) c[i].qty += item.qty || 1;
       else c.push({ ...item, qty: item.qty || 1 });
       this.set(c);
     },
-    update(id, delta){
+    update(id, delta) {
       const c = this.get();
       const i = c.findIndex(x => x.id === id);
       if (i === -1) return;
@@ -25,43 +25,43 @@
       else c[i].qty = next;
       this.set(c);
     },
-    remove(id){ this.set(this.get().filter(x => x.id !== id)); },
-    count(){ return this.get().reduce((s,x)=> s + x.qty, 0); },
-    subtotal(){ return this.get().reduce((s,x)=> s + x.price * x.qty, 0); }
+    remove(id) { this.set(this.get().filter(x => x.id !== id)); },
+    count() { return this.get().reduce((s, x) => s + x.qty, 0); },
+    subtotal() { return this.get().reduce((s, x) => s + x.price * x.qty, 0); }
   };
 
   // Mini cart render (nếu trang có phần mini cart trên header)
   const TAX_RATE = 0;
   const SHIPPING_FLAT = 0;
 
-  function renderMiniCart(){
-    const elList     = document.getElementById('miniCartList');
-    const elCount    = document.getElementById('miniCount');
+  function renderMiniCart() {
+    const elList = document.getElementById('miniCartList');
+    const elCount = document.getElementById('miniCount');
     const elCountTop = document.getElementById('cartCount');
     const elSubtotal = document.getElementById('subtotal');
-    const elTax      = document.getElementById('tax');
-    const elShip     = document.getElementById('ship');
-    const elGrand    = document.getElementById('grand');
+    const elTax = document.getElementById('tax');
+    const elShip = document.getElementById('ship');
+    const elGrand = document.getElementById('grand');
 
     const items = cartStore.get();
     const count = cartStore.count();
 
-    if (elCount)    elCount.textContent = count;
+    if (elCount) elCount.textContent = count;
     if (elCountTop) elCountTop.textContent = count;
 
     const subtotal = cartStore.subtotal();
-    const tax  = Math.round(subtotal * TAX_RATE);
+    const tax = Math.round(subtotal * TAX_RATE);
     const ship = items.length ? SHIPPING_FLAT : 0;
     const grand = subtotal + tax + ship;
 
     if (elSubtotal) elSubtotal.textContent = moneyVND(subtotal);
-    if (elTax)      elTax.textContent      = moneyVND(tax);
-    if (elShip)     elShip.textContent     = moneyVND(ship);
-    if (elGrand)    elGrand.textContent    = moneyVND(grand);
+    if (elTax) elTax.textContent = moneyVND(tax);
+    if (elShip) elShip.textContent = moneyVND(ship);
+    if (elGrand) elGrand.textContent = moneyVND(grand);
 
     if (!elList) return;
 
-    if (!items.length){
+    if (!items.length) {
       elList.innerHTML = `
         <div class="col" style="width:100%">
           <p style="padding:8px 0;color:#666">Giỏ hàng trống</p>
@@ -97,11 +97,11 @@
     if (!addBtn) return;
     const card = addBtn.closest('.product-card');
     const product = {
-      id:   (card?.dataset.id || '').trim(),
+      id: (card?.dataset.id || '').trim(),
       name: card?.dataset.name,
       price: toNumberVND(card?.dataset.price),
-      img:  card?.dataset.img,
-      qty:  1
+      img: card?.dataset.img,
+      qty: 1
     };
     if (!product.id) return;
     e.stopPropagation();
@@ -111,7 +111,7 @@
 
   // Dropdown mini-cart
   const toggleBtn = document.getElementById('cartToggle');
-  const miniCart  = document.getElementById('miniCart');
+  const miniCart = document.getElementById('miniCart');
 
   miniCart?.addEventListener('click', (e) => {
     e.stopPropagation();
@@ -142,4 +142,6 @@
   window.cartStore = cartStore;
   window.renderMiniCart = renderMiniCart;
   window.moneyVND = moneyVND;
+  window.toNumberVND = toNumberVND;
+
 })();

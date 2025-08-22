@@ -1,5 +1,13 @@
 .fuldespage {
-  background: #1435c3;  
+  @media (max-width: 768px) {
+    display: none;
+  }
+
+  @media (max-width: 992px) {
+    display: none;
+  }
+
+  background: #1435c3;
   color: #fff;
   font-size: 13px;
   max-height: 45px;
@@ -24,7 +32,7 @@
     position: relative;
 
     &.li_child {
-      &:hover > .mainChild {
+      &:hover>.mainChild {
         display: block;
       }
     }
@@ -41,7 +49,7 @@
     transition: background .2s ease;
 
     &:hover {
-      background: rgba(255,255,255,0.08);
+      background: rgba(255, 255, 255, 0.08);
     }
 
     img.navIcon {
@@ -61,7 +69,7 @@
   background: #fff;
   color: #000;
   border-radius: 4px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   padding: 8px 0;
   z-index: 99;
 
