@@ -109,7 +109,11 @@ Slidezy.prototype._createTrack = function () {
 
     this.slides.forEach((slide) => {
         slide.classList.add("slidezy-slide");
-        slide.style.flexBasis = `calc(100% / ${this.opt.items})`;
+        if (this.opt.items === 1) {
+            slide.style.flexBasis = `calc(100% / ${this.opt.items})`;
+        } else {
+            slide.style.flexBasis = `calc((100% / ${this.opt.items}) - 10px)`;
+        }
         this.track.appendChild(slide);
     });
 
