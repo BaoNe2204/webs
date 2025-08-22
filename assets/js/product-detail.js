@@ -166,21 +166,6 @@
     // Cho phép nơi khác gọi lại khi bạn thay giá thủ công
     window.updateInstallmentButtons = updateInstallmentButtons;
   })();
-  // ===== Main =====
-  document.addEventListener("DOMContentLoaded", async () => {
-    // ... toàn bộ code hiện tại của bạn ...
-
-    // Gán UI giá:
-    titleEl && (titleEl.textContent = prod.title);
-    priceEl && (priceEl.textContent = moneyVND(priceAfterDiscount)); // trước thuế
-    taxEl && (taxEl.textContent = `${Math.round(taxRate * 100)}%`);
-    totalEl && (totalEl.textContent = moneyVND(totalAfterTax));      // sau thuế
-
-    // >>> THÊM DÒNG NÀY: cập nhật "Chỉ từ .../tháng" SAU khi giá đã render
-    updateInstallmentButtons();
-
-    // ... phần còn lại: addToCart, render specs/desc, bindOfferToggle ...
-  });
 
   // ===== Main =====
   document.addEventListener("DOMContentLoaded", async () => {
@@ -262,24 +247,50 @@
     }
 
     // ===== Giá, giảm giá & thuế =====
-    const basePrice = toNumber(prod.price);
+    const rawPrice = toNumber(prod.price);      
+    const rawOldPrice = toNumber(prod.oldPrice);
+    const hasValidOld = rawOldPrice && rawOldPrice > rawPrice;
+
 
     // Thuế: ưu tiên prod.tax nếu có, fallback TAX_RATE
     const taxRate = (typeof prod.tax === "number") ? prod.tax : TAX_RATE;
 
-    // Giảm giá: chuẩn hoá; nếu data là "5%" (không dấu -) vẫn coi là giảm 5%
-    let discountRate = parsePercent(prod.discount);   // 0.05 | -0.05 | 0
-    if (discountRate > 0) discountRate = -Math.abs(discountRate);
+    let priceAfterDiscount;
+    let percentDisplay = "";
 
-    // Giá sau giảm (trước thuế) & Tổng sau thuế
-    const priceAfterDiscount = Math.max(0, Math.round(basePrice * (1 + discountRate)));
+    if (hasValidOld) {
+      priceAfterDiscount = rawPrice;
+
+      const p = parsePercent(prod.discount);
+      if (p) {
+        percentDisplay = `${Math.round(p * 100)}%`;
+      } else {
+        const rate = (rawPrice && rawOldPrice) ? (rawPrice / rawOldPrice - 1) : 0; // âm
+        percentDisplay = rate ? `${Math.round(rate * 100)}%` : "";
+      }
+    } else {
+      let discountRate = parsePercent(prod.discount); // ví dụ "10%" -> 0.1
+      if (discountRate > 0) discountRate = -Math.abs(discountRate); // ép thành số âm để giảm
+
+      // Nếu không có discount thì giữ nguyên rawPrice
+      if (discountRate) {
+        priceAfterDiscount = Math.max(0, Math.round(rawPrice * (1 + discountRate)));
+        percentDisplay = `${Math.round(discountRate * 100)}%`;
+      } else {
+        priceAfterDiscount = rawPrice;
+        percentDisplay = "";
+      }
+    }
+
+
     const totalAfterTax = Math.round(priceAfterDiscount * (1 + taxRate));
+
 
     // Gán UI
     titleEl && (titleEl.textContent = prod.title);
     priceEl && (priceEl.textContent = moneyVND(priceAfterDiscount)); // trước thuế
     taxEl && (taxEl.textContent = `${Math.round(taxRate * 100)}%`);
-    totalEl && (totalEl.textContent = moneyVND(totalAfterTax));      // sau thuế
+    totalEl && (totalEl.textContent = hasValidOld ? moneyVND(rawOldPrice) : "");
 
     // Badge % giảm (tự chèn nếu chưa có)
     let discountEl = $(".prod-info__tax");
@@ -289,15 +300,15 @@
       taxEl.parentNode.insertBefore(discountEl, taxEl);
     }
     if (discountEl) {
-      const disp = Math.round(discountRate * 100); // -5
-      if (disp) {
-        discountEl.textContent = `${disp}%`;
+      if (percentDisplay) {
+        discountEl.textContent = percentDisplay;   // ví dụ "-10%"
         discountEl.classList.remove("pd-hide");
       } else {
         discountEl.textContent = "";
         discountEl.classList.add("pd-hide");
       }
     }
+
 
     // Add to cart
     addBtn?.addEventListener("click", (e) => {
@@ -351,26 +362,26 @@ qtyInput?.addEventListener("input", () => {
 });
 updateInstallmentButtons();
 (function () {
-  const $ = (s, r=document) => r.querySelector(s);
+  const $ = (s, r = document) => r.querySelector(s);
   const slugify = (str = "") =>
     String(str).normalize("NFD").replace(/[\u0300-\u036f]/g, "")
-      .replace(/đ/g,"d").replace(/Đ/g,"D").toLowerCase()
-      .replace(/[^a-z0-9]+/g,"-").replace(/(^-|-$)/g,"");
+      .replace(/đ/g, "d").replace(/Đ/g, "D").toLowerCase()
+      .replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
 
   function bumpViews(key) {
     const LS_KEY = "productViews";
     let map = {};
-    try { map = JSON.parse(localStorage.getItem(LS_KEY)) || {}; } catch {}
+    try { map = JSON.parse(localStorage.getItem(LS_KEY)) || {}; } catch { }
     map[key] = (map[key] || 0) + 1;
     localStorage.setItem(LS_KEY, JSON.stringify(map));
     return map[key];
   }
 
   function renderMeta({ prod, pid }) {
-    const rateEl   = $("#metaRating");
-    const cmtEl    = $("#metaComments");
-    const viewsEl  = $("#metaViews");
-    const soldEl   = $("#metaSold");
+    const rateEl = $("#metaRating");
+    const cmtEl = $("#metaComments");
+    const viewsEl = $("#metaViews");
+    const soldEl = $("#metaSold");
 
     // Rating
     let score = 0;
@@ -409,9 +420,9 @@ updateInstallmentButtons();
         const all = Object.values(data).flat();
         const withId = all.map((p) => ({ ...p, _id: p.id || p.link || p.title }));
         const prod = withId.find(p => p._id === pid) ||
-                     withId.find(p => slugify(p.title) === slugify(pid));
+          withId.find(p => slugify(p.title) === slugify(pid));
         if (prod) renderMeta({ prod, pid });
       })
-      .catch(() => {});
+      .catch(() => { });
   });
 })();

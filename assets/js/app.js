@@ -48,7 +48,7 @@ function renderProducts(containerId, products = []) {
               <img src="${p.image}" alt class="product-card__thumb">
             </a>
           </div>
-          <h3 class="product-card__title">
+          <h3 class="product-card__title"> 
             <a href="${href}">${p.title}</a>
           </h3>
           <div class="product-card__tag">
