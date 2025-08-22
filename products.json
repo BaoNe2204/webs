@@ -673,7 +673,7 @@
     },
     {
       "id": "laptop-r5-5500h-rtx2050",
-      "title": "Laptop Lenovo IdeaPad Gaming 3 15ACH6-82K2027QVN ",
+      "title": "Laptop Lenovo IdeaPad Gaming 3 15ACH6 ",
       "price": "14.290.000 ₫",
       "oldPrice": "17.990.000 ₫",
       "discount": "-21%",
@@ -695,7 +695,7 @@
     },
     {
       "id": "laptop-i7-13650hx-rtx3050",
-      "title": "Laptop Dell Gaming G15 5530 (71045030) (i7-13650HX/16GB/512GB/RTX 3050)",
+      "title": "Laptop Dell Gaming G15 5530 (71045030) ",
       "price": "35.490.000 ₫",
       "oldPrice": "36.990.000 ₫",
       "discount": "-4%",
@@ -785,82 +785,132 @@
   ],
   "slide9": [
     {
-      "id": "monitor-001",
-      "title": "ASUS TUF Gaming VG27AQ 27'' 2K 165Hz",
-      "price": "8.990.000đ",
-      "oldPrice": "9.990.000đ",
-      "discount": "-10%",
-      "image": "./assets/img/products/monitor1.jpg",
+      "id": "monitor-24.5inch-fhd-300hz",
+      "title": "Màn hình gaming MSI MAG 255XF (24.5 Inch/ IPS/ FHD/ 300Hz/ 0.5ms)",
+      "price": "4.490.000 ₫",
+      "oldPrice": "5.990.000 ₫",
+      "discount": "-25%",
+      "image": "https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2025/02/27/255xf-1.png",
+      "images": [
+      "https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2025/02/27/255xf-1.png",
+      "https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2025/02/27/255xf-3.png",
+      "https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2025/02/27/255xf-4.png",
+      "https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2025/02/27/255xf-2.png",
+      "https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2025/02/27/255xf-5.png"
+    ],
       "score": "4.9",
       "sold": "3,2k",
       "tags": [
         "Gaming",
-        "2K"
+        "FHD"
       ]
     },
     {
-      "id": "monitor-002",
-      "title": "LG UltraGear 24GN600-B 24'' 144Hz",
-      "price": "4.490.000đ",
-      "oldPrice": "4.990.000đ",
-      "discount": "-10%",
-      "image": "./assets/img/products/monitor2.jpg",
+      "id": "imac-24inch-m4",
+      "title": "Laptop iMac M4 24 inch 2024 16GB/512GB - Chính hãng",
+      "price": "43.990.000 ₫",
+      "oldPrice": "44.990.000 ₫",
+      "discount": "-2.2%",
+      "image": "https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2024/11/04/imac-m4-hong-10cpu-1.png",
+      "images": [
+        "https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2024/11/04/imac-m4-hong-10cpu-1.png",
+        "https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2024/11/04/imac-m4-hong-10cpu-2.png",
+        "https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2024/11/04/imac-m4-hong-10cpu-3.png",
+        "https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2024/11/04/imac-m4-hong-10cpu-4.png",
+        "https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2024/11/04/imac-m4-hong-10cpu-5.png",
+        "https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2024/11/04/imac-m4-hong-10cpu-6.png",
+        "https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2024/11/04/imac-m4-hong-10cpu-8.png"
+      ],
       "score": "4.8",
       "sold": "4,5k",
       "tags": [
-        "Budget",
-        "144Hz"
+        "16GB/512GB"
+        
       ]
     },
     {
-      "id": "monitor-003",
-      "title": "Samsung Odyssey G5 27'' 2K 144Hz",
-      "price": "6.990.000đ",
-      "oldPrice": "7.490.000đ",
+      "id": "monitor-27inch-qhd-180hz",
+      "title": "Màn hình ASUS ROG XG27ACS (27 inch/QHD/Fast IPS/180Hz) ",
+      "price": "6.850.000 ₫ ",
+      "oldPrice": "7.590.000 ₫",
       "discount": "-7%",
-      "image": "./assets/img/products/monitor3.jpg",
+      "image": "https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2025/05/12/xg27acs-1.png",
+      "images": [
+        "https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2025/05/12/xg27acs-1.png",
+        "https://cdn.hoanghamobile.vn/i/preview-h-V2/Uploads/2025/05/12/xg27acs-2.png",
+        "https://cdn.hoanghamobile.vn/i/preview-h-V2/Uploads/2025/05/12/xg27acs-3.png",
+        "https://cdn.hoanghamobile.vn/i/preview-h-V2/Uploads/2025/05/12/xg27acs-4.png",
+        "https://cdn.hoanghamobile.vn/i/preview-h-V2/Uploads/2025/05/12/xg27acs-5.png"
+      ],
       "score": "4.7",
       "sold": "2,1k",
       "tags": [
-        "Curved",
-        "2K"
+        "ROG",
+        "QHD"
       ]
     },
     {
-      "id": "monitor-004",
-      "title": "Dell S2721DGF 27'' QHD 165Hz",
-      "price": "9.490.000đ",
-      "oldPrice": "10.490.000đ",
-      "discount": "-9%",
-      "image": "./assets/img/products/monitor4.jpg",
+      "id": "monitor-24.5inch-fhd-310hz",
+      "title": "Màn hình Asus TUF VG259QMR5A (24.5 inch/FHD/Fast IPS/310Hz) ",
+      "price": "5.390.000 ₫",
+      "oldPrice": "6.990.000 ₫",
+      "discount": "-23%",
+      "image": "https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2025/08/08/vg259qmr5a-1.png",
+      "images": [
+      "https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2025/08/08/vg259qmr5a-1.png",
+      "https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2025/08/08/vg259qmr5a-2.png",
+      "https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2025/08/08/vg259qmr5a-3.png",
+      "https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2025/08/08/vg259qmr5a-4.png",
+      "https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2025/08/08/vg259qmr5a-5.png",
+      "https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2025/08/08/vg259qmr5a-6.png"
+    ],
       "score": "4.8",
       "sold": "1,7k",
       "tags": [
-        "Dell",
-        "2K"
+        "Asus",
+        "FHD"
       ]
     },
     {
-      "id": "monitor-005",
-      "title": "Gigabyte G27QC 27'' Curved 165Hz",
-      "price": "6.290.000đ",
-      "oldPrice": "6.890.000đ",
-      "discount": "-9%",
-      "image": "./assets/img/products/monitor5.jpg",
+      "id": "monitor-27inch-fhd-180hz",
+      "title": "Màn hình LG 27GS50F-B (27 INCH/FHD/VA/180HZ/1MS) - Chính hãng",
+      "price": "3.490.000 ₫",
+      "oldPrice": "4.789.000 ₫",
+      "discount": "-27%",
+      "image": "https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2024/06/28/27gs50f-b-1.png",
+      "images": [
+        "https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2024/06/28/27gs50f-b-1.png",
+        "https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2024/06/28/27gs50f-b-5.png",
+        "https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2024/06/28/27gs50f-b-6.png",
+        "https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2024/06/28/27gs50f-b-4.png",
+        "https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2024/06/28/27gs50f-b-3.png",
+        "https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2024/06/28/27gs50f-b-2.png"
+      ],
+      
       "score": "4.7",
       "sold": "2,5k",
       "tags": [
-        "Curved",
+        "FHD",
         "Gaming"
       ]
     },
     {
-      "id": "monitor-006",
-      "title": "MSI Optix MAG342CQR 34'' UltraWide",
-      "price": "12.990.000đ",
-      "oldPrice": "13.990.000đ",
-      "discount": "-7%",
-      "image": "./assets/img/products/monitor6.jpg",
+      "id": "lg-ultragear-24gs65f-b",
+      "title": "Màn hình LG UltraGear 24GS65F-B (23.8 inch/FHD/IPS/180Hz/1ms) - Chính hãng",
+      "price": "3.140.000 ₫ ",
+      "oldPrice": "4.299.000 ₫",
+      "discount": "-27%",
+      "image": "https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2024/12/09/24gs65f-b-1.png",
+      "images": [
+        "https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2024/12/09/24gs65f-b-1.png",
+        "https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2024/12/09/24gs65f-b-2.png",
+        "https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2024/12/09/24gs65f-b-3.png",
+        "https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2024/12/09/24gs65f-b-4.png",
+        "https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2024/12/09/24gs65f-b-5.png",
+        "https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2024/12/09/24gs65f-b-6.png",
+        "https://cdn.hoanghamobile.vn/i/preview-h-V2/Uploads/2024/12/09/24gs65f-b-9.png",
+        "https://cdn.hoanghamobile.vn/i/preview-h-V2/Uploads/2024/12/09/24gs65f-b-10.png"
+      ],
       "score": "4.9",
       "sold": "820",
       "tags": [

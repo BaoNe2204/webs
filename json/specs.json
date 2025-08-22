@@ -322,5 +322,137 @@
     "Kết nối không dây": "Wi-Fi 6, Bluetooth v5.3",
     "Kích thước": "357.9 x 255 x 23.5 mm",
     "Trọng lượng": "2.29 kg"
-  }
+  },
+  "monitor-24.5inch-fhd-300hz": {
+  "Kích thước màn hình": "24.5 inch",
+  "Độ phân giải": "1920x1080 (FHD)",
+  "Tấm nền": "Fast IPS",
+  "Độ sáng": "250 nits",
+  "Tỷ lệ tương phản": "1000:1",
+  "Tỉ lệ khung hình": "16:9",
+  "Thời gian phản hồi": "0.5ms (GtG, Min.)",
+  "Góc nhìn": "178° (H) / 178° (V)",
+  "Tần số quét": "48Hz - 300Hz",
+  "Khả năng hiển thị màu": "1.07 tỉ màu (8-bit + FRC)",
+  "Độ phủ màu": {
+    "Adobe RGB": "87%",
+    "DCI-P3": "90%",
+    "sRGB": "120%"
+  },
+  "Tính năng đặc biệt": [
+    "HDR Ready",
+    "Anti-glare",
+    "AMD FreeSync Premium"
+  ],
+  "Cổng kết nối": [
+    "1 x DisplayPort 1.4a",
+    "2 x HDMI 2.0b (FHD@240Hz)",
+    "1 x Headphone-out"
+  ]
+},
+"imac-24inch-m4": {
+  "Khả năng nâng cấp ổ cứng": "1TB hoặc 2TB",
+  "Khả năng nâng cấp RAM": "24GB",
+  "Kết nối không dây": [
+    "Wi-Fi 6E",
+    "Bluetooth 5.3"
+  ],
+  "Hệ điều hành": "macOS",
+  "Kích thước": "547 x 461 x 147 mm",
+  "Công nghệ CPU": "Apple M4",
+  "Số hiệu CPU": "Apple - M4",
+  "RAM": "16GB",
+  "Ổ cứng mặc định": "512GB SSD",
+  "Card đồ hoạ": "GPU tích hợp",
+  "Kích thước màn hình": "24 inch",
+  "Độ phân giải": "4480x2520",
+  "Trọng lượng": "4.48 kg"
+},
+"monitor-27inch-qhd-180hz": {
+  "Thiết kế": [
+    "Lỗ cắm tripod 1/4\"",
+    "Chân đế công thái học: nghiêng, xoay, quay, chỉnh độ cao"
+  ],
+  "Kích thước màn hình": "27 inch",
+  "Độ phân giải": "2560x1440",
+  "Tấm nền": "Fast IPS",
+  "Tỉ lệ": "16:9",
+  "Tần số quét": "180Hz",
+  "Thời gian phản hồi": "1ms (GTG)",
+  "Màu sắc": {
+    "sRGB": "133%",
+    "DCI-P3": "97%",
+    "Số màu": "16.7 triệu"
+  },
+  "Góc nhìn": "178° (CR≥10)",
+  "Độ sáng": {
+    "Tiêu chuẩn": "350 cd/m²",
+    "HDR tối đa": "400 cd/m²"
+  },
+  "Tính năng": [
+    "Chống lóa",
+    "Chống nhấp nháy",
+    "HDR10",
+    "Giảm ánh sáng xanh (phần cứng)",
+    "Trace Free",
+    "Game Visual",
+    "HDCP 2.2",
+    "Adaptive-Sync (VRR)",
+    "Độ mờ chuyển động cực thấp",
+    "ELMB Sync",
+    "Shadow Boost",
+    "DisplayWidget",
+    "Điều khiển phương diện"
+  ],
+  "Điều chỉnh": {
+    "Nghiêng": "-5° ~ 20°",
+    "Xoay": "-45° ~ 45°",
+    "Quay": "-90° ~ 90°",
+    "Độ cao": "0 ~ 120mm"
+  },
+  "Cổng kết nối": [
+    "1 x DisplayPort 1.4 (HBR3)",
+    "1 x HDMI 2.0",
+    "1 x USB-C (DP Alt Mode)",
+    "1 x Jack tai nghe"
+  ],
+  "Kích thước": {
+    "Có chân đế": "64.18 x 51.29 x 21.88 cm",
+    "Không chân đế": "64.18 x 36.71 x 6.01 cm"
+  },
+  "Trọng lượng": {
+    "Có chân đế": "6.61kg",
+    "Không chân đế": "3.93kg"
+  },
+  "VESA": "100 x 100 mm"
+},
+"monitor-24.5inch-fhd-310hz": {
+  "Màn hình": "24.5 inch, 16:9, Fast IPS, FHD (1920x1080), 99% sRGB, 300 nits, 1000:1, 16.7 triệu màu, chống chói, góc nhìn 178°",
+  "Hiệu năng": "310Hz, 1ms GTG (0.3ms min), HDR10, Adaptive-Sync, ELMB Sync, Shadow Boost, GameFast Input",
+  "Tính năng": "Flicker-free, lọc ánh sáng xanh, GameVisual, GamePlus, HDCP 2.3, DisplayWidget Center",
+  "Kết nối": "DisplayPort 1.4 x1, HDMI 2.0 x2, jack tai nghe",
+  "Nguồn": "<16W, <0.5W tiết kiệm, 100-240V",
+  "Thiết kế": "Nghiêng +23° ~ -5°, VESA 100x100mm, khóa Kensington",
+  "Kích thước": "Có chân: 55.9x40.1x17.4 cm; Không chân: 55.9x32.9x6.2 cm",
+  "Phụ kiện": "DP cable, tua vít L, dây nguồn, HDSD, thẻ BH"
+}
+,
+"monitor-27inch-fhd-180hz": {
+  "Màn hình": "27 inch, VA, FHD (1920x1080), 16:9, 3000:1, 250 nits, 178°/178°, 16.7 triệu màu",
+  "Hiệu năng": "180Hz, 5ms GTG (Faster), 1ms MBR, FreeSync Premium",
+  "Tính năng": "Giao diện chơi game, thiết kế 3 cạnh viền mỏng",
+  "Kết nối": "HDMI 1.4 x2, DisplayPort 1.4 x1, Audio 3.5mm"
+},
+"lg-ultragear-24gs65f-b": {
+  "Màn hình": "23.8 inch, IPS, Full HD (1920x1080), 180Hz, 1ms (GTG), 240 nits, 700:1, sRGB 99%",
+  "Thiết kế": "Viền siêu mỏng 3 cạnh, chân đế công thái học (nghiêng -5°~15°, xoay 90°, nâng 110mm)",
+  "Tính năng": "HDR10, FreeSync, tương thích G-Sync, Dynamic Action Sync, Black Stabilizer, FPS Counter, Crosshair, chế độ đọc sách, OnScreen Control",
+  "Kết nối": "DisplayPort 1.4, HDMI 2.0, Jack 3.5mm"
+}
+
+
+
+
+
+
 }
