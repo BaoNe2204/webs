@@ -595,6 +595,452 @@
   "Tốc độ": "3200MHz",
   "Độ trễ CAS": "CL22"
 }
+,
+"vga-asus-rtx5090-32gb": {
+  "Hãng sản xuất": "ASUS",
+  "Chipset": "NVIDIA",
+  "Loại GPU": "NVIDIA GeForce RTX 5090",
+  "Dung lượng VRAM": "32GB",
+  "Kiểu bộ nhớ": "GDDR7",
+  "Giao diện bộ nhớ": "512-bit",
+  "GPU Clock": {
+    "OC mode": "2610 MHz",
+    "Default mode": "2580 MHz"
+  },
+  "CUDA Cores": 21760,
+  "Giao tiếp PCI": "PCI Express 5.0",
+  "Đầu cấp nguồn": "1 x 16-pin",
+  "Nguồn đề xuất": "1000W"
+}
+,
+"vga-asus-rtx5080-16gb": {
+  "Hãng sản xuất": "ASUS",
+  "Chipset": "NVIDIA",
+  "Loại GPU": "NVIDIA GeForce RTX 5080",
+  "Dung lượng VRAM": "16GB",
+  "Kiểu bộ nhớ": "GDDR7",
+  "Giao diện bộ nhớ": "256-bit",
+  "GPU Clock": {
+    "OC mode": "2730 MHz",
+    "Default mode": "2700 MHz"
+  },
+  "CUDA Cores": 10752,
+  "Giao tiếp PCI": "PCI Express 5.0",
+  "Đầu cấp nguồn": "1 x 16-pin",
+  "Nguồn đề xuất": "850W"
+}
+,
+"vga-asus-rtx5060ti-8gb": {
+  "Hãng sản xuất": "ASUS",
+  "Chipset": "NVIDIA",
+  "Loại GPU": "NVIDIA GeForce RTX 5060 Ti",
+  "Dung lượng VRAM": "8GB",
+  "Kiểu bộ nhớ": "GDDR7",
+  "Giao diện bộ nhớ": "128-bit",
+  "GPU Clock": {
+    "OC mode": "2602 MHz",
+    "Default mode": "2572 MHz (Boost)"
+  },
+  "CUDA Cores": 4608,
+  "Giao tiếp PCI": "PCI Express 5.0",
+  "Đầu cấp nguồn": "1 x 8-pin",
+  "Nguồn đề xuất": "550W"
+}
+,
+"vga-gigabyte-rtx5070ti-16g": {
+  "Hãng sản xuất": "Gigabyte",
+  "Chipset": "NVIDIA",
+  "Loại GPU": "GeForce RTX 5070 Ti",
+  "Dung lượng VRAM": "16GB",
+  "Kiểu bộ nhớ": "GDDR7",
+  "Giao diện bộ nhớ": "256-bit",
+  "GPU Clock": {
+    "Boost Clock": "2542 MHz",
+    "Reference Clock": "2452 MHz"
+  },
+  "CUDA Cores": 8960,
+  "Giao tiếp PCI": "PCI Express 5.0",
+  "Đầu cấp nguồn": "1 x 16-pin",
+  "Nguồn đề xuất": "750W"
+}
+,
+"vga-gigabyte-rx6500xt-4gb": {
+  "Hãng sản xuất": "Gigabyte",
+  "Chipset": "AMD",
+  "Loại GPU": "Radeon RX 6500 XT",
+  "Dung lượng VRAM": "4GB",
+  "Kiểu bộ nhớ": "GDDR6",
+  "Giao diện bộ nhớ": "64-bit",
+  "GPU Clock": {
+    "Boost Clock": "2815 MHz",
+    "Game Clock": "2610 MHz"
+  },
+  "Đơn vị xử lý": 1024,
+  "Giao tiếp PCI": "PCI Express 4.0",
+  "Đầu cấp nguồn": "1 x 6-pin",
+  "Nguồn đề xuất": "400W"
+}
+,
+"vga-msi-rtx5070-12gb": {
+  "Hãng sản xuất": "MSI",
+  "Chipset": "NVIDIA",
+  "Loại GPU": "GeForce RTX 5070",
+  "Dung lượng VRAM": "12GB",
+  "Kiểu bộ nhớ": "GDDR7",
+  "Giao diện bộ nhớ": "192-bit",
+  "GPU Clock": {
+    "Hiệu suất cực cao (MSI Center)": "2557 MHz",
+    "Boost Clock": "2542 MHz"
+  },
+  "Đơn vị xử lý": 6144,
+  "Giao tiếp PCI": "PCI Express 5.0",
+  "Tản nhiệt": "2 quạt TORX 5.0 (cánh quạt liên kết bằng vòng cung, ổn định luồng khí áp suất cao)",
+  "Đầu cấp nguồn": "1 x 16-pin (ATX 3.1 khuyến nghị)",
+  "Nguồn đề xuất": "650W"
+}
+,
+"vga-gigabyte-rtx4070-12gb": {
+  "Hãng sản xuất": "Gigabyte",
+  "Chipset": "NVIDIA",
+  "Loại GPU": "GeForce RTX 4070",
+  "Dung lượng VRAM": "12GB",
+  "Kiểu bộ nhớ": "GDDR6",
+  "Giao diện bộ nhớ": "192-bit",
+  "GPU Clock": {
+    "Boost Clock": "2490 MHz",
+    "Reference": "2475 MHz"
+  },
+  "CUDA Cores": 5888,
+  "Giao tiếp PCI": "PCI Express 4.0",
+  "Tản nhiệt": "3 quạt",
+  "Đầu cấp nguồn": "1 x 8-pin",
+  "Nguồn đề xuất": "650W"
+}
+,
+"vga-sapphire-rx7700xt-12gb": {
+  "Hãng sản xuất": "SAPPHIRE",
+  "Chipset": "AMD",
+  "Loại GPU": "Radeon RX 7700 XT",
+  "Dung lượng VRAM": "12GB",
+  "Kiểu bộ nhớ": "GDDR6",
+  "Giao diện bộ nhớ": "192-bit",
+  "GPU Clock": {
+    "Game Clock": "2171 MHz",
+    "Boost Clock": "2560 MHz"
+  },
+  "Stream Processors": 3456,
+  "Giao tiếp PCI": "PCI Express 4.0",
+  "Tản nhiệt": "3 quạt",
+  "Đầu cấp nguồn": "2 x 8-pin",
+  "Nguồn đề xuất": "700W"
+}
+,
+"vga-asus-rtx5060ti-8gbz": {
+  "Hãng sản xuất": "ASUS",
+  "Chipset": "NVIDIA",
+  "Loại GPU": "GeForce RTX 5060 Ti",
+  "Dung lượng VRAM": "8GB",
+  "Kiểu bộ nhớ": "GDDR7",
+  "Giao diện bộ nhớ": "128-bit",
+  "GPU Clock": {
+    "OC Mode": "2632 MHz",
+    "Boost Clock (Default)": "2602 MHz"
+  },
+  "CUDA Cores": 4608,
+  "Giao tiếp PCI": "PCI Express 5.0",
+  "Đầu cấp nguồn": "1 x 8-pin",
+  "Nguồn đề xuất": "550W"
+},
+"vga-asrock-rx6600-8gb": {
+  "Hãng sản xuất": "ASRock",
+  "Chipset": "AMD",
+  "Loại GPU": "Radeon RX 6600",
+  "Dung lượng VRAM": "8GB",
+  "Kiểu bộ nhớ": "GDDR6",
+  "Giao diện bộ nhớ": "128-bit",
+  "GPU Clock": {
+    "Base Clock": "1626 MHz",
+    "Game Clock": "Up to 2044 MHz",
+    "Boost Clock": "Up to 2491 MHz"
+  },
+  "Đơn vị xử lý": 1792,
+  "Giao tiếp PCI": "PCI Express 4.0 x8",
+  "Cổng xuất hình": {
+    "HDMI": "1 x HDMI 2.1",
+    "DisplayPort": "3 x DisplayPort 1.4",
+    "HDCP": "Supported"
+  },
+  "Đầu cấp nguồn": "1 x 8-pin",
+  "Nguồn đề xuất": "500W"
+},
+"macbook-m2-13_6inch": {
+  "Loại card đồ họa": "8 nhân GPU, 16 nhân Neural Engine",
+  "Dung lượng RAM": "16GB",
+  "Ổ cứng": "256GB",
+  "Kích thước màn hình": "13.6 inches",
+  "Công nghệ màn hình": "Liquid Retina Display",
+  "Độ phân giải màn hình": "2560 x 1664 pixels",
+  "Pin": "52.6 Wh",
+  "Hệ điều hành": "MacOS",
+  "Loại CPU": "Apple M2 8 nhân",
+  "Cổng giao tiếp": [
+    "2 x Thunderbolt 3",
+    "Jack tai nghe 3.5 mm",
+    "MagSafe 3"
+  ]
+}
+,
+"macbook-m3max-14_2inch": {
+  "Loại card đồ họa": "30 nhân GPU, 16 nhân Neural Engine",
+  "Dung lượng RAM": "96GB",
+  "Ổ cứng": "512GB",
+  "Kích thước màn hình": "14.2 inches",
+  "Công nghệ màn hình": [
+    "Độ sáng XDR: 1000 nit liên tục ở chế độ toàn màn hình",
+    "Độ sáng đỉnh 1600 nit (chỉ nội dung HDR)",
+    "True Tone",
+    "ProMotion"
+  ],
+  "Độ phân giải màn hình": "3024 x 1964 pixels",
+  "Pin": "72.4 Wh",
+  "Hệ điều hành": "macOS",
+  "Loại CPU": "Apple M3 Max 14 nhân",
+  "Cổng giao tiếp": [
+    "3 x Thunderbolt 4 (USB-C)",
+    "HDMI",
+    "Khe thẻ nhớ SDXC",
+    "Jack 3.5mm"
+  ]
+}
+,
+"keyboard-aula-mini-671": {
+  "Loại bàn phím": "Mini-size",
+  "Số phím": 67,
+  "Tương thích": "Tất cả các hệ điều hành Windows (WINXP, WIN7, WIN8, WIN10). Win95, Win98 có thể cần trình điều khiển",
+  "Kết nối": [
+    "Có dây Type-C",
+    "Không dây 2.4G",
+    "Bluetooth"
+  ],
+  "Khoảng cách kết nối": "10 m",
+  "Đèn LED": "LED RGB",
+  "Thời gian dùng": {
+    "Hiệu ứng ánh sáng mặc định": "Khoảng 40 giờ",
+    "Tắt LED": "Khoảng 106 giờ"
+  },
+  "Hãng sản xuất": "Aula"
+}
+,
+"keyboard-logitech-tenkeyless-96": {
+  "Loại bàn phím": "Tenkeyless",
+  "Số phím": 96,
+  "Tương thích": [
+    "Windows 10/11",
+    "MacOS",
+    "iOS/iPadOS",
+    "Chrome OS",
+    "Android 4.3 trở lên"
+  ],
+  "Kết nối": [
+    "Wired USB-C",
+    "Bluetooth",
+    "Wireless 2.4GHz"
+  ],
+  "Khoảng cách kết nối": {
+    "Có dây": "1.8 m",
+    "Không dây": "10 m"
+  },
+  "Đèn LED": "LED RGB LIGHTSYNC",
+  "Thời gian dùng": {
+    "Có đèn nền": "Lên đến 42 giờ",
+    "Không đèn nền": "Lên đến 1000 giờ"
+  },
+  "Hãng sản xuất": "Logitech"
+}
+,
+"keyboard-acer-tenkeyless-80": {
+  "Loại bàn phím": "Tenkeyless 80%",
+  "Số phím": 87,
+  "Tương thích": [
+    "Windows"
+  ],
+  "Kết nối": [
+    "USB Port"
+  ],
+  "Đèn LED": {
+    "Loại": "LED RGB",
+    "Chế độ đèn nền": "8 chế độ được cài đặt sẵn",
+    "Độ sáng": "7 mức điều chỉnh"
+  },
+  "Hãng sản xuất": "Acer"
+}
+,
+"keyboard-aula-mini-67": {
+  "Loại bàn phím": "Mini-size",
+  "Số phím": 67,
+  "Tương thích": [
+    "Windows XP",
+    "Windows 7",
+    "Windows 8",
+    "Windows 10",
+    "Windows 95 (cần driver)",
+    "Windows 98 (cần driver)"
+  ],
+  "Kết nối": [
+    "USB Type-C (có dây)",
+    "Wireless 2.4G",
+    "Bluetooth"
+  ],
+  "Khoảng cách kết nối": "10 m",
+  "Đèn LED": "LED RGB",
+  "Thời gian dùng": {
+    "Hiệu ứng ánh sáng mặc định": "40 giờ",
+    "Tắt LED": "106 giờ"
+  },
+  "Hãng sản xuất": "Aula"
+}
+,
+"keyboard-corsair-104": {
+  "Số phím": 104,
+  "Khoảng cách kết nối": "1.8 m",
+  "Đèn LED": "LED RGB (có thể điều chỉnh)",
+  "Tiện ích": [
+    "Tính năng NKRO và Anti-Ghosting",
+    "Nút gạt Tournament Switch",
+    "Tích hợp phím Media tiện lợi",
+    "Dây cáp Type-C có thể tháo rời"
+  ],
+  "Hãng sản xuất": "Corsair"
+}
+,
+"keyboard-corsair-81": {
+  "Số phím": 81,
+  "Đèn LED": "LED RGB",
+  "Tiện ích": [
+    "Pin Lithium-Ion có thể sạc lại",
+    "Núm xoay volume kim loại tiện lợi",
+    "Tích hợp Foam tiêu âm",
+    "N-key with 100% Anti-Ghosting"
+  ],
+  "Hãng sản xuất": "Corsair"
+}
+,
+"keyboard-asus-rog-azoth-extreme": {
+  "Thương hiệu": "Asus",
+  "Tên sản phẩm": "ASUS ROG Azoth Extreme",
+  "Mã Model": "90MP03MA-BKUA01",
+  "Layout": "75%",
+  "Số lượng phím": 81,
+  "Chất liệu vỏ": "Nhôm",
+  "Màu sắc": "Đen",
+  "Keycap": "PBT DoubleShot",
+  "Switch": "ROG NX Snow (Linear)",
+  "LED": "RGB AuraSync",
+  "Kết nối": [
+    "Wireless 2.4GHz",
+    "Bluetooth 5.1",
+    "Dây USB"
+  ],
+  "Loại dây": "USB-A to USB-C",
+  "Kích thước (mm)": "332 x 139 x 40",
+  "Dung lượng/Thời lượng pin": "Lên đến 1600h sử dụng (Chế độ Wireless 2.4GHz - Tắt LED)",
+  "Tính năng": {
+    "Tốc độ phản hồi": "Lên đến 8000Hz với ROG Polling Rate Booster (Chế độ dây + 2.4GHz)",
+    "Foam tiêu âm": "Có",
+    "Màn hình": "OLED 1.47 inch",
+    "HotSwap Switch": "Có"
+  }
+}
+,
+"keyboard-logitech-60": {
+  "Thiết kế": "60% chuyên nghiệp",
+  "Tính năng chính": [
+    "KEYCONTROL",
+    "Ánh sáng RGB LIGHTSYNC",
+    "Cấu hình chiếu sáng trên bo mạch",
+    "Dây cáp có thể tháo rời 6 ft",
+    "Tốc độ báo cáo 1 ms"
+  ],
+  "Kết nối": [
+    "Không dây 2.4GHz LIGHTSPEED",
+    "Bluetooth",
+    "USB có dây"
+  ],
+  "Tuổi thọ pin": "Lên tới 65 giờ (có thể sạc lại)",
+  "Phạm vi không dây": "Lên tới 10 m",
+  "Ghi chú": "Các tính năng nâng cao yêu cầu phần mềm Logitech G HUB"
+}
+,
+"keyboard-asus-rog-65-68": {
+  "Model": [
+    "90MP03ED-BKUA10 (RX Red Switch)",
+    "90MP03EC-BKUA10 (RX Blue Switch)"
+  ],
+  "Kết nối": [
+    "USB 2.0 (Type-C to Type-A)",
+    "Bluetooth 5.1",
+    "RF 2.4GHz"
+  ],
+  "Chất liệu phím": "ABS phủ lớp chống tia UV",
+  "Số phím": 68,
+  "Profile": "Đang cập nhật",
+  "Đèn nền": "RGB per-key",
+  "Keyswitch": "ROG RX Low-Profile Switch Blue/Red",
+  "Độ bền Switch": "Đang cập nhật",
+  "Keyboard Rollover": "N-key, Anti-Ghosting",
+  "Kích thước (mm)": "306 x 110 x 26.5",
+  "Trọng lượng": "595g (không dây cáp)",
+  "Khả năng tương thích": [
+    "macOS 10.11 or later",
+    "Windows 11"
+  ],
+  "Tính năng": [
+    "Bảng điều khiển cảm ứng",
+    "Macro Keys"
+  ],
+  "Dạng bàn phím": "65%",
+  "Bảo hành": "24 tháng"
+}
+,
+"keyboard-logitech-tenkeyless-87": {
+  "Loại bàn phím": "Tenkeyless",
+  "Số phím": 87,
+  "Tương thích": [
+    "Chrome OS",
+    "Windows 10 trở lên",
+    "macOS 10.15 trở lên"
+  ],
+  "Kết nối": [
+    "Bluetooth",
+    "USB Receiver"
+  ],
+  "Khoảng cách kết nối": "1.8 m",
+  "Đèn LED": "LED RGB LIGHTSYNC",
+  "Thời gian dùng": "Lên đến 30 giờ",
+  "Hãng sản xuất": "Logitech"
+}
+,
+"keyboard-akko-tenkeyless-87": {
+  "Loại bàn phím": "Tenkeyless",
+  "Số phím": 87,
+  "Tương thích": [
+    "Windows",
+    "MacOS",
+    "Linux"
+  ],
+  "Chú thích tương thích MacOS": "Ctrl -> Control | Windows -> Command | Alt -> Option, Mojave OS trở lên sẽ điều chỉnh được thứ tự các phím",
+  "Kết nối": {
+    "Có dây": "USB (Type-A to Type-C tháo rời)",
+    "Không dây": "USB 2.4GHz"
+  },
+  "Khoảng cách kết nối": "Lên đến 10 m",
+  "Đèn LED": "Không LED",
+  "Thời gian dùng": "Lên đến 3-5 tháng",
+  "Hãng sản xuất": "AKKO"
+}
+
+
+
 
 
 

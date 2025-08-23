@@ -72,7 +72,7 @@
     },
     {
       "id": "lenovo-v14-g4-iru-83a000bhvn",
-      "title": "Laptop Lenovo V14 G4 IRU 83A000BHVN (i5-13420H/ 16GB/ 512GB/ 14 inch FHD) ",
+      "title": "Laptop Lenovo V14 G4 IRU 83A000BHVN (i5-13420H/ 16GB/ 512GB) ",
       "link": "./product-detail.html",
       "image": "https://cdn.hoanghamobile.vn/i/previewV2/Uploads/2024/11/04/laptop-lenovo-v14-g4-iru-83a000bhvn-i5-13420h-16gb-512gb-14-inch-fhd-win11-grey-7.png",
      
@@ -177,17 +177,26 @@
       "sold": "3,8k"
     },
     {
-      "id": "macbook-air-m2-2024",
-      "title": "MacBook Air M2 2024",
+      "id": "macbook-m2-13_6inch",
+      "title": "MacBook Air M2 8CPU 8GPU 16GB 256GB  Apple Việt Nam",
       "link": "./product-detail.html",
-      "image": "./assets/img/pro3.jpg",
+      "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/v/n/vn0d33_1.jpg",
+      "images": [
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/v/n/vn0d33_1.jpg?_gl=1*jqyjqf*_gcl_au*MTM5NjMwMTAyOS4xNzU1ODY1ODgx*_ga*MTYxNTgyMDk3Mi4xNzMyODgyMDAx*_ga_QLK8WFHNK9*czE3NTU5NjEzNTIkbzYkZzEkdDE3NTU5NjIwNDgkajU0JGwwJGgxNTYzNzI2Njk2",
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/v/n/vnb70f_1.jpg?_gl=1*jqyjqf*_gcl_au*MTM5NjMwMTAyOS4xNzU1ODY1ODgx*_ga*MTYxNTgyMDk3Mi4xNzMyODgyMDAx*_ga_QLK8WFHNK9*czE3NTU5NjEzNTIkbzYkZzEkdDE3NTU5NjIwNDgkajU0JGwwJGgxNTYzNzI2Njk2",
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/v/n/vn_mac_1_2.jpg?_gl=1*jqyjqf*_gcl_au*MTM5NjMwMTAyOS4xNzU1ODY1ODgx*_ga*MTYxNTgyMDk3Mi4xNzMyODgyMDAx*_ga_QLK8WFHNK9*czE3NTU5NjEzNTIkbzYkZzEkdDE3NTU5NjIwNDgkajU0JGwwJGgxNTYzNzI2Njk2",
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/v/n/vn_mac_2_2.jpg?_gl=1*jqyjqf*_gcl_au*MTM5NjMwMTAyOS4xNzU1ODY1ODgx*_ga*MTYxNTgyMDk3Mi4xNzMyODgyMDAx*_ga_QLK8WFHNK9*czE3NTU5NjEzNTIkbzYkZzEkdDE3NTU5NjIwNDgkajU0JGwwJGgxNTYzNzI2Njk2",
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/v/n/vn380f_1.jpg",
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/v/n/vn7269_1.jpg"
+],
+
       "tags": [
         "RAM 16 GB",
-        "SSD 512 GB"
+        "256GB"
       ],
-      "price": "28.990.000đ",
-      "oldPrice": "32.000.000đ",
-      "discount": "-9%",
+      "price": "19.590.000đ",
+      "oldPrice": "24.990.000đ",
+      "discount": "-22%",
       "score": "4.9",
       "sold": "12,4k"
     },
@@ -306,16 +315,28 @@
   ],
   "slide5": [
     {
-      "id": "macbook-pro-14-m3",
-      "title": "MacBook Pro 14 M3",
+      "id": "macbook-m3max-14_2inch",
+      "title": "MacBook Pro 14 inch M3 Max 96GB - 512GB Sạc 96W Apple Việt Nam",
+      "images": [
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/m/a/macbook-pro-16-inch-m3-max-2023_1__5.png",
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/m/a/macbook-pro-16-inch-m3-max-2023_4__5.png",
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/m/a/macbook-pro-16-inch-m3-max-2023_5__5.png",
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/m/a/macbook-pro-16-inch-m3-max-2023_8__5.png",
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/m/a/macbook-pro-16-inch-m3-max-2023_2__5.png",
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/m/a/macbook-pro-16-inch-m3-max-2023_3__5.png",
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/m/a/macbook-pro-16-inch-m3-max-2023_10__5.png",
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/m/a/macbook-pro-16-inch-m3-max-2023_6__5.png",
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/m/a/macbook-pro-16-inch-m3-max-2023_9__5.png"
+],
+
       "link": "./product-detail.html",
-      "image": "./assets/img/pro2.jpg",
+      "image": "https://cdn2.cellphones.com.vn/x/media/catalog/product/m/a/macbook-pro-16-inch-m3-max-2023_1__5.png",
       "tags": [
-        "RAM 16 GB",
-        "SSD 512 GB"
+        "RAM 96 GB",
+        "512GB"
       ],
-      "price": "42.990.000đ",
-      "oldPrice": "47.990.000đ",
+      "price": "89.990.000đ",
+      "oldPrice": "95.990.000đ",
       "discount": "-10%",
       "score": "4.9",
       "sold": "8,1k"
@@ -495,7 +516,7 @@
     },
     {
       "id": "pc-build-i5-12400f-rtx30600",
-      "title": "PC Gaming CORE I5 12400F | RAM 16G | NVME 512G | RTX3060 12G FULL TRẮNG",
+      "title": "PC Gaming CORE I5 12400F | RAM 16G | NVME 512G | RTX3060 12G ",
       "price": "14.798.000đ",
       "oldPrice": "15.240.000đ",
       "discount": "-3%",
@@ -509,7 +530,7 @@
     },
     {
       "id": "pc-build-i5-14600kf-rtx5060ti",
-      "title": "PC Gaming Core I5 14600KF | Ram 32G | RTX 5060 Ti 16G | NVME 500G | Tản Nước",
+      "title": "PC Gaming Core I5 14600KF | Ram 32G | RTX 5060 Ti 16G | NVME 500G ",
       "price": "25.702.000đ",
       "oldPrice": "26.900.000đ",
       "discount": "-5%",
@@ -570,7 +591,7 @@
   "slide8": [
     {
       "id": "laptop-i7-12700h-rtx3050",
-      "title": "Laptop Asus TUF Gaming FX507ZC - HN124W",
+      "title": "Laptop Asus TUF Gaming FX507ZC - HN124W - Chính hãng",
       "price": "21.990.000 ₫",
       "oldPrice": "31.490.000 ₫",
       "discount": "-30%",
@@ -608,7 +629,7 @@
     },
     {
       "id": "laptop-r5-7535hs-rx6550m",
-      "title": "Laptop Gaming MSI Bravo 15 B7ED-010VN",
+      "title": "Laptop Gaming MSI Bravo 15 B7ED-010VN - Chính hãng",
       "price": "13.990.000 ₫",
       "oldPrice": "18.490.000 ₫",
       "discount": "-24%",
@@ -650,7 +671,7 @@
     },
     {
       "id": "laptop-i5-11260h-rtx2050",
-      "title": "Laptop ASUS TUF Gaming F15 FX506HF-HN078W",
+      "title": "Laptop ASUS TUF Gaming F15 FX506HF-HN078W - Chính hãng",
       "price": "15.990.000 ₫ ",
       "oldPrice": "20.990.000 ₫",
       "discount": "-24%",
@@ -673,7 +694,7 @@
     },
     {
       "id": "laptop-r5-5500h-rtx2050",
-      "title": "Laptop Lenovo IdeaPad Gaming 3 15ACH6 ",
+      "title": "Laptop Lenovo IdeaPad Gaming 3 15ACH6 - Chính hãng",
       "price": "14.290.000 ₫",
       "oldPrice": "17.990.000 ₫",
       "discount": "-21%",
@@ -695,7 +716,7 @@
     },
     {
       "id": "laptop-i7-13650hx-rtx3050",
-      "title": "Laptop Dell Gaming G15 5530 (71045030) ",
+      "title": "Laptop Dell Gaming G15 5530 (71045030) - Chinh hãng ",
       "price": "35.490.000 ₫",
       "oldPrice": "36.990.000 ₫",
       "discount": "-4%",
@@ -717,7 +738,7 @@
     },
     {
       "id": "laptop-i7-12650h-rtx3050",
-      "title": "Laptop Acer Gaming Aspire 7 A715-59G-73LB",
+      "title": "Laptop Acer Gaming Aspire 7 A715-59G-73LB - Chính hãng",
       "price": "21.990.000 ₫ ",
       "oldPrice": "24.399.000 ₫",
       "discount": "-10%",
@@ -740,7 +761,7 @@
     },
     {
       "id": "laptop-i5-13500h-rtx4050",
-      "title": "Laptop Gaming GIGABYTE G5 MF5-52VN383SH",
+      "title": "Laptop Gaming GIGABYTE G5 MF5-52VN383SH - Chính hãng",
       "price": "19.490.000 ₫",
       "oldPrice": "23.490.000 ₫",
       "discount": "-14%",
@@ -763,7 +784,7 @@
     },
     {
       "id": "laptop-i5-12450h-rtx2050",
-      "title": "ALaptop Gaming HP Victus 15-fa1155TX (952R1PA) ",
+      "title": "ALaptop Gaming HP Victus 15-fa1155TX (952R1PA) - Chính hãng ",
       "price": "16.890.000 ₫",
       "oldPrice": "23.490.000 ₫",
       "discount": "-28%",
@@ -896,7 +917,7 @@
     },
     {
       "id": "lg-ultragear-24gs65f-b",
-      "title": "Màn hình LG UltraGear 24GS65F-B (23.8 inch/FHD/IPS/180Hz/1ms) - Chính hãng",
+      "title": "Màn hình LG UltraGear 24GS65F-B (23.8 inch/FHD/IPS/180Hz/1ms)",
       "price": "3.140.000 ₫ ",
       "oldPrice": "4.299.000 ₫",
       "discount": "-27%",
@@ -920,7 +941,7 @@
     },
     {
       "id": "monitor-23-8inch-fhd-100hz",
-      "title": "Màn hình EDRA EGM24F100H (23.8 inch/FHD/IPS/100Hz/1ms) - Chính hãng",
+      "title": "Màn hình EDRA EGM24F100H (23.8 inch/FHD/IPS/100Hz/1ms)",
       "price": "1.650.000 ₫ ",
       "oldPrice": "2.990.000 ₫",
       "discount": "-45%",
@@ -940,7 +961,7 @@
     },
     {
       "id": "monitor-32inch-qhd-165hz",
-      "title": "Màn hình Samsung Odyssey G5 G55C LS32CG552EEXXV (32 inch/QHD/VA/165Hz/1ms/Cong) - Chính hãng",
+      "title": "Màn hình Samsung Odyssey G5 G55C LS32CG552EEXXV (32 inch/QHD/VA/165Hz/1ms/Cong) ",
       "price": "5.690.000 ₫",
       "oldPrice": "8.836.000 ₫",
       "discount": "-36%",
@@ -963,7 +984,7 @@
     },
     {
       "id": "monitor-24_5inch-fhd-180hz",
-      "title": "Màn hình VSP IP2518S4 (24.5 inch/FHD/Fast IPS/180Hz/1ms/USB-C) - Chính hãng",
+      "title": "Màn hình VSP IP2518S4 (24.5 inch/FHD/Fast IPS/180Hz/1ms/USB-C) ",
       "price": "2.580.000 ₫",
       "oldPrice": "3.890.000 ₫",
       "discount": "-34%",
@@ -983,7 +1004,7 @@
     },
     {
       "id": "monitor-34inch-2k-240hz",
-      "title": "Màn hình MSI MPG 341CQPX QD-OLED (34 inch/UWQHD/OLED/240Hz/0.03ms/Cong)",
+      "title": "Màn hình cong MSI MPG 341CQPX QD-OLED 34 QD-OLED - 2K",
       "price": "26.490.000 ₫",
       "oldPrice": "29.990.000 ₫",
       "discount": "-12%",
@@ -1039,7 +1060,7 @@
     },
     {
       "id": "ram-kingston-8gb-ddr4-3200mhz",
-      "title": "Ram PC Kingston Fury Beast 8GB DDR4 3200Mhz (1x 8GB) (KF432C16BB/8)",
+      "title": "Ram PC Kingston Fury Beast 8GB DDR4 3200Mhz (1x 8GB)",
       "price": "759,000₫",
       "oldPrice": "790,000₫",
       "discount": "-4%",
@@ -1062,7 +1083,7 @@
     },
     {
       "id": "ram-gskill-32gb-ddr4-3600mhz",
-      "title": "Ram PC G.SKILL Trident Z RGB 32GB 3600MHz DDR4 (16GBx2) F4-3600C18D",
+      "title": "Ram PC G.SKILL Trident Z RGB 32GB 3600MHz DDR4 (16GBx2)",
       "price": "2.300.000 ₫",
       "oldPrice": "2.650.000 ₫",
       "discount": "-13%",
@@ -1199,210 +1220,364 @@
   ],
   "slide11": [
     {
-      "id": "gpu-001",
-      "title": "ASUS Dual GeForce RTX 4060 Ti 8GB",
-      "price": "10.990.000đ",
-      "oldPrice": "11.990.000đ",
+      "id": "vga-asus-rtx5090-32gb",
+      "title": "VGA Asus ROG Astral Geforce RTX 5090 OC 32GB ROG-ASTRAL",
+      "price": "109.990.000đ",
+      "oldPrice": "119.990.000đ",
       "discount": "-8%",
-      "image": "./assets/img/products/gpu1.jpg",
+      "image": "https://cdn2.cellphones.com.vn/x/media/catalog/product/v/g/vga-asus-rog-astral-geforce-rtx-5090-oc-32gb_1_.png?_gl=1*1eeajwi*_gcl_au*MTM5NjMwMTAyOS4xNzU1ODY1ODgx*_ga*MTYxNTgyMDk3Mi4xNzMyODgyMDAx*_ga_QLK8WFHNK9*czE3NTU5NDUzNjMkbzUkZzEkdDE3NTU5NDU4MTEkajYwJGwwJGg1NDMwOTU5NTM.",
+      "images": [
+        "https://cdn2.cellphones.com.vn/x/media/catalog/product/v/g/vga-asus-rog-astral-geforce-rtx-5090-oc-32gb_1_.png?_gl=1*1eeajwi*_gcl_au*MTM5NjMwMTAyOS4xNzU1ODY1ODgx*_ga*MTYxNTgyMDk3Mi4xNzMyODgyMDAx*_ga_QLK8WFHNK9*czE3NTU5NDUzNjMkbzUkZzEkdDE3NTU5NDU4MTEkajYwJGwwJGg1NDMwOTU5NTM.",
+        "https://cdn2.cellphones.com.vn/x/media/catalog/product/v/g/vga-asus-rog-astral-geforce-rtx-5090-oc-32gb_2_.png?_gl=1*1eeajwi*_gcl_au*MTM5NjMwMTAyOS4xNzU1ODY1ODgx*_ga*MTYxNTgyMDk3Mi4xNzMyODgyMDAx*_ga_QLK8WFHNK9*czE3NTU5NDUzNjMkbzUkZzEkdDE3NTU5NDU4MTEkajYwJGwwJGg1NDMwOTU5NTM.",
+        "https://cdn2.cellphones.com.vn/x/media/catalog/product/v/g/vga-asus-rog-astral-geforce-rtx-5090-oc-32gb_4_.png?_gl=1*1hw0y3x*_gcl_au*MTM5NjMwMTAyOS4xNzU1ODY1ODgx*_ga*MTYxNTgyMDk3Mi4xNzMyODgyMDAx*_ga_QLK8WFHNK9*czE3NTU5NDUzNjMkbzUkZzEkdDE3NTU5NDUzNzYkajQ3JGwwJGg1NDMwOTU5NTM.",
+        "https://cdn2.cellphones.com.vn/x/media/catalog/product/v/g/vga-asus-rog-astral-geforce-rtx-5090-oc-32gb_3_.png?_gl=1*1hw0y3x*_gcl_au*MTM5NjMwMTAyOS4xNzU1ODY1ODgx*_ga*MTYxNTgyMDk3Mi4xNzMyODgyMDAx*_ga_QLK8WFHNK9*czE3NTU5NDUzNjMkbzUkZzEkdDE3NTU5NDUzNzYkajQ3JGwwJGg1NDMwOTU5NTM.",
+        "https://cdn2.cellphones.com.vn/x/media/catalog/product/v/g/vga-asus-rog-astral-geforce-rtx-5090-oc-32gb_5_.png?_gl=1*1hw0y3x*_gcl_au*MTM5NjMwMTAyOS4xNzU1ODY1ODgx*_ga*MTYxNTgyMDk3Mi4xNzMyODgyMDAx*_ga_QLK8WFHNK9*czE3NTU5NDUzNjMkbzUkZzEkdDE3NTU5NDUzNzYkajQ3JGwwJGg1NDMwOTU5NTM.",
+        "https://cdn2.cellphones.com.vn/x/media/catalog/product/v/g/vga-asus-rog-astral-geforce-rtx-5090-oc-32gb_6_.png?_gl=1*1hw0y3x*_gcl_au*MTM5NjMwMTAyOS4xNzU1ODY1ODgx*_ga*MTYxNTgyMDk3Mi4xNzMyODgyMDAx*_ga_QLK8WFHNK9*czE3NTU5NDUzNjMkbzUkZzEkdDE3NTU5NDUzNzYkajQ3JGwwJGg1NDMwOTU5NTM.",
+        "https://cdn2.cellphones.com.vn/x/media/catalog/product/v/g/vga-asus-rog-astral-geforce-rtx-5090-oc-32gb_7_.png?_gl=1*1hw0y3x*_gcl_au*MTM5NjMwMTAyOS4xNzU1ODY1ODgx*_ga*MTYxNTgyMDk3Mi4xNzMyODgyMDAx*_ga_QLK8WFHNK9*czE3NTU5NDUzNjMkbzUkZzEkdDE3NTU5NDUzNzYkajQ3JGwwJGg1NDMwOTU5NTM.",
+        "https://cdn2.cellphones.com.vn/x/media/catalog/product/v/g/vga-asus-rog-astral-geforce-rtx-5090-oc-32gb_8_.png?_gl=1*1hw0y3x*_gcl_au*MTM5NjMwMTAyOS4xNzU1ODY1ODgx*_ga*MTYxNTgyMDk3Mi4xNzMyODgyMDAx*_ga_QLK8WFHNK9*czE3NTU5NDUzNjMkbzUkZzEkdDE3NTU5NDUzNzYkajQ3JGwwJGg1NDMwOTU5NTM."
+      ],
       "score": "4.9",
       "sold": "2,3k",
       "tags": [
-        "RTX 4060 Ti",
-        "ASUS"
+        "RTX 5090",
+        "ROG"
       ]
     },
     {
-      "id": "gpu-002",
-      "title": "MSI Gaming X GeForce RTX 4070 12GB",
-      "price": "17.990.000đ",
-      "oldPrice": "18.990.000đ",
-      "discount": "-5%",
-      "image": "./assets/img/products/gpu2.jpg",
+      "id": "vga-asus-rtx5080-16gb",
+      "title": "VGA Asus Tuf Gaming Geforce RTX 5080 OC 16GB TUF",
+      "price": "43.990.000đ",
+      "oldPrice": "49.990.000đđ",
+      "discount": "-12%",
+      "image": "https://cdn2.cellphones.com.vn/x/media/catalog/product/v/g/vga-asus-tuf-gaming-geforce-rtx-5080-oc-16gb_1__2.png?_gl=1*c2tkyv*_gcl_au*MTM5NjMwMTAyOS4xNzU1ODY1ODgx*_ga*MTYxNTgyMDk3Mi4xNzMyODgyMDAx*_ga_QLK8WFHNK9*czE3NTU5NDUzNjMkbzUkZzEkdDE3NTU5NDYwNDgkajMzJGwwJGg1NDMwOTU5NTM.",
+      "images": [
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/v/g/vga-asus-tuf-gaming-geforce-rtx-5080-oc-16gb_1__2.png",
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/v/g/vga-asus-tuf-gaming-geforce-rtx-5080-oc-16gb_2__2.png",
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/v/g/vga-asus-tuf-gaming-geforce-rtx-5080-oc-16gb_4__2.png",
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/v/g/vga-asus-tuf-gaming-geforce-rtx-5080-oc-16gb_3__2.png",
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/v/g/vga-asus-tuf-gaming-geforce-rtx-5080-oc-16gb_5__2.png",
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/v/g/vga-asus-tuf-gaming-geforce-rtx-5080-oc-16gb_6__2.png"
+],
       "score": "4.8",
       "sold": "1,7k",
       "tags": [
-        "RTX 4070",
-        "MSI"
+        "RTX 5080",
+        "TUF"
       ]
     },
     {
-      "id": "gpu-003",
-      "title": "Gigabyte AERO OC GeForce RTX 4070 Ti 12GB",
-      "price": "23.990.000đ",
-      "oldPrice": "25.490.000đ",
-      "discount": "-6%",
-      "image": "./assets/img/products/gpu3.jpg",
+      "id": "vga-asus-rtx5060ti-8gb",
+      "title": "VGA Asus Prime Gaming Geforce RTX 5060 Ti 8GB PRIME ",
+      "price": "15.190.000đ",
+      "oldPrice": "15.890.000đ",
+      "discount": "-4%",
+      "image": "https://cdn2.cellphones.com.vn/x/media/catalog/product/v/g/vga-asus-prime-geforce-rtx-5060-ti-8gb_1_.png",
+      "images": [
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/v/g/vga-asus-prime-geforce-rtx-5060-ti-8gb_1_.png",
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/v/g/vga-asus-prime-geforce-rtx-5060-ti-8gb_2_.png",
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/v/g/vga-asus-prime-geforce-rtx-5060-ti-8gb_3_.png",
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/v/g/vga-asus-prime-geforce-rtx-5060-ti-8gb_4_.png",
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/v/g/vga-asus-prime-geforce-rtx-5060-ti-8gb_5_.png",
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/v/g/vga-asus-prime-geforce-rtx-5060-ti-8gb_6_.png",
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/v/g/vga-asus-prime-geforce-rtx-5060-ti-8gb_7_.png",
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/v/g/vga-asus-prime-geforce-rtx-5060-ti-8gb_8_.png"
+],
+
       "score": "4.9",
       "sold": "1,3k",
       "tags": [
-        "RTX 4070 Ti",
+        "RTX 5060 Ti",
+        "Prime"
+      ]
+    },
+    {
+      "id": "vga-gigabyte-rtx5070ti-16g",
+      "title": "VGA Gigabyte Geforce RTX 5070 Ti Eagle OC 16GB GV-N507TEAGLEOC-16GD",
+      "price": "31.990.000đ",
+      "oldPrice": "34.990.000đ",
+      "discount": "-9%",
+      "image": "https://cdn2.cellphones.com.vn/x/media/catalog/product/v/g/vga-gigabyte-geforce-rtx-5070-ti-eagle-oc-16gb_1_.png",
+      "images": [
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/v/g/vga-gigabyte-geforce-rtx-5070-ti-eagle-oc-16gb_1_.png",
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/v/g/vga-gigabyte-geforce-rtx-5070-ti-eagle-oc-16gb_2_.png",
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/v/g/vga-gigabyte-geforce-rtx-5070-ti-eagle-oc-16gb_3_.png",
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/v/g/vga-gigabyte-geforce-rtx-5070-ti-eagle-oc-16gb_4_.png",
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/v/g/vga-gigabyte-geforce-rtx-5070-ti-eagle-oc-16gb_5_.png",
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/v/g/vga-gigabyte-geforce-rtx-5070-ti-eagle-oc-16gb_6_.png",
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/v/g/vga-gigabyte-geforce-rtx-5070-ti-eagle-oc-16gb_7_.png"
+],
+
+      "score": "5.0",
+      "sold": "1,1k",
+      "tags": [
+        "RTX 5070 Ti",
         "Gigabyte"
       ]
     },
     {
-      "id": "gpu-004",
-      "title": "Zotac GAMING GeForce RTX 4080 Trinity 16GB",
-      "price": "32.990.000đ",
-      "oldPrice": "34.990.000đ",
-      "discount": "-6%",
-      "image": "./assets/img/products/gpu4.jpg",
-      "score": "5.0",
-      "sold": "1,1k",
-      "tags": [
-        "RTX 4080",
-        "Zotac"
-      ]
-    },
-    {
-      "id": "gpu-005",
-      "title": "ASUS ROG Strix GeForce RTX 4090 24GB",
-      "price": "55.990.000đ",
-      "oldPrice": "58.990.000đ",
-      "discount": "-5%",
-      "image": "./assets/img/products/gpu5.jpg",
+      "id": "vga-gigabyte-rx6500xt-4gb",
+      "title": "VGA Gigabyte Radeon RX 6500 XT Eagle 4GB GV-R65XTEAGLE-4GD",
+      "price": "3.790.000đ",
+      "oldPrice": "4.390.000đ",
+      "discount": "-14%",
+      "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/g/r/group_839_3_.png",
+      "images": [
+  "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/g/r/group_839_3_.png",
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/v/g/vga-gigabyte-radeon-rx-6500-xt-eagle-4gb-gv-r65xteagle_2_.png?_gl=1*jsxmz7*_gcl_au*MTM5NjMwMTAyOS4xNzU1ODY1ODgx*_ga*MTYxNTgyMDk3Mi4xNzMyODgyMDAx*_ga_QLK8WFHNK9*czE3NTU5NDUzNjMkbzUkZzEkdDE3NTU5NDc1NDYkajIwJGwwJGg1NDMwOTU5NTM.",
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/v/g/vga-gigabyte-radeon-rx-6500-xt-eagle-4gb-gv-r65xteagle_3_.png",
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/v/g/vga-gigabyte-radeon-rx-6500-xt-eagle-4gb-gv-r65xteagle_6_.png",
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/v/g/vga-gigabyte-radeon-rx-6500-xt-eagle-4gb-gv-r65xteagle_4_.png",
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/v/g/vga-gigabyte-radeon-rx-6500-xt-eagle-4gb-gv-r65xteagle_5_.png",
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/v/g/vga-gigabyte-radeon-rx-6500-xt-eagle-4gb-gv-r65xteagle_7_.png"
+],
+
       "score": "5.0",
       "sold": "740",
       "tags": [
-        "RTX 4090",
-        "Flagship"
+        "RX 6500 XT",
+        "4GB"
       ]
     },
     {
-      "id": "gpu-006",
-      "title": "MSI Ventus GeForce RTX 3060 Ti 8GB",
-      "price": "8.490.000đ",
-      "oldPrice": "9.490.000đ",
-      "discount": "-11%",
-      "image": "./assets/img/products/gpu6.jpg",
+      "id": "vga-msi-rtx5070-12gb",
+      "title": "VGA MSI GeForce RTX 5070 12GB VENTUS 2X OC - Chính hãng",
+      "price": "19.690.000đ",
+      "oldPrice": "22.990.000đ",
+      "discount": "-14%",
+      "image": "https://cdn2.cellphones.com.vn/x/media/catalog/product/t/e/text_ng_n_2__10_46.png",
+      "images": [
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/t/e/text_ng_n_2__10_46.png",
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/t/e/text_ng_n_3__8_36.png",
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/t/e/text_ng_n_4__8_37.png",
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/t/e/text_ng_n_5__10_35.png",
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/t/e/text_ng_n_6__5_37.png",
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/t/e/text_ng_n_7__5_32.png",
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/t/e/text_ng_n_8__8_31.png",
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/t/e/text_ng_n_9__9_252.png",
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/t/e/text_ng_n_10__5_249.png",
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/t/e/text_ng_n_11__7_173.png"
+],
+
       "score": "4.7",
       "sold": "4,8k",
       "tags": [
-        "RTX 3060 Ti",
+        "RTX 5070",
         "MSI"
       ]
     },
     {
-      "id": "gpu-007",
-      "title": "Gigabyte Eagle GeForce RTX 3050 8GB",
-      "price": "6.490.000đ",
-      "oldPrice": "6.990.000đ",
-      "discount": "-7%",
-      "image": "./assets/img/products/gpu7.jpg",
+      "id": "vga-gigabyte-rtx4070-12gb",
+      "title": "VGA Gigabyte GeForce RTX 4070 WINDFORCE OC 12G - Chính hãng",
+      "price": "17.490.000đ",
+      "oldPrice": "19.990.000đ",
+      "discount": "-13%",
+      "image": "https://cdn2.cellphones.com.vn/x/media/catalog/product/v/g/vga-gigabyte-rtx4070-windforce-oc-12g-3-fan-n4070wf3oc-12gd_8_.png?_gl=1*iuof9n*_gcl_au*MTM5NjMwMTAyOS4xNzU1ODY1ODgx*_ga*MTYxNTgyMDk3Mi4xNzMyODgyMDAx*_ga_QLK8WFHNK9*czE3NTU5NDUzNjMkbzUkZzEkdDE3NTU5NDgyNTAkajU4JGwwJGg1NDMwOTU5NTM.",
+       "images": [
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/v/g/vga-gigabyte-rtx4070-windforce-oc-12g-3-fan-n4070wf3oc-12gd_8_.png",
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/v/g/vga-gigabyte-rtx4070-windforce-oc-12g-3-fan-n4070wf3oc-12gd_1_.png",
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/v/g/vga-gigabyte-rtx4070-windforce-oc-12g-3-fan-n4070wf3oc-12gd_7_.png",
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/v/g/vga-gigabyte-rtx4070-windforce-oc-12g-3-fan-n4070wf3oc-12gd_6_.png",
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/v/g/vga-gigabyte-rtx4070-windforce-oc-12g-3-fan-n4070wf3oc-12gd_5_.png",
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/v/g/vga-gigabyte-rtx4070-windforce-oc-12g-3-fan-n4070wf3oc-12gd_4_.png",
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/v/g/vga-gigabyte-rtx4070-windforce-oc-12g-3-fan-n4070wf3oc-12gd_2_.png",
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/v/g/vga-gigabyte-rtx4070-windforce-oc-12g-3-fan-n4070wf3oc-12gd_3_.png"
+],
+
       "score": "4.7",
       "sold": "3,2k",
       "tags": [
-        "RTX 3050",
-        "Entry"
+        "RTX 4070",
+        "Gigabyte"
       ]
     },
     {
-      "id": "gpu-008",
-      "title": "ASUS TUF Gaming GeForce RTX 4070 Ti Super 16GB",
-      "price": "25.490.000đ",
-      "oldPrice": "26.990.000đ",
-      "discount": "-6%",
-      "image": "./assets/img/products/gpu8.jpg",
+      "id": "vga-sapphire-rx7700xt-12gb",
+      "title": "VGA Sapphire Radeon RX 7700XT NITRO + Gaming OC 12GB GDDR6",
+      "price": "12.990.000đ",
+      "oldPrice": "13.990.000đ",
+      "discount": "-7%",
+      "image": "https://cdn2.cellphones.com.vn/x/media/catalog/product/v/g/vga-sapphire-radeon-rx-7700xt-nitro-gaming-oc-12gb_6_.png",
+      "images": [
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/v/g/vga-sapphire-radeon-rx-7700xt-nitro-gaming-oc-12gb_6_.png",
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/v/g/vga-sapphire-radeon-rx-7700xt-nitro-gaming-oc-12gb_5_.png",
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/v/g/vga-sapphire-radeon-rx-7700xt-nitro-gaming-oc-12gb_3_.png",
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/v/g/vga-sapphire-radeon-rx-7700xt-nitro-gaming-oc-12gb_4_.png",
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/v/g/vga-sapphire-radeon-rx-7700xt-nitro-gaming-oc-12gb_2_.png"
+],
+
       "score": "4.9",
       "sold": "690",
       "tags": [
-        "RTX 4070 Ti Super",
-        "ASUS"
+        "RX 7700",
+        "Sapphire"
       ]
     },
     {
-      "id": "gpu-009",
-      "title": "Palit GeForce RTX 4060 StormX 8GB",
-      "price": "9.490.000đ",
-      "oldPrice": "9.990.000đ",
+      "id": "vga-asus-rtx5060ti-8gbz",
+      "title": "VGA Asus Dual Geforce RTX 5060 Ti 8GB OC DUAL-RTX5060TI-O8G",
+      "price": "12.390.000đ",
+      "oldPrice": "12.990.000 đ",
       "discount": "-5%",
-      "image": "./assets/img/products/gpu9.jpg",
+      "image": "https://cdn2.cellphones.com.vn/x/media/catalog/product/v/g/vga-asus-dual-geforce-rtx-5060-ti-8gb-oc_1_.png",
+      "images": [
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/v/g/vga-asus-dual-geforce-rtx-5060-ti-8gb-oc_1_.png",
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/v/g/vga-asus-dual-geforce-rtx-5060-ti-8gb-oc_2_.png",
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/v/g/vga-asus-dual-geforce-rtx-5060-ti-8gb-oc_3_.png",
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/v/g/vga-asus-dual-geforce-rtx-5060-ti-8gb-oc_4_.png",
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/v/g/vga-asus-dual-geforce-rtx-5060-ti-8gb-oc_6_.png",
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/v/g/vga-asus-dual-geforce-rtx-5060-ti-8gb-oc_5_.png",
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/v/g/vga-asus-dual-geforce-rtx-5060-ti-8gb-oc_7_.png"
+],
+
       "score": "4.6",
       "sold": "2,6k",
       "tags": [
-        "RTX 4060",
-        "Palit"
+        "RTX 5060",
+        "Dual"
       ]
     },
     {
-      "id": "gpu-010",
-      "title": "NVIDIA Founders Edition GeForce RTX 4090D 24GB",
-      "price": "49.990.000đ",
-      "oldPrice": "53.990.000đ",
+      "id": "vga-asrock-rx6600-8gb",
+      "title": "VGA Asrock AMD Radeon RX 6600 Challenger White 8GB (RX6600 CLW 8G)",
+      "price": "5.690.000đ",
+      "oldPrice": "6.490.000đ",
       "discount": "-7%",
-      "image": "./assets/img/products/gpu10.jpg",
+      "image": "https://cdn2.cellphones.com.vn/x/media/catalog/product/v/g/vga-asrock-amd-radeon-rx-6600-challenger-white-8gb_1_.png",
+      "images": [
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/v/g/vga-asrock-amd-radeon-rx-6600-challenger-white-8gb_1_.png",
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/v/g/vga-asrock-amd-radeon-rx-6600-challenger-white-8gb_2_.png",
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/v/g/vga-asrock-amd-radeon-rx-6600-challenger-white-8gb_3_.png",
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/v/g/vga-asrock-amd-radeon-rx-6600-challenger-white-8gb_4_.png",
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/v/g/vga-asrock-amd-radeon-rx-6600-challenger-white-8gb_6_.png",
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/v/g/vga-asrock-amd-radeon-rx-6600-challenger-white-8gb_5_.png"
+],
+
       "score": "5.0",
       "sold": "310",
       "tags": [
-        "RTX 4090D",
-        "NVIDIA"
+        "RX 6600 ",
+        "Asrock"
       ]
     }
   ],
   "slide12": [
     {
-      "id": "kb-001",
-      "title": "Keychron K2 V2 Wireless RGB",
+      "id": "keyboard-aula-mini-671",
+      "title": "Bàn phím cơ không dây Aula AMG65 đen",
       "price": "2.190.000đ",
-      "oldPrice": "2.490.000đ",
-      "discount": "-12%",
-      "image": "./assets/img/products/kb1.jpg",
+      "oldPrice": "2.590.000đ",
+      "discount": "-15%",
+      "image": "https://cdn2.cellphones.com.vn/x/media/catalog/product/f/r/frame_379_-_2025-08-05t205244.059.png",
+      
+        "images": [
+          "https://cdn2.cellphones.com.vn/x/media/catalog/product/f/r/frame_379_-_2025-08-05t205244.059.png",
+          "https://cdn2.cellphones.com.vn/x/media/catalog/product/f/r/frame_379_-_2025-08-05t205308.478.png",
+          "https://cdn2.cellphones.com.vn/x/media/catalog/product/f/r/frame_379_-_2025-08-05t205326.517.png",
+          "https://cdn2.cellphones.com.vn/x/media/catalog/product/f/r/frame_379_-_2025-08-05t205338.335.png",
+          "https://cdn2.cellphones.com.vn/x/media/catalog/product/f/r/frame_379_-_2025-08-05t205348.066.png",
+          "https://cdn2.cellphones.com.vn/x/media/catalog/product/f/r/frame_379_-_2025-08-05t205416.627.png",
+          "https://cdn2.cellphones.com.vn/x/media/catalog/product/f/r/frame_379_-_2025-08-05t205317.728.png"
+        ],
+      
+      
       "score": "4.9",
       "sold": "3,5k",
+      "tags": [
+        "Jadeite Switch",
+        "RGB"
+      ]
+    },
+    {
+      "id": "keyboard-logitech-tenkeyless-96",
+      "title": "Bàn phím gaming Logitech G915 X Lightspeed",
+      "price": "4.350.000đ",
+      "oldPrice": "5.290.000đ",
+      "discount": "-18%",
+      "image": "https://cdn2.cellphones.com.vn/x/media/catalog/product/b/a/ban-phim-gaming-khong-day-logitech-g915-x-lightspeed-tkl-low-profile_2_.png",
+      "images": [
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/b/a/ban-phim-gaming-khong-day-logitech-g915-x-lightspeed-tkl-low-profile_2_.png",
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/b/a/ban-phim-gaming-khong-day-logitech-g915-x-lightspeed-tkl-low-profile_3_.png",
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/b/a/ban-phim-gaming-khong-day-logitech-g915-x-lightspeed-tkl-low-profile_4_.png",
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/b/a/ban-phim-gaming-khong-day-logitech-g915-x-lightspeed-tkl-low-profile_5_.png",
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/b/a/ban-phim-gaming-khong-day-logitech-g915-x-lightspeed-tkl-low-profile_6_.png",
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/b/a/ban-phim-gaming-khong-day-logitech-g915-x-lightspeed-tkl-low-profile_7_.png",
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/f/r/frame_379_-_2025-05-23t110638.531.png",
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/f/r/frame_379_-_2025-05-23t110646.392.png",
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/f/r/frame_379_-_2025-05-23t110657.882.png"
+  
+]
+,
+      "score": "4.8",
+      "sold": "2,9k",
       "tags": [
         "Wireless",
         "RGB"
       ]
     },
     {
-      "id": "kb-002",
-      "title": "Akko 3068B Plus Mechanical Keyboard",
-      "price": "1.790.000đ",
-      "oldPrice": "1.990.000đ",
-      "discount": "-10%",
-      "image": "./assets/img/products/kb2.jpg",
-      "score": "4.8",
-      "sold": "2,9k",
-      "tags": [
-        "Compact",
-        "Akko"
-      ]
-    },
-    {
-      "id": "kb-003",
-      "title": "Logitech G Pro X TKL Gaming",
-      "price": "2.990.000đ",
-      "oldPrice": "3.290.000đ",
-      "discount": "-9%",
-      "image": "./assets/img/products/kb3.jpg",
+      "id": "keyboard-acer-tenkeyless-80",
+      "title": "Bàn Phím Cơ Gaming Predator Aethon TKL 301",
+      "price": "990.000đ",
+      "oldPrice": "1.290.000đ",
+      "discount": "-23%",
+      "image": "https://cdn2.cellphones.com.vn/x/media/catalog/product/b/a/ban_ph_m.png",
+      "images": [
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/b/a/ban_ph_m.png",
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/s/c/scajbcl.png",
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/a/o/aoos4.png",
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/n/f/nffbfh.png",
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/f/r/frame_379_-_2025-05-26t150837.574.png",
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/f/r/frame_379_-_2025-05-26t150849.105.png",
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/f/r/frame_379_-_2025-05-26t150856.095.png"
+],
+
       "score": "4.9",
       "sold": "4,2k",
       "tags": [
         "Gaming",
-        "Logitech"
+        "RGB"
       ]
     },
     {
-      "id": "kb-004",
-      "title": "Razer Huntsman Mini 60% RGB",
-      "price": "2.490.000đ",
-      "oldPrice": "2.790.000đ",
-      "discount": "-11%",
-      "image": "./assets/img/products/kb4.jpg",
+      "id": "keyboard-aula-mini-67",
+      "title": "Bàn phím cơ không dây Aula AMG65 trắng hồng",
+      "price": "2.190.000đ",
+      "oldPrice": "2.590.000đ",
+      "discount": "-15%",
+      "image": "https://cdn2.cellphones.com.vn/x/media/catalog/product/f/r/frame_379_-_2025-08-05t211018.105.png",
+      "images": [
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/f/r/frame_379_-_2025-08-05t211018.105.png",
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/f/r/frame_379_-_2025-08-05t211035.557.png",
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/f/r/frame_379_-_2025-08-05t211055.606.png",
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/f/r/frame_379_-_2025-08-05t211115.321.png",
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/f/r/frame_379_-_2025-08-05t211141.548.png",
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/f/r/frame_379_-_2025-08-05t205308.478_1_1.png",
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/f/r/frame_379_-_2025-08-05t205326.517_1_1.png",
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/f/r/frame_379_-_2025-08-05t205338.335_1_1.png",
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/f/r/frame_379_-_2025-08-05t205317.728_1_1.png"
+],
+
       "score": "4.8",
       "sold": "3,1k",
       "tags": [
-        "60%",
-        "Razer"
+        "Aula",
+        "RGB"
       ]
     },
     {
-      "id": "kb-005",
-      "title": "Corsair K95 RGB Platinum XT",
-      "price": "4.990.000đ",
-      "oldPrice": "5.490.000đ",
-      "discount": "-9%",
-      "image": "./assets/img/products/kb5.jpg",
+      "id": "keyboard-corsair-104",
+      "title": "Bàn phím Gaming Corsair K70 Pro Rgb Blue Switch ",
+      "price": "3.390.000đ",
+      "oldPrice": "4.190.000đ",
+      "discount": "-19%",
+      "image": "https://cdn2.cellphones.com.vn/x/media/catalog/product/b/a/ban-phim-gaming-corsair-k70-pro-rgb-red-switch_2__2.png?_gl=1*k2b9ld*_gcl_au*MTM5NjMwMTAyOS4xNzU1ODY1ODgx*_ga*MTYxNTgyMDk3Mi4xNzMyODgyMDAx*_ga_QLK8WFHNK9*czE3NTU5NjEzNTIkbzYkZzEkdDE3NTU5NjUzNTQkajI3JGwwJGgxNTYzNzI2Njk2",
+      "images": [
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/b/a/ban-phim-gaming-corsair-k70-pro-rgb-red-switch_2__2.png",
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/b/a/ban-phim-gaming-corsair-k70-pro-rgb-red-switch_3__2.png",
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/b/a/ban-phim-gaming-corsair-k70-pro-rgb-red-switch_4__2.png",
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/b/a/ban-phim-gaming-corsair-k70-pro-rgb-red-switch_5__2.png"
+]
+,
       "score": "5.0",
       "sold": "1,8k",
       "tags": [
@@ -1411,86 +1586,132 @@
       ]
     },
     {
-      "id": "kb-006",
-      "title": "Ducky One 2 Mini RGB 60%",
-      "price": "2.190.000đ",
-      "oldPrice": "2.490.000đ",
-      "discount": "-12%",
-      "image": "./assets/img/products/kb6.jpg",
+      "id": "keyboard-corsair-81",
+      "title": "Bàn phím Gaming Corsair K65 WL-CSR RED ",
+      "price": "3.590.000đ",
+      "oldPrice": "4.390.000đđ",
+      "discount": "-18%",
+      "image": "https://cdn2.cellphones.com.vn/x/media/catalog/product/b/a/ban-phim-gaming-khong-day-corsair-k65-wl-csr-red-blk-gld_2_.png",
+      "images": [
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/b/a/ban-phim-gaming-khong-day-corsair-k65-wl-csr-red-blk-gld_2_.png",
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/b/a/ban-phim-gaming-khong-day-corsair-k65-wl-csr-red-blk-gld_3_.png",
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/b/a/ban-phim-gaming-khong-day-corsair-k65-wl-csr-red-blk-gld_5_.png",
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/b/a/ban-phim-gaming-khong-day-corsair-k65-wl-csr-red-blk-gld_6_.png"
+]
+,
       "score": "4.9",
       "sold": "2,4k",
       "tags": [
-        "60%",
-        "Ducky"
+        "Gaming",
+        "RED Switch"
       ]
     },
     {
-      "id": "kb-007",
-      "title": "SteelSeries Apex Pro TKL OmniPoint",
-      "price": "4.490.000đ",
-      "oldPrice": "4.990.000đ",
-      "discount": "-10%",
-      "image": "./assets/img/products/kb7.jpg",
+      "id": "keyboard-asus-rog-azoth-extreme",
+      "title": "Bàn phím cơ ASUS ROG Azoth Extreme",
+      "price": "12.899.000 đ",
+      "oldPrice": "16.999.000đ",
+      "discount": "-25%",
+      "image": "https://gland.vn/media/product/16309_85734_ban_phim_co_gaming_khong_day_asus_rog_azoth_extreme_rog_nx_snow_switch_1.jpg",
+      "images": [
+  "https://gland.vn/media/product/16309_85734_ban_phim_co_gaming_khong_day_asus_rog_azoth_extreme_rog_nx_snow_switch_1.jpg",
+  "https://gland.vn/media/product/16309_85734_ban_phim_co_gaming_khong_day_asus_rog_azoth_extreme_rog_nx_snow_switch_2.jpg",
+  "https://gland.vn/media/product/16309_85734_ban_phim_co_gaming_khong_day_asus_rog_azoth_extreme_rog_nx_snow_switch_7.jpg"
+  
+]
+,
       "score": "5.0",
       "sold": "2,1k",
       "tags": [
-        "Gaming",
-        "SteelSeries"
+        "ROG",
+        "Snow Switch"
       ]
     },
     {
-      "id": "kb-008",
-      "title": "Leopold FC660M PD Mechanical",
-      "price": "3.290.000đ",
-      "oldPrice": "3.590.000đ",
-      "discount": "-8%",
-      "image": "./assets/img/products/kb8.jpg",
+      "id": "keyboard-logitech-60",
+      "title": "Bàn phím cơ Logitech Pro X 60 Lightspeed Wireless",
+      "price": "3.589.000 đ  ",
+      "oldPrice": "4.699.000đ",
+      "discount": "-24%",
+      "image": "https://gland.vn/media/product/15548_82686_ban_phim_co_logitech_pro_x_60_lightspeed_wireless_black_1.jpg",
+      "images": [
+  "https://gland.vn/media/product/15548_82686_ban_phim_co_logitech_pro_x_60_lightspeed_wireless_black_1.jpg",
+  "https://gland.vn/media/product/15548_82686_ban_phim_co_logitech_pro_x_60_lightspeed_wireless_black_5.jpg",
+  "https://gland.vn/media/product/15548_82686_ban_phim_co_logitech_pro_x_60_lightspeed_wireless_black_4.jpg"
+]
+,
       "score": "4.9",
       "sold": "1,6k",
       "tags": [
-        "Compact",
-        "Leopold"
+        "Wireless",
+        "RGB"
       ]
     },
     {
-      "id": "kb-009",
-      "title": "HyperX Alloy Origins Core",
-      "price": "1.890.000đ",
-      "oldPrice": "2.090.000đ",
-      "discount": "-9%",
-      "image": "./assets/img/products/kb9.jpg",
+      "id": "keyboard-asus-rog-65-68",
+      "title": "Bàn phím cơ Asus ROG FALCHION RX LP RED ",
+      "price": "3.699.000 đ ",
+      "oldPrice": "4.199.000đ",
+      "discount": "-12%",
+      "image": "https://gland.vn/media/product/15551_80947_rog_falchion_rx_low_profile_rd_01.jpg",
+      "images": [
+  "https://gland.vn/media/product/15551_80947_rog_falchion_rx_low_profile_rd_01.jpg",
+  "https://gland.vn/media/product/15551_80947_rog_falchion_rx_low_profile_rd_08.jpg",
+  "https://gland.vn/media/product/15551_80947_rog_falchion_rx_low_profile_rd_06.jpg"
+]
+,
       "score": "4.8",
       "sold": "3,9k",
       "tags": [
-        "Gaming",
-        "HyperX"
+        "ROG",
+        "65%"
       ]
     },
     {
-      "id": "kb-010",
-      "title": "Asus ROG Strix Scope RX",
-      "price": "2.690.000đ",
-      "oldPrice": "2.990.000đ",
-      "discount": "-10%",
-      "image": "./assets/img/products/kb10.jpg",
+      "id": "keyboard-logitech-tenkeyless-87",
+      "title": "Bàn phím gaming không dây Logitech G715 ",
+      "price": "3.790.000đ",
+      "oldPrice": "4.290.000đ",
+      "discount": "-12%",
+      "image": "https://cdn2.cellphones.com.vn/x/media/catalog/product/b/a/ban-phim-gaming-khong-day-logitech-g715-tkl-lightspeed-rgb-tactile_2__2.png",
+      "images": [
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/b/a/ban-phim-gaming-khong-day-logitech-g715-tkl-lightspeed-rgb-tactile_2__2.png",
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/b/a/ban-phim-gaming-khong-day-logitech-g715-tkl-lightspeed-rgb-tactile_3__2.png",
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/b/a/ban-phim-gaming-khong-day-logitech-g715-tkl-lightspeed-rgb-tactile_4__2.png",
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/b/a/ban-phim-gaming-khong-day-logitech-g715-tkl-lightspeed-rgb-tactile_5__2.png",
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/b/a/ban-phim-gaming-khong-day-logitech-g715-tkl-lightspeed-rgb-tactile_6__2.png",
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/f/r/frame_379_-_2025-05-23t113021.905_1.png",
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/f/r/frame_379_-_2025-05-23t113052.505_1.png"
+]
+,
       "score": "4.9",
       "sold": "2,7k",
       "tags": [
-        "ROG",
-        "Gaming"
+        "Tenkeyless",
+        "RGB"
       ]
     },{
-      "id": "kb-010",
-      "title": "Asus ROG Strix Scope RX",
-      "price": "2.690.000đ",
-      "oldPrice": "2.990.000đ",
-      "discount": "-10%",
-      "image": "./assets/img/products/kb10.jpg",
+      "id": "keyboard-akko-tenkeyless-87",
+      "title": "Bàn phím cơ Akko 3087 RF One Piece Luffy",
+      "price": "1.490.000đ",
+      "oldPrice": "1.699.000đ",
+      "discount": "-12%",
+      "image": "https://cdn2.cellphones.com.vn/x/media/catalog/product/b/a/ban-phim-co-akko-3087-rf-one-piece-luffy-cream.png",
+      "images": [
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/b/a/ban-phim-co-akko-3087-rf-one-piece-luffy-cream.png",
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/b/a/ban-phim-co-akko-3087-rf-one-piece-luffy-cream_3_.png",
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/b/a/ban-phim-co-akko-3087-rf-one-piece-luffy-cream_1_.png",
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/b/a/ban-phim-co-akko-3087-rf-one-piece-luffy-cream_2_.png",
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/f/r/frame_379_-_2025-05-25t152631.032.png",
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/f/r/frame_379_-_2025-05-25t152623.614.png",
+  "https://cdn2.cellphones.com.vn/x/media/catalog/product/f/r/frame_379_-_2025-05-25t152640.429.png"
+]
+,
       "score": "4.9",
       "sold": "2,7k",
       "tags": [
-        "ROG",
-        "Gaming"
+        "Custom",
+        "Akko"
       ]
     }
   ]
