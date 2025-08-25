@@ -138,5 +138,34 @@
   window.renderMiniCart = renderMiniCart;
   window.moneyVND = moneyVND;
   window.toNumberVND = toNumberVND;
+  if (!window.__buyNowBound) {
+    window.__buyNowBound = true;
+
+    document.addEventListener('click', function (e) {
+      const buyBtn = e.target.closest('.btn--primary-red.prod-info__buy');
+      if (!buyBtn) return;
+      e.preventDefault();
+
+      const name = (document.getElementById('prod-title')?.textContent || '').trim() || 'Sản phẩm';
+      const priceText =
+        document.getElementById('total-price')?.textContent ||
+        document.getElementById('price')?.textContent || '0';
+      const price = toNumberVND(priceText); 
+      const qty = parseInt(document.getElementById('detailQty')?.value, 10) || 1;
+      const img = document.querySelector('.prod-preview__list img, .prod-preview img')?.src || '';
+
+      const id = new URLSearchParams(location.search).get('id') ||
+        document.querySelector('[data-product-id]')?.dataset.productId ||
+        name;
+
+      cartStore.add({ id, name, price, img, qty });
+      renderMiniCart();
+
+      const goto = buyBtn.dataset.goto;
+      if (goto === 'checkout') location.href = './checkout.html';
+      else if (goto === 'cart') location.href = './cart.html';
+      else document.getElementById('miniCart')?.classList.add('is-open'); 
+    });
+  }
 
 })();
