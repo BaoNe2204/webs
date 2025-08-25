@@ -2820,20 +2820,20 @@ html {
 
 @media (max-width: 1600px) {
   :root {
-    --ad-w: 160px;
-    --ad-top: 180px;
+    --ad-w: 140px;
+    --ad-top: 190px;
   }
 }
 @media (max-width: 1440px) {
   :root {
-    --ad-w: 130px;
-    --ad-top: 160px;
+    --ad-w: 120px;
+    --ad-top: 170px;
   }
 }
 @media (max-width: 1280px) {
   :root {
-    --ad-w: 110px;
-    --ad-top: 140px;
+    --ad-w: 100px;
+    --ad-top: 1500px;
     --ad-safe-gap: 12px;
   }
 }
