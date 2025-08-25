@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Grocery Mart</title>
+        <title>Shark Tank</title>
 
         <!-- Favicon -->
         <link rel="apple-touch-icon" sizes="76x76"
@@ -58,6 +58,7 @@
         <script>
             load("#header", "./templates/header.html");
         </script>
+        <div id="ad-sentinel"></div>
 
         <!-- MAIN -->
         <main class="container home">
@@ -65,29 +66,76 @@
 
             <div class="home__container">
                 <div class="slideshow">
-                    <div class="slideshow__inner">
-                        <div id="my-slider">
-                            <div class="slide-1">
-                                <img src="./assets/img/slide/slide1.jpg" alt>
+                    <section class="promo-grid">
+                        <!-- Hàng trên -->
+                        <div class="promo-grid__top">
+                            <div class="promo-grid__big">
+                                <div id="my-slider">
+                                    <div class="slide-1">
+                                        <a href><img
+                                                src="https://file.hstatic.net/200000722513/file/gearvn-laptop-van-phong-slider-t8-fix.png"
+                                                alt></a>
+                                    </div>
+                                    <div class="slide-2">
+                                        <a href><img
+                                                src="https://file.hstatic.net/200000722513/file/man_hinh_thang_04_banner_web_slider_800x400.jpg"
+                                                alt></a>
+                                    </div>
+                                    <div class="slide-3">
+                                        <a href><img
+                                                src="https://file.hstatic.net/200000722513/file/gearvn-back-to-school-25-slider.png"
+                                                alt></a>
+                                    </div>
+                                    <div class="slide-4">
+                                        <a href><img
+                                                src="https://file.hstatic.net/200000722513/file/gearvn-asus-sat-canh-nhe-ganh-hoc-choi-slider.jpg"
+                                                alt></a>
+                                    </div>
+                                    <div class="slide-5">
+                                        <a href><img
+                                                src="https://file.hstatic.net/200000722513/file/gearvn-acer-back-to-school-2025-slider.jpg"
+                                                alt></a>
+                                    </div>
+                                    <div class="slide-6">
+                                        <a href><img
+                                                src="https://file.hstatic.net/200000722513/file/gearvn-man-hinh-sub-t8.png"
+                                                alt></a>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="slide-2">
-                                <img src="./assets/img/slide/slide2.jpg" alt>
-                            </div>
-                            <div class="slide-3">
-                                <img src="./assets/img/slide/slide3.jpg" alt>
-                            </div>
-                            <div class="slide-4">
-                                <img src="./assets/img/slide/slide4.jpg" alt>
-                            </div>
-                            <div class="slide-5">
-                                <img src="./assets/img/slide/slide5.jpg" alt>
-                            </div>
-                            <div class="slide-6">
-                                <img src="./assets/img/slide/slide6.jpg" alt>
+                            <div class="promo-grid__side">
+                                <div class="promo-grid__item">
+                                    <a href><img
+                                            src="https://file.hstatic.net/200000722513/file/gearvn-build-pc-slider-right-t8.png"
+                                            alt></a>
+                                </div>
+                                <div class="promo-grid__item">
+                                    <a href> <img
+                                            src="https://file.hstatic.net/200000722513/file/gearvn-ban-phim-slider-right-t8.png"
+                                            alt></a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="slideshow__footer"></div>
+
+                        <!-- Hàng dưới -->
+                        <div class="promo-grid__bottom">
+                            <div class="promo-grid__item">
+                                <a href> <img
+                                        src="https://file.hstatic.net/200000722513/file/gearvn-laptop-van-phong-slider-bot-t8.png"
+                                        alt></a>
+                            </div>
+                            <div class="promo-grid__item">
+                                <a href><img
+                                        src="https://file.hstatic.net/200000722513/file/gearvn-laptop-gaming-slider-bot-t8.png"
+                                        alt></a>
+                            </div>
+                            <div class="promo-grid__item">
+                                <a href><img
+                                        src="https://file.hstatic.net/200000722513/file/gearvn-pc-intel-slider-bot-t8.png"
+                                        alt></a>
+                            </div>
+                        </div>
+                    </section>
                 </div>
             </div>
             <div class="home__container">
@@ -143,8 +191,21 @@
                     </div>
                 </div>
                 <div class="flashsales">
+                    <!-- FLASH SALE COUNTDOWN -->
+
                     <div class="flashsales__row">
                         <div class="flashsales-wrap">
+                            <div class="flashsale-countdown">
+                                <span class="flashsale-title">FLASH
+                                    <span>SALE</span></span>
+                                <span class="flashsale-text">Kết thúc
+                                    trong</span>
+                                <div id="countdown">
+                                    <span id="hours">00</span> :
+                                    <span id="minutes">00</span> :
+                                    <span id="seconds">00</span>
+                                </div>
+                            </div>
                             <div class="sample-3">
                                 <div class="tabzy-wrapper">
                                     <ul id="sliding-tabs"
@@ -340,6 +401,12 @@
                 </section>
 
             </div>
+            <a class="side-ad side-ad--left" href="#"><img
+                    src="https://file.hstatic.net/200000722513/file/gearvn-pc-gvn-t8-sticky-banner.jpg"
+                    alt></a>
+            <a class="side-ad side-ad--right" href="#"><img
+                    src="https://file.hstatic.net/200000722513/file/gearvn-back-to-school-25-sticky.png"
+                    alt></a>
         </main>
 
         <!-- Footer -->
@@ -348,7 +415,6 @@
             load("#footer", "./templates/footer.html");
         </script>
 
-        <script src="./assets/highlight/highlight.js"></script>
         <script src="./assets/js/tabzy.min.js"></script>
         <script src="./assets/js/slidezy.js"></script>
         <script src="./assets/js/my-slider.js"></script>

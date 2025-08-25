@@ -4,7 +4,6 @@
   const toNumberVND = (s) => parseInt(String(s || '').replace(/[^\d]/g, ''), 10) || 0;
   const moneyVND = (n) => (n || 0).toLocaleString('vi-VN', { style: 'currency', currency: 'VND' });
 
-  // Store giỏ hàng (dùng chung)
   const CART_KEY = 'cart';
   const cartStore = {
     get() { try { return JSON.parse(localStorage.getItem(CART_KEY)) || []; } catch { return []; } },
@@ -30,7 +29,6 @@
     subtotal() { return this.get().reduce((s, x) => s + x.price * x.qty, 0); }
   };
 
-  // Mini cart render (nếu trang có phần mini cart trên header)
   const TAX_RATE = 0;
   const SHIPPING_FLAT = 0;
 
@@ -91,7 +89,6 @@
     `).join('');
   }
 
-  // Lắng nghe “Thêm vào giỏ” từ card sản phẩm (trang list)
   document.addEventListener('click', (e) => {
     const addBtn = e.target.closest('.btn-add-cart');
     if (!addBtn) return;
@@ -109,7 +106,6 @@
     renderMiniCart();
   });
 
-  // Dropdown mini-cart
   const toggleBtn = document.getElementById('cartToggle');
   const miniCart = document.getElementById('miniCart');
 
@@ -138,7 +134,6 @@
 
   document.addEventListener('DOMContentLoaded', renderMiniCart);
 
-  // Global để trang khác dùng
   window.cartStore = cartStore;
   window.renderMiniCart = renderMiniCart;
   window.moneyVND = moneyVND;

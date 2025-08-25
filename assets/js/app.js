@@ -217,11 +217,10 @@ document.addEventListener('click', (e) => {
     return;
   }
 
-  // Nút giảm / tăng
   const decBtn = e.target.closest('.btn-qty.dec');
   const incBtn = e.target.closest('.btn-qty.inc');
   if (decBtn || incBtn) {
-    e.stopPropagation(); // để không đóng dropdown
+    e.stopPropagation(); 
     const id = (decBtn?.dataset.id || incBtn?.dataset.id || '').trim();
     if (!id) return;
     cartStore.update(id, decBtn ? -1 : +1);
@@ -246,7 +245,6 @@ document.addEventListener('click', (e) => {
 const toggleBtn = document.getElementById('cartToggle');
 const miniCart = document.getElementById('miniCart');
 
-// Cho phép qty về 0 thì xóa
 cartStore.update = function (id, delta) {
   const c = this.get();
   const i = c.findIndex(x => x.id === id);
@@ -257,9 +255,7 @@ cartStore.update = function (id, delta) {
   this.set(c);
 };
 
-// Lắng nghe click ngay trên dropdown để chắc chắn bắt được nút
 miniCart?.addEventListener('click', (e) => {
-  // không cho click trong dropdown làm đóng bảng
   e.stopPropagation();
 
   const btn = e.target.closest('[data-action]');
@@ -280,14 +276,12 @@ miniCart?.addEventListener('click', (e) => {
   renderMiniCart();
 });
 
-// (tùy chọn) xử lý trên thiết bị cảm ứng mượt hơn
 miniCart?.addEventListener('pointerdown', (e) => {
   const btn = e.target.closest('[data-action]');
   if (btn) e.stopPropagation();
 });
 
-// CSS cần có:
-// #miniCart{display:none}  #miniCart.is-open{display:block}
+
 
 toggleBtn?.addEventListener('click', (e) => {
   e.stopPropagation();
@@ -302,3 +296,23 @@ document.addEventListener('DOMContentLoaded', () => {
   renderMiniCart();
 });
 
+let countDownDate = new Date().getTime() + (6 * 60 * 60 * 1000);
+
+let timer = setInterval(function () {
+  let now = new Date().getTime();
+  let distance = countDownDate - now;
+
+  if (distance < 0) {
+    clearInterval(timer);
+    document.getElementById("countdown").innerHTML = "Đã kết thúc";
+    return;
+  }
+
+  let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  let seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  document.getElementById("hours").innerHTML = String(hours).padStart(2, '0');
+  document.getElementById("minutes").innerHTML = String(minutes).padStart(2, '0');
+  document.getElementById("seconds").innerHTML = String(seconds).padStart(2, '0');
+}, 1000);

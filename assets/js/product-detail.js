@@ -8,7 +8,6 @@
     (n || 0).toLocaleString("vi-VN", { style: "currency", currency: "VND" });
   const TAX_RATE = 0.10;
 
-  // Chuẩn hoá phần trăm -> số thập phân (5%|"-5%"|5|0.05 -> 0.05|-0.05)
   const parsePercent = (v) => {
     if (v == null) return 0;
     if (typeof v === "number") return v > 1 ? v / 100 : v;
@@ -101,9 +100,7 @@
     });
   }
   // ===== Helpers chung =====
-  // (giữ nguyên $ , toNumber , moneyVND , TAX_RATE , parsePercent , slugify ...)
 
-  // Thêm HÀM NÀY vào trong IIFE, phía trên "===== Main ====="
   (function () {
     // Helpers
     const toNumber = (v) => parseInt(String(v || "").replace(/[^\d]/g, ""), 10) || 0;
@@ -147,10 +144,8 @@
       });
     }
 
-    // Chạy khi DOM sẵn sàng
     document.addEventListener("DOMContentLoaded", updateInstallmentButtons);
 
-    // Nếu giá được cập nhật động sau khi fetch, theo dõi thay đổi text để cập nhật lại
     const priceTargets = [
       ".prod-info__total-price",
       "#total-price",
@@ -163,13 +158,11 @@
       mo.observe(targetEl, { childList: true, characterData: true, subtree: true });
     }
 
-    // Cho phép nơi khác gọi lại khi bạn thay giá thủ công
     window.updateInstallmentButtons = updateInstallmentButtons;
   })();
 
   // ===== Main =====
   document.addEventListener("DOMContentLoaded", async () => {
-    // Lấy pid từ URL (fallback lastProductId)
     const params = new URLSearchParams(location.search);
     let pid = params.get("id") || localStorage.getItem("lastProductId");
     if (!pid) {
@@ -183,12 +176,11 @@
     const listBig = $(".prod-preview__list");
     const listThumb = $(".prod-preview__thumbs");
     const titleEl = $(".prod-info__heading");
-    const totalEl = $(".prod-info__price");        // Tổng sau thuế
-    const taxEl = $(".prod-info__tax");          // % Thuế
-    const priceEl = $(".prod-info__total-price");  // Giá sau giảm (trước thuế)
+    const totalEl = $(".prod-info__price");        
+    const taxEl = $(".prod-info__tax");         
+    const priceEl = $(".prod-info__total-price");  
     const addBtn = $(".prod-info__add-to-cart");
 
-    // Lấy dữ liệu sản phẩm
     let data;
     try {
       data = await fetch("./products.json").then((r) => r.json());
@@ -252,7 +244,6 @@
     const hasValidOld = rawOldPrice && rawOldPrice > rawPrice;
 
 
-    // Thuế: ưu tiên prod.tax nếu có, fallback TAX_RATE
     const taxRate = (typeof prod.tax === "number") ? prod.tax : TAX_RATE;
 
     let priceAfterDiscount;
@@ -265,14 +256,13 @@
       if (p) {
         percentDisplay = `${Math.round(p * 100)}%`;
       } else {
-        const rate = (rawPrice && rawOldPrice) ? (rawPrice / rawOldPrice - 1) : 0; // âm
+        const rate = (rawPrice && rawOldPrice) ? (rawPrice / rawOldPrice - 1) : 0; 
         percentDisplay = rate ? `${Math.round(rate * 100)}%` : "";
       }
     } else {
-      let discountRate = parsePercent(prod.discount); // ví dụ "10%" -> 0.1
-      if (discountRate > 0) discountRate = -Math.abs(discountRate); // ép thành số âm để giảm
+      let discountRate = parsePercent(prod.discount); 
+      if (discountRate > 0) discountRate = -Math.abs(discountRate); 
 
-      // Nếu không có discount thì giữ nguyên rawPrice
       if (discountRate) {
         priceAfterDiscount = Math.max(0, Math.round(rawPrice * (1 + discountRate)));
         percentDisplay = `${Math.round(discountRate * 100)}%`;
@@ -288,11 +278,10 @@
 
     // Gán UI
     titleEl && (titleEl.textContent = prod.title);
-    priceEl && (priceEl.textContent = moneyVND(priceAfterDiscount)); // trước thuế
+    priceEl && (priceEl.textContent = moneyVND(priceAfterDiscount));
     taxEl && (taxEl.textContent = `${Math.round(taxRate * 100)}%`);
     totalEl && (totalEl.textContent = hasValidOld ? moneyVND(rawOldPrice) : "");
 
-    // Badge % giảm (tự chèn nếu chưa có)
     let discountEl = $(".prod-info__tax");
     if (!discountEl && taxEl) {
       discountEl = document.createElement("span");
@@ -301,7 +290,7 @@
     }
     if (discountEl) {
       if (percentDisplay) {
-        discountEl.textContent = percentDisplay;   // ví dụ "-10%"
+        discountEl.textContent = percentDisplay;   
         discountEl.classList.remove("pd-hide");
       } else {
         discountEl.textContent = "";
@@ -314,7 +303,6 @@
     addBtn?.addEventListener("click", (e) => {
       e.preventDefault();
 
-      // Lấy số lượng từ input, ràng buộc tối thiểu 1
       const qtyInput = document.getElementById("detailQty");
       let qty = parseInt(qtyInput?.value, 10);
       if (!Number.isFinite(qty) || qty < 1) qty = 1;
@@ -322,20 +310,17 @@
       window.cartStore?.add({
         id: prod._id,
         name: prod.title,
-        price: priceAfterDiscount,          // giá đã giảm (trước thuế)
+        price: priceAfterDiscount,         
         img: prod.image || gallery[0],
-        qty,                                 // <-- dùng số lượng người dùng chọn
+        qty,                                 
       });
 
-      // Cập nhật mini cart
       window.renderMiniCart?.();
     });
 
-    // Render Thông số & Mô tả
     await renderSpecsForProduct(prod, pid);
     await renderDescription(prod.id || pid);
 
-    // Toggle ưu đãi
     bindOfferToggleOnce();
   });
 })();
@@ -354,7 +339,6 @@ document.addEventListener("click", (e) => {
   input.value = String(current);
 });
 
-// Chặn ký tự ngoài số & bỏ 0 đầu
 const qtyInput = document.getElementById("detailQty");
 qtyInput?.addEventListener("input", () => {
   const cleaned = (qtyInput.value.match(/\d+/g) || ["1"]).join("");
@@ -383,7 +367,6 @@ updateInstallmentButtons();
     const viewsEl = $("#metaViews");
     const soldEl = $("#metaSold");
 
-    // Rating
     let score = 0;
     if (prod.score) {
       const s = String(prod.score).replace(",", ".").match(/[\d.]+/);
@@ -391,15 +374,12 @@ updateInstallmentButtons();
     }
     if (rateEl) rateEl.textContent = score.toFixed(1).replace(".0", "");
 
-    // Comments (default 0)
     if (cmtEl) cmtEl.textContent = prod.commentsCount ? String(prod.commentsCount) : "0";
 
-    // Views
     const viewKey = "pv_" + (prod.id || pid || slugify(prod.title || ""));
     const views = bumpViews(viewKey);
     if (viewsEl) viewsEl.textContent = views.toLocaleString("vi-VN");
 
-    // Sold
     if (soldEl) soldEl.textContent = prod.sold ? String(prod.sold) : "0";
   }
 

@@ -42,7 +42,7 @@ $gutters: (
 
 .container {
     @extend .container-fluid;
-    width: 1370px;
+    max-width: 1280px;
 }
 
 .row {
@@ -52,7 +52,7 @@ $gutters: (
     margin-left: calc(var(--grid-gutter-x) * 0.5 * -1);
     margin-right: calc(var(--grid-gutter-x) * 0.5 * -1);
 
-    > * {
+    >* {
         margin-top: var(--grid-gutter-y);
         @extend %gutter-padding;
     }
@@ -70,7 +70,7 @@ $gutters: (
 
 @mixin make-row-columns($infix: null) {
     @for $i from 1 through $grid-columns * 0.5 {
-        .row-cols#{$infix}-#{$i} > * {
+        .row-cols#{$infix}-#{$i}>* {
             flex: 0 0 auto;
             width: math.div(100%, $i);
         }
@@ -96,6 +96,7 @@ $gutters: (
 
 @mixin make-gutters($infix: null) {
     @each $i, $ratio in $gutters {
+
         .g#{$infix}-#{$i},
         .gx#{$infix}-#{$i} {
             --grid-gutter-x: #{$grid-gutter-width * $ratio};
