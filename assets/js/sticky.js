@@ -125,3 +125,39 @@
 
   document.addEventListener('DOMContentLoaded', applyBase);
 })();
+
+(function(){
+  const ads = document.querySelectorAll('.side-ad');
+  const footer = document.getElementById('footer');
+  if (!ads.length || !footer) return;
+
+  const SAFE = parseInt(getComputedStyle(document.documentElement)
+                 .getPropertyValue('--ad-safe-gap') || '16', 10);
+
+  let ticking = false;
+  function clampToFooter(){
+    const overlap = Math.ceil(window.innerHeight - footer.getBoundingClientRect().top);
+    ads.forEach(ad=>{
+      if (overlap > 0){
+        ad.classList.add('side-ad--clamped');
+        ad.style.bottom = (overlap + SAFE) + 'px';
+        ad.style.top = 'auto';    
+      } else {
+        ad.classList.remove('side-ad--clamped');
+        ad.style.bottom = '';
+        ad.style.top = '';       
+      }
+    });
+  }
+
+  function onScroll(){
+    if (ticking) return;
+    ticking = true;
+    requestAnimationFrame(()=>{ clampToFooter(); ticking = false; });
+  }
+
+  window.addEventListener('scroll', onScroll, {passive:true});
+  window.addEventListener('resize', onScroll);
+  window.addEventListener('load', onScroll);
+  clampToFooter();
+})();

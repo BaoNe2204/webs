@@ -6,15 +6,14 @@ function formatDate(date) {
   return `${days[date.getDay()]}, ngày ${date.getDate()} tháng ${date.getMonth() + 1} năm ${date.getFullYear()}`;
 }
 
-const today = new Date();       // Ngày hiện tại
-const after2 = new Date();      // Ngày sau 2 ngày
+const today = new Date();       
+const after2 = new Date();     
 after2.setDate(today.getDate() + 2);
 
 const text = `1. Vận chuyển, đến vào khoảng thời gian từ ${formatDate(today)} đến ${formatDate(after2)} (tối)`;
 
 document.querySelector(".cart-info__heading").innerText = text;
 (function initShipping() {
-  // chạy an toàn dù DOM đã sẵn sàng
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', initShipping, { once: true });
     return;
@@ -22,7 +21,7 @@ document.querySelector(".cart-info__heading").innerText = text;
 
   // ===== Cấu hình
   const CART_KEY = 'cart';
-  const SHIPPING_FLAT = 0; // VND: đổi thành 10000 nếu cần phí ship cố định
+  const SHIPPING_FLAT = 0; 
 
   // ===== Helpers
   const moneyVND = (n) => (n || 0).toLocaleString('vi-VN', { style: 'currency', currency: 'VND' });

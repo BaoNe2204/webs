@@ -4,10 +4,8 @@
     --primary: #1ca595;
 }
 
-/* Flashsales */
 .flashsales {
     width: 100%;
-    height: 500px;
 }
 
 /* Tabzy Wrapper */
@@ -47,7 +45,7 @@
             overflow: hidden;
             text-overflow: ellipsis;
 
-            span{
+            span {
                 font-size: 1.1rem;
                 text-align: center;
                 font-weight: 600;
@@ -57,7 +55,7 @@
         &.tabzy--active a {
             color: white;
             background-color: #0022ad;
-            border-radius: 8px 8px 0 0;
+            // border-radius: 8px 8px 0 0;
         }
     }
 }
@@ -113,4 +111,42 @@
 
 .slidezy-item {
     margin-left: 10px;
+}
+
+.flashsale-countdown {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    background: #0022ad;
+    padding: 15px;
+    border-radius: 6px 6px 0px 0px;
+
+
+    .flashsale-title {
+        font-weight: bold;
+        color: #ff5722;
+        font-size: 20px;
+
+        span {
+            color: #ff0044;
+        }
+    }
+    .flashsale-text{
+        color: white;
+    }
+
+    #countdown {
+        span {
+            display: inline-block;
+            background: #ff3366;
+            color: #fff;
+            padding: 6px 10px;
+            margin: 0 2px;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 18px;
+        }
+    }
 }

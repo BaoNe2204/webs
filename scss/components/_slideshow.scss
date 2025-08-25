@@ -1,98 +1,116 @@
-@use "../abstracts";
+/* ========= KÍCH THƯỚC FLUID ========= */
+:root {
+    --container: clamp(960px, 92vw, 1200px);
+    --gap: 16px;
 
-.slideshow {
-    position: relative;
-    border-radius: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    overflow: hidden;
-    z-index: 1000;
-    &__inner {
-        display: flex;
-        overflow: hidden;
+    --ad-w: clamp(120px, 12vw, 180px);
+    --ad-ratio: 2.9; 
+}
+
+/* ========= CONTAINER ========= */
+.container {
+    width: min(100%, var(--container));
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+/* ========= PROMO GRID ========= */
+.promo-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    &__top {
+        display: grid;
+        grid-template-columns: 2.1fr 1fr; 
+        gap: 16px;
     }
 
+    &__big,
     &__item {
-        position: relative;
-        flex-shrink: 0;
+        border-radius: 16px;
+        overflow: hidden;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, .1);
+    }
+
+    &__big img,
+    &__item img {
         width: 100%;
-        padding-top: 26%;
-
-        @include abstracts.screen(md) {
-            padding-top: 50%;
-        }
+        height: 100%;
+        object-fit: cover; 
+        display: block;
     }
 
-
-    &__page {
-        --color: #fff;
-
-        position: absolute;
-        bottom: 15%;
-        left: 5.2%;
-        width: 12.8%;
-        display: flex;
-        align-items: center;
-        column-gap: 24px;
+    &__side {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        gap: 16px;
     }
 
-    &__num {
-        font-size: 1.8rem;
-        font-weight: 500;
-        line-height: 144.444%;
-        color: var(--color);
-
-        @include abstracts.screen(md) {
-            font-size: 1.4rem;
-            line-height: 142.857%;
-        }
-    }
-
-    &__slider {
-        position: relative;
-        width: 100%;
-        height: 4px;
-        flex-shrink: 0;
-        background: var(--color);
-
-        &::before,
-        &::after {
-            content: "";
-            position: absolute;
-            top: 50%;
-
-            width: 14px;
-            height: 14px;
-            border: 4px solid var(--color);
-            border-radius: 50%;
-
-            @include abstracts.screen(md) {
-                border-width: 3px;
-            }
-        }
-
-        &::before {
-            left: 0;
-            translate: -90% -50%;
-        }
-
-        &::after {
-            right: 0;
-            translate: 90% -50%;
-        }
-    }
-
-    &__footer {
-        margin-top: -17px;
-        background: white;
-        width: 100%;
-        height: 70px;
+    &__bottom {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
     }
 }
 
-#my-slider img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    /* Không cần border-radius riêng cho ảnh nếu muốn dùng border-radius chung của .slideshow */
+@media (max-width: 768px) {
+    .promo-grid {
+        &__top {
+            grid-template-columns: 1fr;
+        }
+
+        &__side {
+            grid-template-rows: auto;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        &__bottom {
+            grid-template-columns: 1fr;
+        }
+    }
+}
+
+:root{
+  --container: clamp(960px, 92vw, 1200px);
+  --gap: 16px;
+  --ad-w: clamp(120px, 12vw, 180px);
+  --ad-ratio: 2.9;
+  --ad-top: 200px;         // vị trí bám bình thường
+  --ad-safe-gap: 16px;     // đệm tránh footer
+  --ad-offset: 0px;        // JS sẽ set
+}
+
+.side-ad{
+  position: fixed;
+  top: var(--ad-top);
+  width: var(--ad-w);
+  height: calc(var(--ad-w) * var(--ad-ratio));
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0,0,0,.15);
+  z-index: 50;
+
+  /* di chuyển mượt khi gần footer */
+  transform: translateY(calc(-1 * var(--ad-offset)));
+  transition: transform 240ms cubic-bezier(.2,.8,.2,1);
+  will-change: transform;
+}
+.side-ad img{ width:100%; height:100%; object-fit:cover; display:block; }
+
+.side-ad--left{
+  left: calc((100vw - min(100vw, var(--container))) / 2 - var(--gap) - var(--ad-w));
+}
+.side-ad--right{
+  right: calc((100vw - min(100vw, var(--container))) / 2 - var(--gap) - var(--ad-w));
+}
+
+.side-ad--clamped {
+    top: auto !important;
+}
+
+@media (max-width: 1400px) {
+    .side-ad {
+        display: none;
+    }
 }
