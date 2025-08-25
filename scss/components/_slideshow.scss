@@ -109,6 +109,31 @@
     top: auto !important;
 }
 
+@media (max-width: 1600px){
+  :root{
+    --ad-w: 160px;   
+    --ad-top: 180px; 
+  }
+}
+
+@media (max-width: 1440px){
+  :root{
+    --ad-w: 130px;
+    --ad-top: 160px;
+  }
+}
+
+@media (max-width: 1280px){
+  :root{
+    --ad-w: 110px;
+    --ad-top: 140px;
+    --ad-safe-gap: 12px; 
+  }
+}
+
+@media (max-width: 1200px){
+  .side-ad{ display: none; }
+}
 @media (max-width: 1400px) {
     .side-ad {
         display: none;
