@@ -26,7 +26,18 @@
         <script src="./assets/js/scripts.js"></script>
     </head>
     <body>
-        Price list
+                <!-- Header -->
+        <div class="navbar-sticky" id="navbar" data-sticky>
+            <div id="header-top"></div>
+            <header id="header" class="header"></header>
+        </div>
+        <script>
+            load("#header-top", "./templates/header-top.html");
+        </script>
+        <script>
+            load("#header", "./templates/header.html");
+        </script>
+        <!-- Breadcrumb -->
         <div class="policy">
             <div class="container">
                 <div class="checkout-container">
