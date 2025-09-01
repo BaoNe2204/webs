@@ -1899,11 +1899,16 @@ html {
   cursor: pointer;
 }
 .top-bar .top-act__dropdown {
-  right: -15px !important;
-  width: min(300px, 100vw) !important;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: min(300px, 100vw);
 }
 .top-bar .top-act__dropdown-arrow {
-  right: 15px !important;
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .top-bar .nav-btn {
   height: 50px;
@@ -1934,6 +1939,7 @@ html {
   display: none;
 }
 .top-bar .act-dropdown__inner {
+  top: -7px;
   position: relative;
   padding: 30px;
   border-radius: 20px;
@@ -2184,7 +2190,8 @@ html {
 .header,
 .top-bar {
   position: relative;
-  z-index: 50000; /* cao hơn mọi banner/slide */
+  z-index: 50000;
+  /* cao hơn mọi banner/slide */
 }
 
 .fuldespage {

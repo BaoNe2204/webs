@@ -1,71 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shark Tank</title>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Shark Tank</title>
 
-    <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="76x76" href="./assets/favicon/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png" />
-    <link rel="manifest" href="./assets/favicon/site.webmanifest" />
-    <meta name="msapplication-TileColor" content="#da532c" />
-    <meta name="theme-color" content="#ffffff" />
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" sizes="76x76"
+            href="./assets/favicon/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32"
+            href="./assets/favicon/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16"
+            href="./assets/favicon/favicon-16x16.png" />
+        <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+        <meta name="msapplication-TileColor" content="#da532c" />
+        <meta name="theme-color" content="#ffffff" />
 
-    <!-- Fonts -->
-    <link rel="stylesheet" href="./assets/fonts/stylesheet.css" />
+        <!-- Fonts -->
+        <link rel="stylesheet" href="./assets/fonts/stylesheet.css" />
 
-    <!-- Styles -->
-    <link rel="stylesheet" href="./assets/css/main.css" />
+        <!-- Styles -->
+        <link rel="stylesheet" href="./assets/css/main.css" />
 
-    <!-- Scripts -->
-    <script src="./assets/js/scripts.js"></script>
-</head>
+        <!-- Scripts -->
+        <script src="./assets/js/scripts.js"></script>
+    </head>
 
-<body>
+    <body>
 
-    <!-- Header -->
-    <div class="navbar-sticky" id="navbar" data-sticky>
-        <div id="header-top"></div>
-        <header id="header" class="header"></header>
-    </div>
-    <script>
+        <!-- Header -->
+        <div class="navbar-sticky" id="navbar" data-sticky>
+            <div id="header-top"></div>
+            <header id="header" class="header"></header>
+        </div>
+        <script>
         load("#header-top", "./templates/header-top.html");
     </script>
-    <script>
+        <script>
         load("#header", "./templates/header.html");
     </script>
-    <!-- <div id="ad-sentinel"></div> -->
+        <!-- <div id="ad-sentinel"></div> -->
 
-    <!-- MAIN -->
+        <!-- MAIN -->
 
-    <main class="product-page">
-        <div class="ads_gif">
-            <img src="./assets/icons/QCSO1.gif" alt>
-        </div>
-        <div class="container">
-            <!-- Search bar -->
-            <div class="product-container">
-                <div class="search-bar d-none d-md-flex">
-                    <input type="text" name id placeholder="Search for item" class="search-bar__input" />
-                    <button class="search-bar__submit">
-                        <img src="./assets/icons/search.svg" alt class="search-bar__icon icon" />
-                    </button>
-                </div>
+        <main class="product-page">
+            <div class="ads_gif">
+                <img src="./assets/icons/QCSO1.gif" alt>
             </div>
+            <div class="container">
+                <!-- Search bar -->
+                <div class="product-container">
+                    <div class="search-bar d-none d-md-flex">
+                        <input type="text" name id placeholder="Search for item"
+                            class="search-bar__input" />
+                        <button class="search-bar__submit">
+                            <img src="./assets/icons/search.svg" alt
+                                class="search-bar__icon icon" />
+                        </button>
+                    </div>
+                </div>
 
-            <!-- Breadcrumbs -->
-            <div class="product-container">
-                <ul class="breadcrumbs">
-                    <li>
-                        <a href="./index.html" class="breadcrumbs__link">
-                            Trang chủ
-                            <img src="./assets/icons/arrow-right.svg" alt />
-                        </a>
-                    </li>
-                    <!-- <li>
+                <!-- Breadcrumbs -->
+                <div class="product-container">
+                    <ul class="breadcrumbs">
+                        <li>
+                            <a href="./index.html" class="breadcrumbs__link">
+                                Trang chủ
+                                <img src="./assets/icons/arrow-right.svg" alt />
+                            </a>
+                        </li>
+                        <!-- <li>
                             <a href="#!" class="breadcrumbs__link">
                                 Coffee
                                 <img src="./assets/icons/arrow-right.svg" alt />
@@ -77,378 +82,530 @@
                                 <img src="./assets/icons/arrow-right.svg" alt />
                             </a>
                         </li> -->
-                    <li>
-                        <a href="#!" class="breadcrumbs__link breadcrumbs__link--current">Sản
-                            Phẩm</a>
-                    </li>
-                </ul>
-            </div>
-
-            <!-- Product info -->
-            <div class="product-container prod-info-content">
-                <div class="product-center">
-                    <div class="col-5 col-xl-6 col-lg-12">
-                        <div class="prod-preview">
-                            <div class="prod-preview__list"></div>
-                            <div class="prod-preview__thumbs"></div>
-                        </div>
-                    </div>
-
-                    <!-- RIGHT: Info -->
-                    <div class="col-5 col-xl-5 col-lg-12">
-                        <form action class="form">
-                            <section class="prod-info">
-
-                                <!-- <div class="row"> -->
-
-                                <div class="prod-props">
-                                    <!-- Tên sản phẩm -->
-                                    <h1 class="prod-info__heading" id="prod-title">
-
-                                    </h1>
-                                    <div class="prod-info__row">
-                                        <!-- Product meta -->
-                                        <div class="prod-meta" id="prodMeta">
-                                            <span class="prod-meta__item">
-                                                <span class="prod-meta__label">Đánh
-                                                    giá:</span>
-                                                <span id="metaRating">0</span>
-                                            </span>
-
-                                            <span class="prod-meta__sep">•</span>
-
-                                            <span class="prod-meta__item">
-                                                <span class="prod-meta__label">Bình
-                                                    luận:</span>
-                                                <span id="metaComments">0</span>
-                                            </span>
-
-                                            <span class="prod-meta__sep">•</span>
-
-                                            <span class="prod-meta__item">
-                                                <span class="prod-meta__label">Lượt
-                                                    xem:</span>
-                                                <span id="metaViews">0</span>
-                                            </span>
-
-                                            <span class="prod-meta__sep">•</span>
-
-                                            <span class="prod-meta__item">
-                                                <span class="prod-meta__label">Đã
-                                                    bán:</span>
-                                                <span id="metaSold">0</span>
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <div class="box-price-detail">
-                                        <p class="prod-info__total-price" id="total-price">&nbsp;₫</p>
-                                        <span class="prod-info__price" id="price">&nbsp;₫</span>
-                                        <!-- Thuế (%) -->
-                                        <span class="prod-info__tax" id="tax"></span>
-                                    </div>
-                                    <!-- Banner nhỏ (tuỳ chọn) -->
-                                    <div class="hssv-banner" style="margin-bottom:10px;">
-                                        <div class="hssv-left-content" style="display:flex;align-items:center;gap:8px;">
-                                            <img src="https://cdn-icons-png.flaticon.com/512/1164/1164726.png" alt
-                                                width="30" height="30" />
-                                            <div class="hssv-text-content"
-                                                style="display:flex;align-items:center;gap:10px;">
-                                                <span class="hssv-discount-text">Build
-                                                    PC giảm thêm đến
-                                                    1 triệu</span>
-                                                <span class="hssv-separator"
-                                                    style="width:6px;height:6px;background:#999;border-radius:50%;"></span>
-                                                <span class="hssv-description">Ưu
-                                                    đãi HSSV</span>
-                                            </div>
-                                        </div>
-                                        <a class="hssv-cta-button"
-                                            href="https://gearvn.com/blogs/khuyen-mai/mua-pc-nhan-ngay-uu-dai-hap-dan-tu-gearvn-dip-b2s-2025"
-                                            target="_blank" rel="noopener">
-                                            <span class="hssv-label">Chi
-                                                tiết</span>
-                                            <span class="hssv-arrow">→</span>
-                                        </a>
-                                    </div>
-                                    <!-- Khối số lượng + thêm vào giỏ -->
-                                    <div class="product-buy-quantity d-flex align-items-center">
-                                        <p class="title-quantity">Số
-                                            lượng:</p>
-
-                                        <!-- Chọn số lượng -->
-                                        <div class="cart-quantity-select justify-content-center align-items-center d-flex"
-                                            id="detailQtyWrap">
-                                            <button type="button" class="qty-btn" data-delta="-1"
-                                                aria-label="Giảm">−</button>
-                                            <input type="text" class="qty-input" id="detailQty" value="1"
-                                                inputmode="numeric" pattern="[0-9]*" aria-label="Số lượng">
-                                            <button type="button" class="qty-btn" data-delta="1"
-                                                aria-label="Tăng">+</button>
-                                        </div>
-
-                                        <!-- Nút thêm vào giỏ -->
-                                        <button type="button" class="btn btn--primary prod-info__add-to-cart"
-                                            title="Thêm vào giỏ">
-                                            <img src="./assets/icons/buy.svg" alt class="icon top-act__icon">
-                                            <span class="title-cart">Thêm
-                                                vào giỏ hàng</span>
-                                        </button>
-                                    </div>
-
-                                    <!-- Nút hành động -->
-                                    <div class="prod-info__row" style="gap:10px;">
-                                        <button type="button" class="btn btn--primary-red prod-info__buy"
-                                            data-goto="checkout">
-                                            <span class="btn-line">Đặt Mua
-                                                Ngay</span>
-                                            <span class="button-title">Giao
-                                                Hàng Tận Nơi nhanh
-                                                chóng</span>
-                                        </button>
-
-                                    </div>
-                                    <div class="prod-info__row">
-
-                                        <button type="button" class="btn btn--primary-blue prod-info__buy"
-                                            onclick="window.location.href='Installment.html'">
-                                            <span class="btn-line">Trả Góp Qua Hồ Sơ</span>
-                                            <span class="button-title">Chỉ Từ</span>
-                                        </button>
-
-                                        <button type="button" class="btn btn--primary-blue prod-info__buy"
-                                            onclick="window.location.href='Installment.html'">
-                                            <span class="btn-line">Trả
-                                                Góp Qua
-                                                Thẻ</span>
-                                            <span class="button-title">Chỉ
-                                                Từ</span>
-                                        </button>
-
-                                    </div>
-                                    <!-- Box khuyến mãi text -->
-
-                                    <!-- Ưu đãi -->
-                                    <div class="offer-block">
-                                        <h3 class="offer-block__title">Quà
-                                            tặng và ưu đãi khác</h3>
-                                        <ul class="offer-block__list">
-                                            <li class="offer-block__item">
-                                                <img src="./assets/icons/gift.svg" alt class="offer-block__icon" />
-                                                <p class="offer-block__text">Tặng
-                                                    thêm bảo hành 1
-                                                    năm</p>
-                                            </li>
-                                            <li class="offer-block__item">
-                                                <img src="./assets/icons/gift.svg" alt class="offer-block__icon" />
-                                                <p class="offer-block__text">Tặng
-                                                    mã ưu đãi
-                                                    150.000đ mua
-                                                    Balo – Túi
-                                                    xách</p>
-                                            </li>
-                                            <li class="offer-block__item">
-                                                <img src="./assets/icons/gift.svg" alt class="offer-block__icon" />
-                                                <p class="offer-block__text">Tặng
-                                                    phiếu mua hàng
-                                                    100.000đ</p>
-                                            </li>
-
-                                            <!-- các ưu đãi ẩn -->
-                                            <li class="offer-block__item offer-block__item--more pd-hide">
-                                                <img src="./assets/icons/gift.svg" alt class="offer-block__icon" />
-                                                <p class="offer-block__text">Giảm
-                                                    ngay 300.000đ
-                                                    khi mua
-                                                    Microsoft
-                                                    Office</p>
-                                            </li>
-                                            <li class="offer-block__item offer-block__item--more pd-hide">
-                                                <img src="./assets/icons/gift.svg" alt class="offer-block__icon" />
-                                                <p class="offer-block__text">Giảm
-                                                    500.000đ cho đơn
-                                                    từ 10.000.000đ
-                                                    qua PAYOO (MB
-                                                    Bank)</p>
-                                            </li>
-                                            <li class="offer-block__item offer-block__item--more pd-hide">
-                                                <img src="./assets/icons/gift.svg" alt class="offer-block__icon" />
-                                                <p class="offer-block__text">Hoàn
-                                                    100% phí chuyển
-                                                    đổi trả góp
-                                                    (TPBank EVO)</p>
-                                            </li>
-                                            <li class="offer-block__item offer-block__item--more pd-hide">
-                                                <img src="./assets/icons/gift.svg" alt class="offer-block__icon" />
-                                                <p class="offer-block__text">Trả
-                                                    góp 0% lãi suất,
-                                                    miễn phí chuyển
-                                                    đổi kỳ hạn</p>
-                                            </li>
-                                        </ul>
-
-                                        <button type="button" class="offer-block__toggle" data-expanded="false">
-                                            Xem thêm ưu đãi khác
-                                        </button>
-                                    </div>
-
-                                    <!-- Địa chỉ showroom -->
-                                    <div class="product-desc-short prtab2 store-address" style="margin-top:14px;">
-                                        <hr>
-                                        <div class="section-title">Showroom
-                                            HCM</div>
-                                        <div class="location"><span class="icon">📍</span><span class="address">78-80-82
-                                                Hoàng Hoa Thám,
-                                                Phường Bảy Hiền,
-                                                TP.HCM</span></div>
-                                        <div class="location"><span class="icon">📍</span><span class="address">905
-                                                Kha Vạn Cân, Phường
-                                                Linh Tây,
-                                                TP.HCM</span></div>
-                                        <div class="location"><span class="icon">📍</span><span
-                                                class="address">1081-1083
-                                                Trần Hưng Đạo,
-                                                Phường An Đông,
-                                                TP.HCM</span></div>
-                                        <div class="location">
-                                            <span class="icon">📍</span>
-                                            <span class="address">63
-                                                Nguyễn Cửu Vân,
-                                                Phường Gia Định,
-                                                TP.HCM</span>
-                                        </div>
-
-                                        <div class="section-title">Showroom
-                                            HN</div>
-                                        <div class="location"><span class="icon">📍</span><span class="address">162-164
-                                                Thái Hà, Phường Đống
-                                                Đa, Hà
-                                                Nội</span></div>
-                                        <hr>
-                                    </div>
-                                </div>
-                                <!-- </div> -->
-                            </section>
-                        </form>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Product content -->
-            <div class="product-container">
-                <!-- THÔNG SỐ SẢN PHẨM -->
-                <div class="prod-info__card specs-card">
-                    <div class="spec-card">
-                        <h3 class="spec-card__title">⚙
-                            Thông số sản phẩm</h3>
-                        <ul id="specList" class="spec-list"></ul>
-
-                    </div>
-                </div>
-                <div class="prod-tab js-tabs">
-                    <ul class="prod-tab__list">
-                        <li class="prod-tab__item prod-tab__item--current">Description</li>
-                        <li class="prod-tab__item">Review (1100)</li>
-                        <li class="prod-tab__item">Similar</li>
+                        <li>
+                            <a href="#!"
+                                class="breadcrumbs__link breadcrumbs__link--current">Sản
+                                Phẩm</a>
+                        </li>
                     </ul>
-                    <div class="prod-tab__contents">
-                        <div class="prod-tab__content prod-tab__content--current">
-                            <div class="row">
-                                <div class="col-8 col-xl-10 col-lg-12">
-                                    <div class="text-content prod-tab__text-content" id="descContent">
-                                        <!-- JS sẽ bơm nội dung ở đây -->
+                </div>
+
+                <!-- Product info -->
+                <div class="product-container prod-info-content">
+                    <div class="product-center">
+                        <div class="col-5 col-xl-6 col-lg-12">
+                            <div class="prod-preview">
+                                <div class="prod-preview__list"></div>
+                                <div class="prod-preview__thumbs"></div>
+                            </div>
+                        </div>
+
+                        <!-- RIGHT: Info -->
+                        <div class="col-5 col-xl-5 col-lg-12">
+                            <form action class="form">
+                                <section class="prod-info">
+
+                                    <!-- <div class="row"> -->
+
+                                    <div class="prod-props">
+                                        <!-- Tên sản phẩm -->
+                                        <h1 class="prod-info__heading"
+                                            id="prod-title">
+
+                                        </h1>
+                                        <div class="prod-info__row">
+                                            <!-- Product meta -->
+                                            <div class="prod-meta"
+                                                id="prodMeta">
+                                                <span class="prod-meta__item">
+                                                    <span
+                                                        class="prod-meta__label">Đánh
+                                                        giá:</span>
+                                                    <span
+                                                        id="metaRating">0</span>
+                                                </span>
+
+                                                <span
+                                                    class="prod-meta__sep">•</span>
+
+                                                <span class="prod-meta__item">
+                                                    <span
+                                                        class="prod-meta__label">Bình
+                                                        luận:</span>
+                                                    <span
+                                                        id="metaComments">0</span>
+                                                </span>
+
+                                                <span
+                                                    class="prod-meta__sep">•</span>
+
+                                                <span class="prod-meta__item">
+                                                    <span
+                                                        class="prod-meta__label">Lượt
+                                                        xem:</span>
+                                                    <span
+                                                        id="metaViews">0</span>
+                                                </span>
+
+                                                <span
+                                                    class="prod-meta__sep">•</span>
+
+                                                <span class="prod-meta__item">
+                                                    <span
+                                                        class="prod-meta__label">Đã
+                                                        bán:</span>
+                                                    <span id="metaSold">0</span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="box-price-detail">
+                                            <p class="prod-info__total-price"
+                                                id="total-price">&nbsp;₫</p>
+                                            <span class="prod-info__price"
+                                                id="price">&nbsp;₫</span>
+                                            <!-- Thuế (%) -->
+                                            <span class="prod-info__tax"
+                                                id="tax"></span>
+                                        </div>
+                                        <!-- Banner nhỏ (tuỳ chọn) -->
+                                        <div class="hssv-banner"
+                                            style="margin-bottom:10px;">
+                                            <div class="hssv-left-content"
+                                                style="display:flex;align-items:center;gap:8px;">
+                                                <img
+                                                    src="https://cdn-icons-png.flaticon.com/512/1164/1164726.png"
+                                                    alt
+                                                    width="30" height="30" />
+                                                <div class="hssv-text-content"
+                                                    style="display:flex;align-items:center;gap:10px;">
+                                                    <span
+                                                        class="hssv-discount-text">Build
+                                                        PC giảm thêm đến
+                                                        1 triệu</span>
+                                                    <span class="hssv-separator"
+                                                        style="width:6px;height:6px;background:#999;border-radius:50%;"></span>
+                                                    <span
+                                                        class="hssv-description">Ưu
+                                                        đãi HSSV</span>
+                                                </div>
+                                            </div>
+                                            <a class="hssv-cta-button"
+                                                href="https://gearvn.com/blogs/khuyen-mai/mua-pc-nhan-ngay-uu-dai-hap-dan-tu-gearvn-dip-b2s-2025"
+                                                target="_blank" rel="noopener">
+                                                <span class="hssv-label">Chi
+                                                    tiết</span>
+                                                <span
+                                                    class="hssv-arrow">→</span>
+                                            </a>
+                                        </div>
+                                        <!-- Khối số lượng + thêm vào giỏ -->
+                                        <div
+                                            class="product-buy-quantity d-flex align-items-center">
+                                            <p class="title-quantity">Số
+                                                lượng:</p>
+
+                                            <!-- Chọn số lượng -->
+                                            <div
+                                                class="cart-quantity-select justify-content-center align-items-center d-flex"
+                                                id="detailQtyWrap">
+                                                <button type="button"
+                                                    class="qty-btn"
+                                                    data-delta="-1"
+                                                    aria-label="Giảm">−</button>
+                                                <input type="text"
+                                                    class="qty-input"
+                                                    id="detailQty" value="1"
+                                                    inputmode="numeric"
+                                                    pattern="[0-9]*"
+                                                    aria-label="Số lượng">
+                                                <button type="button"
+                                                    class="qty-btn"
+                                                    data-delta="1"
+                                                    aria-label="Tăng">+</button>
+                                            </div>
+
+                                            <!-- Nút thêm vào giỏ -->
+                                            <button type="button"
+                                                class="btn btn--primary prod-info__add-to-cart"
+                                                title="Thêm vào giỏ">
+                                                <img
+                                                    src="./assets/icons/buy.svg"
+                                                    alt
+                                                    class="icon top-act__icon">
+                                                <span class="title-cart">Thêm
+                                                    vào giỏ hàng</span>
+                                            </button>
+                                        </div>
+
+                                        <!-- Nút hành động -->
+                                        <div class="prod-info__row"
+                                            style="gap:10px;">
+                                            <button type="button"
+                                                class="btn btn--primary-red prod-info__buy"
+                                                data-goto="checkout">
+                                                <span class="btn-line">Đặt Mua
+                                                    Ngay</span>
+                                                <span class="button-title">Giao
+                                                    Hàng Tận Nơi nhanh
+                                                    chóng</span>
+                                            </button>
+
+                                        </div>
+                                        <div class="prod-info__row">
+
+                                            <button type="button"
+                                                class="btn btn--primary-blue prod-info__buy"
+                                                onclick="window.location.href='Installment.html'">
+                                                <span class="btn-line">Trả Góp
+                                                    Qua Hồ Sơ</span>
+                                                <span class="button-title">Chỉ
+                                                    Từ</span>
+                                            </button>
+
+                                            <button type="button"
+                                                class="btn btn--primary-blue prod-info__buy"
+                                                onclick="window.location.href='Installment.html'">
+                                                <span class="btn-line">Trả
+                                                    Góp Qua
+                                                    Thẻ</span>
+                                                <span class="button-title">Chỉ
+                                                    Từ</span>
+                                            </button>
+
+                                        </div>
+                                        <!-- Box khuyến mãi text -->
+
+                                        <!-- Ưu đãi -->
+                                        <div class="offer-block">
+                                            <h3 class="offer-block__title">Quà
+                                                tặng và ưu đãi khác</h3>
+                                            <ul class="offer-block__list">
+                                                <li class="offer-block__item">
+                                                    <img
+                                                        src="./assets/icons/gift.svg"
+                                                        alt
+                                                        class="offer-block__icon" />
+                                                    <p
+                                                        class="offer-block__text">Tặng
+                                                        thêm bảo hành 1
+                                                        năm</p>
+                                                </li>
+                                                <li class="offer-block__item">
+                                                    <img
+                                                        src="./assets/icons/gift.svg"
+                                                        alt
+                                                        class="offer-block__icon" />
+                                                    <p
+                                                        class="offer-block__text">Tặng
+                                                        mã ưu đãi
+                                                        150.000đ mua
+                                                        Balo – Túi
+                                                        xách</p>
+                                                </li>
+                                                <li class="offer-block__item">
+                                                    <img
+                                                        src="./assets/icons/gift.svg"
+                                                        alt
+                                                        class="offer-block__icon" />
+                                                    <p
+                                                        class="offer-block__text">Tặng
+                                                        phiếu mua hàng
+                                                        100.000đ</p>
+                                                </li>
+
+                                                <!-- các ưu đãi ẩn -->
+                                                <li
+                                                    class="offer-block__item offer-block__item--more pd-hide">
+                                                    <img
+                                                        src="./assets/icons/gift.svg"
+                                                        alt
+                                                        class="offer-block__icon" />
+                                                    <p
+                                                        class="offer-block__text">Giảm
+                                                        ngay 300.000đ
+                                                        khi mua
+                                                        Microsoft
+                                                        Office</p>
+                                                </li>
+                                                <li
+                                                    class="offer-block__item offer-block__item--more pd-hide">
+                                                    <img
+                                                        src="./assets/icons/gift.svg"
+                                                        alt
+                                                        class="offer-block__icon" />
+                                                    <p
+                                                        class="offer-block__text">Giảm
+                                                        500.000đ cho đơn
+                                                        từ 10.000.000đ
+                                                        qua PAYOO (MB
+                                                        Bank)</p>
+                                                </li>
+                                                <li
+                                                    class="offer-block__item offer-block__item--more pd-hide">
+                                                    <img
+                                                        src="./assets/icons/gift.svg"
+                                                        alt
+                                                        class="offer-block__icon" />
+                                                    <p
+                                                        class="offer-block__text">Hoàn
+                                                        100% phí chuyển
+                                                        đổi trả góp
+                                                        (TPBank EVO)</p>
+                                                </li>
+                                                <li
+                                                    class="offer-block__item offer-block__item--more pd-hide">
+                                                    <img
+                                                        src="./assets/icons/gift.svg"
+                                                        alt
+                                                        class="offer-block__icon" />
+                                                    <p
+                                                        class="offer-block__text">Trả
+                                                        góp 0% lãi suất,
+                                                        miễn phí chuyển
+                                                        đổi kỳ hạn</p>
+                                                </li>
+                                            </ul>
+
+                                            <button type="button"
+                                                class="offer-block__toggle"
+                                                data-expanded="false">
+                                                Xem thêm ưu đãi khác
+                                            </button>
+                                        </div>
+
+                                        <!-- Địa chỉ showroom -->
+                                        <div
+                                            class="product-desc-short prtab2 store-address"
+                                            style="margin-top:14px;">
+                                            <hr>
+                                            <div class="section-title">Showroom
+                                                HCM</div>
+                                            <div class="location"><span
+                                                    class="icon">📍</span><span
+                                                    class="address">78-80-82
+                                                    Hoàng Hoa Thám,
+                                                    Phường Bảy Hiền,
+                                                    TP.HCM</span></div>
+                                            <div class="location"><span
+                                                    class="icon">📍</span><span
+                                                    class="address">905
+                                                    Kha Vạn Cân, Phường
+                                                    Linh Tây,
+                                                    TP.HCM</span></div>
+                                            <div class="location"><span
+                                                    class="icon">📍</span><span
+                                                    class="address">1081-1083
+                                                    Trần Hưng Đạo,
+                                                    Phường An Đông,
+                                                    TP.HCM</span></div>
+                                            <div class="location">
+                                                <span class="icon">📍</span>
+                                                <span class="address">63
+                                                    Nguyễn Cửu Vân,
+                                                    Phường Gia Định,
+                                                    TP.HCM</span>
+                                            </div>
+
+                                            <div class="section-title">Showroom
+                                                HN</div>
+                                            <div class="location"><span
+                                                    class="icon">📍</span><span
+                                                    class="address">162-164
+                                                    Thái Hà, Phường Đống
+                                                    Đa, Hà
+                                                    Nội</span></div>
+                                            <hr>
+                                        </div>
+                                    </div>
+                                    <!-- </div> -->
+                                </section>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product content -->
+                <div class="product-container">
+                    <!-- THÔNG SỐ SẢN PHẨM -->
+                    <div class="prod-info__card specs-card">
+                        <div class="spec-card">
+                            <h3 class="spec-card__title">⚙
+                                Thông số sản phẩm</h3>
+                            <ul id="specList" class="spec-list"></ul>
+
+                        </div>
+                    </div>
+                    <div class="prod-tab js-tabs">
+                        <ul class="prod-tab__list">
+                            <li
+                                class="prod-tab__item prod-tab__item--current">Description</li>
+                            <li class="prod-tab__item">Review (1100)</li>
+                            <li class="prod-tab__item">Similar</li>
+                        </ul>
+                        <div class="prod-tab__contents">
+                            <div
+                                class="prod-tab__content prod-tab__content--current">
+                                <div class="row">
+                                    <div class="col-8 col-xl-10 col-lg-12">
+                                        <div
+                                            class="text-content prod-tab__text-content"
+                                            id="descContent">
+                                            <!-- JS sẽ bơm nội dung ở đây -->
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="prod-tab__content">
-                        <div class="prod-content">
-                            <h2 class="prod-content__heading">What our
-                                customers are saying</h2>
-                            <div class="row row-cols-3 gx-lg-2 row-cols-md-1 gy-md-3">
-                                <!-- Review card 1 -->
-                                <div class="col">
-                                    <div class="review-card">
-                                        <div class="review-card__content">
-                                            <img src="./assets/img/avatar/avatar-1.png" alt
-                                                class="review-card__avatar" />
-                                            <div class="review-card__info">
-                                                <h4 class="review-card__title">Gia
-                                                    Bảo</h4>
-                                                <p class="review-card__desc">
-                                                    100Đ nha kakak
-                                                </p>
+                        <div class="prod-tab__content">
+                            <div class="prod-content">
+                                <h2 class="prod-content__heading">What our
+                                    customers are saying</h2>
+                                <div
+                                    class="row row-cols-3 gx-lg-2 row-cols-md-1 gy-md-3">
+                                    <!-- Review card 1 -->
+                                    <div class="col">
+                                        <div class="review-card">
+                                            <div class="review-card__content">
+                                                <img
+                                                    src="./assets/img/avatar/avatar-1.png"
+                                                    alt
+                                                    class="review-card__avatar" />
+                                                <div class="review-card__info">
+                                                    <h4
+                                                        class="review-card__title">Gia
+                                                        Bảo</h4>
+                                                    <p
+                                                        class="review-card__desc">
+                                                        100Đ nha kakak
+                                                    </p>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="review-card__rating">
-                                            <div class="review-card__star-list">
-                                                <img src="./assets/icons/star.svg" alt class="review-card__star" />
-                                                <img src="./assets/icons/star.svg" alt class="review-card__star" />
-                                                <img src="./assets/icons/star.svg" alt class="review-card__star" />
-                                                <img src="./assets/icons/star-half.svg" alt class="review-card__star" />
-                                                <img src="./assets/icons/star-blank.svg" alt
-                                                    class="review-card__star" />
+                                            <div class="review-card__rating">
+                                                <div
+                                                    class="review-card__star-list">
+                                                    <img
+                                                        src="./assets/icons/star.svg"
+                                                        alt
+                                                        class="review-card__star" />
+                                                    <img
+                                                        src="./assets/icons/star.svg"
+                                                        alt
+                                                        class="review-card__star" />
+                                                    <img
+                                                        src="./assets/icons/star.svg"
+                                                        alt
+                                                        class="review-card__star" />
+                                                    <img
+                                                        src="./assets/icons/star-half.svg"
+                                                        alt
+                                                        class="review-card__star" />
+                                                    <img
+                                                        src="./assets/icons/star-blank.svg"
+                                                        alt
+                                                        class="review-card__star" />
+                                                </div>
+                                                <span
+                                                    class="review-card__rating-title">(3.5)
+                                                    Review</span>
                                             </div>
-                                            <span class="review-card__rating-title">(3.5)
-                                                Review</span>
                                         </div>
                                     </div>
-                                </div>
 
-                                <!-- Review card 2 -->
-                                <div class="col">
-                                    <div class="review-card">
-                                        <div class="review-card__content">
-                                            <img src="./assets/img/avatar/avatar-2.png" alt
-                                                class="review-card__avatar" />
-                                            <div class="review-card__info">
-                                                <h4 class="review-card__title">Hải
-                                                    Đăng</h4>
-                                                <p class="review-card__desc">
-                                                    Sản phẩm tốt dùng oki
-                                                </p>
+                                    <!-- Review card 2 -->
+                                    <div class="col">
+                                        <div class="review-card">
+                                            <div class="review-card__content">
+                                                <img
+                                                    src="./assets/img/avatar/avatar-2.png"
+                                                    alt
+                                                    class="review-card__avatar" />
+                                                <div class="review-card__info">
+                                                    <h4
+                                                        class="review-card__title">Hải
+                                                        Đăng</h4>
+                                                    <p
+                                                        class="review-card__desc">
+                                                        Sản phẩm tốt dùng oki
+                                                    </p>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="review-card__rating">
-                                            <div class="review-card__star-list">
-                                                <img src="./assets/icons/star.svg" alt class="review-card__star" />
-                                                <img src="./assets/icons/star.svg" alt class="review-card__star" />
-                                                <img src="./assets/icons/star.svg" alt class="review-card__star" />
-                                                <img src="./assets/icons/star-half.svg" alt class="review-card__star" />
-                                                <img src="./assets/icons/star-blank.svg" alt
-                                                    class="review-card__star" />
+                                            <div class="review-card__rating">
+                                                <div
+                                                    class="review-card__star-list">
+                                                    <img
+                                                        src="./assets/icons/star.svg"
+                                                        alt
+                                                        class="review-card__star" />
+                                                    <img
+                                                        src="./assets/icons/star.svg"
+                                                        alt
+                                                        class="review-card__star" />
+                                                    <img
+                                                        src="./assets/icons/star.svg"
+                                                        alt
+                                                        class="review-card__star" />
+                                                    <img
+                                                        src="./assets/icons/star-half.svg"
+                                                        alt
+                                                        class="review-card__star" />
+                                                    <img
+                                                        src="./assets/icons/star-blank.svg"
+                                                        alt
+                                                        class="review-card__star" />
+                                                </div>
+                                                <span
+                                                    class="review-card__rating-title">(3.5)
+                                                    Review</span>
                                             </div>
-                                            <span class="review-card__rating-title">(3.5)
-                                                Review</span>
                                         </div>
                                     </div>
-                                </div>
 
-                                <!-- Review card 3 -->
-                                <div class="col">
-                                    <div class="review-card">
-                                        <div class="review-card__content">
-                                            <img src="./assets/img/avatar/avatar-3.png" alt
-                                                class="review-card__avatar" />
-                                            <div class="review-card__info">
-                                                <h4 class="review-card__title">Thế
-                                                    An</h4>
-                                                <p class="review-card__desc">
-                                                    sản phẩm tốt
-                                                </p>
+                                    <!-- Review card 3 -->
+                                    <div class="col">
+                                        <div class="review-card">
+                                            <div class="review-card__content">
+                                                <img
+                                                    src="./assets/img/avatar/avatar-3.png"
+                                                    alt
+                                                    class="review-card__avatar" />
+                                                <div class="review-card__info">
+                                                    <h4
+                                                        class="review-card__title">Thế
+                                                        An</h4>
+                                                    <p
+                                                        class="review-card__desc">
+                                                        sản phẩm tốt
+                                                    </p>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="review-card__rating">
-                                            <div class="review-card__star-list">
-                                                <img src="./assets/icons/star.svg" alt class="review-card__star" />
-                                                <img src="./assets/icons/star.svg" alt class="review-card__star" />
-                                                <img src="./assets/icons/star.svg" alt class="review-card__star" />
-                                                <img src="./assets/icons/star-half.svg" alt class="review-card__star" />
-                                                <img src="./assets/icons/star-blank.svg" alt
-                                                    class="review-card__star" />
+                                            <div class="review-card__rating">
+                                                <div
+                                                    class="review-card__star-list">
+                                                    <img
+                                                        src="./assets/icons/star.svg"
+                                                        alt
+                                                        class="review-card__star" />
+                                                    <img
+                                                        src="./assets/icons/star.svg"
+                                                        alt
+                                                        class="review-card__star" />
+                                                    <img
+                                                        src="./assets/icons/star.svg"
+                                                        alt
+                                                        class="review-card__star" />
+                                                    <img
+                                                        src="./assets/icons/star-half.svg"
+                                                        alt
+                                                        class="review-card__star" />
+                                                    <img
+                                                        src="./assets/icons/star-blank.svg"
+                                                        alt
+                                                        class="review-card__star" />
+                                                </div>
+                                                <span
+                                                    class="review-card__rating-title">(3.5)
+                                                    Review</span>
                                             </div>
-                                            <span class="review-card__rating-title">(3.5)
-                                                Review</span>
                                         </div>
                                     </div>
                                 </div>
@@ -457,23 +614,24 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <a class="side-ad side-ad--left" href="#"><img
-                src="https://file.hstatic.net/200000722513/file/gearvn-pc-gvn-t8-sticky-banner.jpg" alt></a>
-        <a class="side-ad side-ad--right" href="#"><img
-                src="https://file.hstatic.net/200000722513/file/gearvn-back-to-school-25-sticky.png" alt></a>
-    </main>
+            <a class="side-ad side-ad--left" href="#"><img
+                    src="https://file.hstatic.net/200000722513/file/gearvn-pc-gvn-t8-sticky-banner.jpg"
+                    alt></a>
+            <a class="side-ad side-ad--right" href="#"><img
+                    src="https://file.hstatic.net/200000722513/file/gearvn-back-to-school-25-sticky.png"
+                    alt></a>
+        </main>
 
-    <!-- Footer -->
-    <footer id="footer" class="footer"></footer>
-    <script>load("#footer", "./templates/footer.html");</script>
+        <!-- Footer -->
+        <footer id="footer" class="footer"></footer>
+        <script>load("#footer", "./templates/footer.html");</script>
 
+        <script src="./assets/js/product-detail.js?v=1"></script>
+        <script src="./assets/js/cart.js"></script>
+        <script src="./assets/js/sticky.js"></script>
+        <script src="./assets/js/app.js"></script>
+        <script src="./assets/js/auth-local.js"></script>
 
-    <script src="./assets/js/product-detail.js?v=1"></script>
-    <script src="./assets/js/cart.js"></script>
-    <script src="./assets/js/sticky.js"></script>
-    <script src="./assets/js/app.js"></script>
-
-</body>
+    </body>
 
 </html>
