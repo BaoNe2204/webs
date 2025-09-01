@@ -411,12 +411,17 @@
         }
 
         &__dropdown {
-            right: -15px !important;
-            width: min(300px, 100vw) !important;
+            position: absolute;
+            top: 100%;
+            right: 0;
+            width: min(300px, 100vw);
         }
 
         &__dropdown-arrow {
-            right: 15px !important;
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
         }
     }
 
@@ -452,6 +457,7 @@
         display: none;
 
         &__inner {
+            top: -7px;
             position: relative;
             padding: 30px;
             border-radius: 20px;
@@ -700,11 +706,13 @@
 #miniCart {
     display: none;
 }
+
 @media (max-width: 768px) {
-  .top-act__btn, 
-  #miniCart {
-    display: none !important;
-  }
+
+    .top-act__btn,
+    #miniCart {
+        display: none !important;
+    }
 }
 
 
@@ -764,9 +772,11 @@
 // .navbar-sticky,
 .header,
 .top-bar {
-  position: relative;
-  z-index: 50000; /* cao hơn mọi banner/slide */
+    position: relative;
+    z-index: 50000;
+    /* cao hơn mọi banner/slide */
 }
+
 // .navbar-sticky {
 //   position: relative;
 //   will-change: transform;
