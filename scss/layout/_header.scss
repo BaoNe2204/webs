@@ -811,3 +811,41 @@
 //         --h-pad-y: 6px;
 //     }
 // }
+
+.top-act__user > .top-act__dropdown.act-dropdown {
+  position: absolute !important;
+  top: 120% !important;              /* dính ngay dưới avatar */
+  right: 0 !important;
+  margin-top: 0 !important;          /* KHÔNG tạo gap */
+  padding-top: 0 !important;         /* chặn hitbox rỗng do arrow ảnh */
+  width: min(300px, 100vw) !important;
+  display: none !important;
+  z-index: 100002 !important;        /* cao hơn mọi overlay/header */
+  pointer-events: auto !important;
+}
+
+.top-act__user:hover > .top-act__dropdown.act-dropdown,
+.top-act__user > .top-act__dropdown.act-dropdown:hover {
+  display: block !important;
+}
+
+.top-act__user > .top-act__dropdown.act-dropdown .act-dropdown__inner {
+  position: relative !important;
+  margin-top: 12px !important;      
+  padding: 20px !important;
+  border-radius: 12px !important;
+  background: var(--header-act-dropdown-bg) !important;
+  box-shadow: 0 20px 60px 0 var(--header-act-dropdown-shadow) !important;
+}
+
+.top-act__user > .top-act__dropdown.act-dropdown .act-dropdown__inner::before {
+  content: "" !important;
+  position: absolute !important;
+  top: -8px !important;
+  right: 24px !important;
+  width: 16px !important;
+  height: 16px !important;
+  background: var(--header-act-dropdown-bg) !important;
+  transform: rotate(45deg) !important;
+  box-shadow: -2px -2px 2px rgba(0,0,0,.04) !important;
+}

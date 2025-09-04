@@ -154,7 +154,7 @@
             </div>
 
             <ul class="user-menu__list">
-              <li><a href="./profile.html" class="user-menu__link">Profile</a></li>
+              <li><a href="./index.html" class="user-menu__link">Profile</a></li>
               <li><a href="./favourite.html" class="user-menu__link">Favourite list</a></li>
               <li class="user-menu__separate">
                 <a href="#!" class="user-menu__link" id="switch-theme-btn">
