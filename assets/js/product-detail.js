@@ -27,38 +27,74 @@
       .replace(/(^-|-$)/g, "");
 
   // ===== Specs (Thông số) =====
-  async function renderSpecsForProduct(prod, pid) {
-    const list = document.getElementById("specList");
-    if (!list) return;
+ // ===== Specs (Thông số) =====
+async function renderSpecsForProduct(prod, pid) {
+  const list = document.getElementById("specList");
+  if (!list) return;
 
-    try {
-      const res = await fetch("./json/specs.json", { cache: "no-store" });
-      const map = await res.json();
+  // escape HTML cơ bản
+  const esc = (s) => String(s)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#39;");
 
-      const candidates = [
-        prod?.id,
-        pid,
-        slugify(pid || ""),
-        slugify(prod?.title || ""),
-      ].filter(Boolean);
-      const key = candidates.find((k) => Object.prototype.hasOwnProperty.call(map, k));
-      const spec = key ? map[key] : null;
+  const isPrimitive = (x) =>
+    x == null || ["string","number","boolean"].includes(typeof x);
 
-      list.innerHTML = spec
-        ? Object.entries(spec)
-          .map(
-            ([k, v]) => `
-          <li class="spec-item">
-            <span class="spec-k">${k}:</span>
-            <span class="spec-v">${v}</span>
-          </li>`
-          )
-          .join("")
-        : '<li class="spec-item">Chưa có thông số cho sản phẩm này.</li>';
-    } catch (e) {
-      console.error("[specs] lỗi tải specs.json:", e);
+  function renderLeaf(val) {
+    if (val == null) return "";
+    if (Array.isArray(val)) {
+      // nếu là mảng primitive -> join; nếu là mảng object -> render dạng danh sách con
+      if (val.every(isPrimitive)) return esc(val.join(", "));
+      return `<ul class="spec-sublist">
+        ${val.map((item, i) => `
+          <li class="spec-subitem">
+            <span class="spec-k">#${i + 1}</span>
+            ${typeof item === "object"
+              ? `<ul class="spec-sublist">${renderPairs(item)}</ul>`
+              : `<span class="spec-v">${esc(item)}</span>`}
+          </li>`).join("")}
+      </ul>`;
     }
+    if (typeof val === "object") {
+      // object lồng
+      return `<ul class="spec-sublist">${renderPairs(val)}</ul>`;
+    }
+    return esc(val);
   }
+
+  function renderPairs(obj) {
+    return Object.entries(obj).map(([k, v]) => `
+      <li class="spec-item">
+        <span class="spec-k">${esc(k)}:</span>
+        <span class="spec-v">${renderLeaf(v)}</span>
+      </li>
+    `).join("");
+  }
+
+  try {
+    const res = await fetch("./json/specs.json", { cache: "no-store" });
+    const map = await res.json();
+
+    const candidates = [
+      prod?.id,
+      pid,
+      slugify(pid || ""),
+      slugify(prod?.title || ""),
+    ].filter(Boolean);
+    const key = candidates.find((k) => Object.prototype.hasOwnProperty.call(map, k));
+    const spec = key ? map[key] : null;
+
+    list.innerHTML = spec
+      ? renderPairs(spec)
+      : '<li class="spec-item">Chưa có thông số cho sản phẩm này.</li>';
+  } catch (e) {
+    console.error("[specs] lỗi tải specs.json:", e);
+  }
+}
+
 
   async function renderDescription(pid) {
     const el = document.getElementById("descContent");

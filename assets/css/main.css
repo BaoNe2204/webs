@@ -2194,6 +2194,44 @@ html {
   /* cao hơn mọi banner/slide */
 }
 
+.top-act__user > .top-act__dropdown.act-dropdown {
+  position: absolute !important;
+  top: 120% !important; /* dính ngay dưới avatar */
+  right: 0 !important;
+  margin-top: 0 !important; /* KHÔNG tạo gap */
+  padding-top: 0 !important; /* chặn hitbox rỗng do arrow ảnh */
+  width: min(300px, 100vw) !important;
+  display: none !important;
+  z-index: 100002 !important; /* cao hơn mọi overlay/header */
+  pointer-events: auto !important;
+}
+
+.top-act__user:hover > .top-act__dropdown.act-dropdown,
+.top-act__user > .top-act__dropdown.act-dropdown:hover {
+  display: block !important;
+}
+
+.top-act__user > .top-act__dropdown.act-dropdown .act-dropdown__inner {
+  position: relative !important;
+  margin-top: 12px !important;
+  padding: 20px !important;
+  border-radius: 12px !important;
+  background: var(--header-act-dropdown-bg) !important;
+  box-shadow: 0 20px 60px 0 var(--header-act-dropdown-shadow) !important;
+}
+
+.top-act__user > .top-act__dropdown.act-dropdown .act-dropdown__inner::before {
+  content: "" !important;
+  position: absolute !important;
+  top: -8px !important;
+  right: 24px !important;
+  width: 16px !important;
+  height: 16px !important;
+  background: var(--header-act-dropdown-bg) !important;
+  transform: rotate(45deg) !important;
+  box-shadow: -2px -2px 2px rgba(0, 0, 0, 0.04) !important;
+}
+
 .fuldespage {
   background: #1435c3;
   color: #fff;
@@ -4681,6 +4719,187 @@ html {
   }
   .cat-nav__title {
     color: black;
+  }
+}
+.price-list-cont h1 {
+  color: #1435c3;
+  font-size: 3em;
+  text-align: center;
+  margin: 2rem 0;
+  font-weight: bold;
+}
+
+.price-list-cont {
+  margin-bottom: 30px;
+  margin-left: 25px;
+  margin-right: 25px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.head {
+  display: flex;
+  border: 1px solid #ddd;
+  font-family: Arial, sans-serif;
+}
+
+.head > div {
+  border-right: 1px solid #ddd;
+  padding: 10px;
+}
+
+.head > div:last-child {
+  border-right: none;
+}
+
+/* Tiêu đề */
+.head h3 {
+  font-size: 100%;
+  font-weight: bold;
+  margin: 0 0 5px 0;
+  text-align: center;
+}
+
+.bg-form {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.bg-form input {
+  width: 100%;
+  padding: 6px 30px 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.bg-form i {
+  position: absolute;
+  right: 10px;
+  color: #1435c3;
+  cursor: pointer;
+}
+
+.col-xs-4 {
+  width: 33.33%;
+}
+
+.col-xs-8 {
+  width: 66.66%;
+}
+
+.col-sm-2 {
+  width: 16.66%;
+}
+
+.col-sm-6 {
+  width: 50%;
+}
+
+.col-md-2 {
+  width: 16.66%;
+}
+
+.col-md-6 {
+  width: 50%;
+}
+
+/* Khung danh sách sản phẩm */
+.bg-product__list {
+  border: 1px solid #ccc;
+  border-top: none;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+/* Tiêu đề danh mục */
+.bg-product__list .name {
+  background: #1435c3; /* đỏ */
+  color: #fff;
+  padding: 8px 12px;
+}
+
+/* --- LIST --- */
+.pd-item {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  padding: 8px 0;
+}
+
+/* Cột chung */
+.pd-item > div {
+  padding: 6px 10px;
+  border-right: 1px solid #ddd;
+}
+
+.pd-item > div:last-child {
+  border-right: none;
+}
+
+/* Xen kẽ màu */
+.pd-item:nth-child(even) {
+  background: #f3f2ff;
+}
+
+.pd-item:nth-child(odd) {
+  background: #fff;
+}
+
+/* Mã SP */
+.pd-item .sku {
+  font-weight: bold;
+}
+
+/* Tên sản phẩm */
+.pd-item .title a {
+  color: #000;
+  text-decoration: none;
+}
+
+.pd-item .title a:hover {
+  text-decoration: underline;
+}
+
+/* Giá */
+.pd-item .price span {
+  color: #000;
+}
+
+/* Bảo hành */
+.pd-item .bh span {
+  color: #000;
+}
+
+/* --- MOBILE (gom lại 1 khối) --- */
+@media (max-width: 768px) {
+  .pd-item {
+    display: block;
+    padding: 10px;
+  }
+  .pd-item > div {
+    border-right: none;
+    padding: 3px 0;
+  }
+  /* Ẩn cột giá & bảo hành desktop */
+  .pd-item .price,
+  .pd-item .bh {
+    display: none;
+  }
+  /* Hiện info-mobile */
+  .pd-item .info-mobile {
+    display: block;
+    margin-top: 5px;
+    font-size: 13px;
+    color: #333;
+  }
+}
+/* --- DESKTOP --- */
+@media (min-width: 769px) {
+  /* Ẩn info-mobile khi desktop */
+  .pd-item .info-mobile {
+    display: none;
   }
 }
 .wrapperPage {
