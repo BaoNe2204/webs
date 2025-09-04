@@ -1038,6 +1038,475 @@
   "Thời gian dùng": "Lên đến 3-5 tháng",
   "Hãng sản xuất": "AKKO"
 }
+,
+"mouse-logitech-g304": {
+  "Độ phân giải (DPI)": "200 - 12000 DPI",
+  "Cảm biến": "HERO",
+  "Nút nhấn": "6 nút",
+  "Đèn LED": "Không",
+  "Kết nối & Tương thích": {
+    "Kết nối": "Không dây Lightspeed (độ trễ 1ms)"
+  },
+  "Thiết kế & Trọng lượng": {
+    "Kích thước": "116.6 x 62.15 x 38.2 mm",
+    "Trọng lượng": "99g"
+  },
+  "Tiện ích": [
+    "Công nghệ không dây Lightspeed cho độ trễ chỉ 1ms",
+    "Cảm biến HERO cho độ chính xác hoàn hảo"
+  ]
+}
+,
+"ram-32gb-ddr5-4800": {
+  "Dung lượng": "32GB",
+  "BUS Ram": "4800MHz",
+  "Loại Ram": "DDR5",
+  "Đèn LED": "Không"
+}
+,
+"mainboard-gigabyte-b850-aorus-elite-wifi7": {
+  "Hãng sản xuất": "Gigabyte",
+  "Model": "B850 AORUS ELITE WIFI7",
+  "Socket": "AM5",
+  "Chipset": "AMD B850",
+  "Form Factor": "ATX",
+  "Hỗ trợ CPU": "AMD Ryzen 7000/8000/9000 Series",
+  "RAM": "DDR5, 4 khe, hỗ trợ OC 8200+ MHz",
+  "Khe M.2": "3 khe (1 PCIe 5.0, 2 PCIe 4.0)",
+  "PCIe": "1 x16 (5.0), 2 x1 (3.0)",
+  "USB": "USB 3.2 Gen2x2 Type-C, USB 3.2 Gen2/Gen1, USB 2.0",
+  "LAN": "2.5GbE",
+  "Wi-Fi": "Wi-Fi 7 + Bluetooth 5.3",
+  "Audio": "Realtek 7.1",
+  "Nguồn đề xuất": "Tùy cấu hình"
+}
+,
+"vga-msi-rtx5060ti-ventus-3x-oc-16gb": {
+  "Hãng sản xuất": "MSI",
+  "Loại GPU": "GeForce RTX 5060 Ti",
+  "Dung lượng VRAM": "16GB GDDR7",
+  "Bus bộ nhớ": "128-bit, 28 Gbps",
+  "CUDA Cores": 4608,
+  "GPU Clock (Boost)": "2617 MHz (Extreme Performance)",
+  "TDP": "180W",
+  "Cổng xuất hình": "3× DisplayPort 2.1b, 1× HDMI 2.1b",
+  "Kết nối nguồn": "1× 8-pin",
+  "PCIe": "PCIe Gen 5 x16 (lên đến x8)",
+  "Thiết kế tản nhiệt": "Ventus 3X triple-fan, TORX Fan 5.0",
+  "Độ phân giải tối đa": "7680 × 4320",
+  "Hỗ trợ": "DirectX 12 Ultimate, OpenGL 4.6",
+  "LED": "Không",
+  "Kích thước (mm)": "304–306 × 121 × 44",
+  "Hỗ trợ tối đa màn hình": 4
+}
+,
+"case-x2-luxury-ultra": {
+  "Mã sản phẩm": "X2 LUXURY ULTRA",
+  "Màu sắc": "Đen",
+  "Kiểu dáng": "Mid Tower",
+  "Chất liệu": "SPCC 0.5mm, 3 mặt kính cường lực",
+  "Chuẩn PSU": "ATX",
+  "Khe ổ cứng": {
+    "3.5inch": 2,
+    "2.5inch": 1
+  },
+  "Khe mở rộng": 7,
+  "Cổng I/O": "USB 3.0 x1, USB 2.0 x2, HD Audio",
+  "Quạt hỗ trợ": {
+    "Trước": "3x120mm (chưa kèm)",
+    "Sau": "1x120mm (chưa kèm)",
+    "Dưới": "3x120mm (chưa kèm)",
+    "Tản nhiệt nước": "Hỗ trợ 360/240/120mm"
+  },
+  "Chiều cao tản CPU tối đa": "165mm",
+  "Chiều dài VGA tối đa": "410mm",
+  "Hỗ trợ mainboard": "ATX / Micro ATX / ITX",
+  "Kích thước (LxWxH)": "425 x 280 x 375mm",
+  "Trọng lượng": {
+    "Net": "4.9kg",
+    "Gross": "6.3kg"
+  },
+  "Ghi chú": "Vỏ case chưa kèm fan"
+}
+,
+"psu-asus-rog-thor-1200w-plat3": {
+  "Hãng sản xuất": "ASUS",
+  "Dòng sản phẩm": "ROG THOR Platinum III",
+  "Công suất": "1200W",
+  "Chứng nhận hiệu suất": "80 PLUS Platinum",
+  "Màu sắc": "Đen/Bạc",
+  "Chuẩn dây": "Full Modular"
+}
+,
+"monitor-asus-rog-swift-pg32ucdp": {
+  "Kích thước": "31.5 inch",
+  "Loại tấm nền": "OLED WOLED",
+  "Độ phân giải": "4K UHD (3840 x 2160) / Full HD (1080p)",
+  "Tần số quét": "4K @ 240 Hz / FHD @ 480 Hz",
+  "Thời gian phản hồi (GTG)": "0.03 ms",
+  "Độ sáng": {
+    "Thông thường": "250 cd/m²",
+    "Đỉnh": "1300 cd/m²"
+  },
+  "Góc nhìn": "178°/178°",
+  "Không gian màu": {
+    "sRGB": "100%",
+    "DCI-P3": "99%"
+  },
+  "Chế độ chống nháy": "OLED Anti-flicker",
+  "Tính năng đặc biệt": [
+    "Dual-Mode (4K/240Hz ↔ FHD/480Hz)",
+    "ROG Gaming AI (AI Crosshair, Shadow Boost, Sniper, Visual, MOBA Map Helper)",
+    "Heatsink tùy chỉnh & ASUS OLED Care",
+    "USB-C (DP Alt Mode, 90W PD) & KVM"
+  ],
+  "Kết nối": [
+    "DisplayPort 1.4 DSC",
+    "HDMI 2.1",
+    "USB-C (DP Alt Mode, 90W power delivery)"
+  ],
+  "Hỗ trợ góc đặt": "Tựa nghiêng, xoay, điều chỉnh độ cao, VESA 100×100 mm"
+}
+,
+"monitor-viewsonic-va1655-3": {
+  "Kích thước": "15.6 inch",
+  "Độ phân giải": "FHD (1920x1080)",
+  "Tấm nền": "IPS",
+  "Tần số quét": "60 Hz",
+  "Thời gian phản hồi": "7 ms",
+  "Độ sáng": "250 cd/m²",
+  "Tỷ lệ tương phản": "1000:1",
+  "Kết nối": [
+    "USB-C (DisplayPort Alt-Mode, 60W PD)",
+    "Mini-HDMI",
+    "Jack tai nghe 3.5 mm"
+  ],
+  "Tương thích OS": [
+    "Windows",
+    "macOS",
+    "Chrome OS",
+    "Android",
+    "iOS / iPadOS"
+  ],
+  "Thiết kế di động": "9.85 mm, 0.7 kg, chân đế gập tích hợp, hỗ trợ ngang / dọc",
+  "Bảo vệ mắt": "Low Blue Light, lớp phủ chống chói",
+  "Tính năng thêm": [
+    "USB-C sạc 60 W và hỗ trợ Pass-Through",
+    "Chế độ Eco tiết kiệm năng lượng"
+  ]
+}
+,
+"monitor-vsp-v2704s-27": {
+  "Kích thước": "27 inch",
+  "Độ phân giải": "FHD (1920x1080)",
+  "Tấm nền": "IPS",
+  "Tần số quét": "75 Hz",
+  "Thời gian phản hồi": "5 ms (Typical)",
+  "Độ sáng": "250 cd/m²",
+  "Tỷ lệ tương phản": "1000:1",
+  "Số màu hiển thị": "16.7 triệu màu",
+  "Góc nhìn": "178°/178°",
+  "Kết nối": ["HDMI x1", "VGA x1"],
+  "Tính năng đặc biệt": ["FreeSync", "HDR", "DCR", "Color Temp", "Low Blue Light", "Multi-language Menu"],
+  "Khối lượng": "4.4 kg",
+  "Bảo hành": "36 tháng"
+}
+,
+"monitor-lg-32ur500k-b": {
+  "Kích thước": "31.5 inch",
+  "Độ phân giải": "4K UHD (3840 × 2160)",
+  "Tấm nền": "VA",
+  "Tần số quét": "60 Hz",
+  "Thời gian phản hồi": "4 ms (GtG)",
+  "Độ sáng": "250 cd/m² (typical)",
+  "Tỷ lệ tương phản": "3000:1",
+  "Không gian màu": "DCI-P3 90%",
+  "HDR": "HDR10",
+  "Tính năng game": [
+    "Dynamic Action Sync",
+    "Black Stabilizer",
+    "AMD FreeSync"
+  ],
+  "Loa tích hợp": "Có (Waves MaxxAudio)",
+  "Cổng kết nối": [
+    "HDMI ×2",
+    "DisplayPort 1.4",
+    "Headphone Out"
+  ],
+  "Chân đế": "Tilt",
+  "VESA Mount": "100 × 100 mm",
+  "Góc nhìn": "178°/178°",
+  "Tích hợp phần mềm": "OnScreen Control, Super Resolution+"
+}
+,
+"monitor-cooler-master-gm238-ffs": {
+  "Kích thước": "23.8 inch",
+  "Độ phân giải": "FHD (1920×1080)",
+  "Tấm nền": "Ultra-Speed IPS",
+  "Tần số quét": "Up to 144 Hz",
+  "Thời gian phản hồi": "0.5 ms (MPRT)",
+  "Độ sáng": "250 cd/m² (typical)",
+  "Tỷ lệ tương phản": "1000:1",
+  "Không gian màu": {
+    "DCI-P3": "90%",
+    "sRGB": "120%"
+  },
+  "HDR": "HDR10",
+  "Kết nối": [
+    "2× DisplayPort 1.4",
+    "2× HDMI 2.0"
+  ],
+  "Tính năng": [
+    "Adaptive Sync (FreeSync, G-Sync Compatible)",
+    "Low Blue Light",
+    "Anti-Flicker",
+    "Dynamic Overdrive"
+  ],
+  "Góc nhìn": "178°/178°",
+  "Điều chỉnh": "Tilt –5°/+15°, VESA 100×100 mm",
+  "Kích thước (mm)": "540 × 319.6 × 42",
+  "Trọng lượng": "2.8 kg"
+}
+,
+"keyboard-logitech-pro-x-tkl-rapid": {
+  "Thương hiệu": "Logitech",
+  "Tên sản phẩm": "PRO X TKL RAPID",
+  "Mã SP": "920-013131",
+  "Layout": "Tenkeyless",
+  "Số phím": 87,
+  "Chất liệu vỏ": "Nhựa",
+  "Màu sắc": "Đen",
+  "Keycap": "ABS",
+  "Switch": "Switch Nam châm",
+  "LED": "RGB",
+  "Kết nối": "USB-C to USB-A",
+  "Kích thước (mm)": "357 x 38 x 150",
+  "Tính năng": [
+    "Rapid Trigger",
+    "KEYCONTROL tùy chỉnh qua phần mềm"
+  ]
+}
+,
+"mouse-corsair-darkstar-rgb": {
+  "Nhà sản xuất": "Corsair",
+  "Tên sản phẩm": "DARKSTAR RGB",
+  "Model": "CH-931A011-AP",
+  "Kết nối": [
+    "USB 2.4GHz Slipstream",
+    "Bluetooth",
+    "Cáp sợi bện 1.8m"
+  ],
+  "DPI": 26000,
+  "Đèn nền": "RGB",
+  "Cảm biến": "MARKSMAN 26K",
+  "Số nút": 15,
+  "Switch": "Omron",
+  "Độ bền Switch": "50 triệu nhấp chuột",
+  "Game type": ["MMO", "MOBA", "RTS"],
+  "Pin": {
+    "USB 2.4GHz Slipstream": "Lên đến 65h",
+    "Bluetooth": "Lên đến 80h"
+  },
+  "Kích thước": "Đang cập nhật",
+  "Trọng lượng": "96g",
+  "Bảo hành": "24 tháng"
+}
+,
+"asus-rog-azoth-nx": {
+  "Thương hiệu": "Asus",
+  "Tên sản phẩm": "ASUS ROG AZOTH NX",
+  "Mã Model": "90MP0316-BKUA01",
+  "Layout": "75%",
+  "Số phím": 84,
+  "Chất liệu vỏ": ["Kim loại", "Nhựa"],
+  "Màu sắc": "Đen",
+  "Keycap": "PBT",
+  "Switch": "ROG NX Red Switch",
+  "LED": "RGB",
+  "Kết nối": ["Wireless 2.4Ghz", "Bluetooth", "USB có dây"],
+  "Loại dây": "USB",
+  "Kích thước": "326 x 136 x 40 mm",
+  "Pin": "4000mAh",
+  "Tính năng": [
+    "Màn hình OLED tùy chỉnh",
+    "Hỗ trợ Hotswap switch 3/5 pin",
+    "Tích hợp foam lót",
+    "Kèm bộ Kit DIY tùy chỉnh switch"
+  ]
+}
+,
+"asus-rog-harpe-ace-aimlab-white": {
+  "Thương hiệu": "Asus",
+  "Tên sản phẩm": "ROG Harpe Ace Aim Lab Edition - Moonlight White",
+  "Mã Model": "90MP02W0-BMUA10",
+  "Loại": "Chuột Gaming không dây",
+  "Màu sắc": "Moonlight White",
+  "Kết nối": ["Wireless 2.4GHz", "Bluetooth", "USB có dây"],
+  "Cảm biến": "ROG AimPoint Optical Sensor",
+  "DPI": "36.000 DPI",
+  "Độ bền switch": "70 triệu lần nhấn",
+  "Số nút": 5,
+  "Tần số phản hồi": "1000Hz",
+  "Trọng lượng": "54g",
+  "Thời lượng pin": "Lên đến 90 giờ (2.4GHz, tắt RGB)",
+  "Tính năng": [
+    "Hỗ trợ Aim Lab Settings Optimizer",
+    "Thiết kế siêu nhẹ",
+    "Feet PTFE 100% cho di chuột mượt",
+    "Hỗ trợ sạc nhanh USB-C"
+  ]
+}
+,
+"logitech-pro-x-superlight-2-white": {
+  "Thương hiệu": "Logitech",
+  "Tên sản phẩm": "PRO X Superlight 2 LIGHTSPEED",
+  "Mã Model": "910-006640",
+  "Loại": "Chuột Gaming không dây",
+  "Màu sắc": "Trắng",
+  "Kết nối": ["Wireless LIGHTSPEED 2.4GHz", "USB-C có dây"],
+  "Cảm biến": "HERO 2",
+  "DPI": "32.000 DPI",
+  "Tần số phản hồi": "2000Hz (LIGHTSPEED)",
+  "Số nút": 5,
+  "Độ bền switch": "Lên đến 100 triệu lần nhấn (Hybrid Optical-Mechanical)",
+  "Trọng lượng": "60g",
+  "Thời lượng pin": "Lên đến 95 giờ (không bật đèn)",
+  "Tiện ích": [
+    "Feet PTFE 100% cho độ mượt tối đa",
+    "Thiết kế siêu nhẹ",
+    "USB-C sạc nhanh",
+    "Tương thích POWERPLAY"
+  ]
+}
+,
+"asus-gt-ax11000-pro": {
+  "Mã sản phẩm": "GT-AX11000 PRO",
+  "Loại mạng": "IEEE 802.11ax",
+  "Công nghệ AX": true,
+  "Phân khúc": "AX11000 ultimate AX performance",
+  "Tốc độ dữ liệu": {
+    "2.4GHz": "4x4 (Tx/Rx) 1024 QAM 20/40MHz, up to 1148Mbps",
+    "5GHz-1": "4x4 (Tx/Rx) 1024 QAM 20/40/80/160MHz, up to 4804Mbps",
+    "5GHz-2": "4x4 (Tx/Rx) 1024 QAM 20/40/80/160MHz, up to 4804Mbps"
+  },
+  "Antenna": "External antenna x8 (non-detachable)",
+  "Vi xử lý": "2.0GHz quad-core processor",
+  "Bộ nhớ": "256MB NAND flash, 1GB DDR4 RAM",
+  "Tăng tốc độ": [
+    "OFDMA",
+    "Beamforming: standard-based and universal",
+    "1024-QAM high data rate",
+    "20/40/80/160 MHz bandwidth"
+  ],
+  "Tần số hoạt động": ["2.4 GHz", "5 GHz-1", "5 GHz-2"],
+  "Cổng": {
+    "WAN": ["1 x 2.5 Gigabit WAN", "1 x 10 Gigabit WAN/LAN"],
+    "LAN": "4 x Gigabit LAN Ports",
+    "USB": ["1 x USB 3.2 Gen 1", "1 x USB 2.0"]
+  },
+  "Nút bấm": ["WPS Button", "LED Button", "Reset Button", "Power Switch"],
+  "LED chỉ dẫn": ["Power", "2.4G", "5GHz-1", "5GHz-2", "WPS", "10GE", "LAN", "WAN"],
+  "Nguồn": {
+    "AC Input": "110V~240V 50/60Hz",
+    "DC Output": "19V/3.42A hoặc 19.5V/3.33A"
+  },
+  "Phụ kiện": ["Router GT-AX11000 Pro", "RJ-45 Cable", "Power Adapter", "Quick Start Guide", "Warranty Card"],
+  "Trọng lượng": "2180g",
+  "AiMesh": ["Primary AiMesh router", "AiMesh node"],
+  "Ứng dụng Router": "ASUS Router APP",
+  "Chế độ Gaming": ["Game Boost", "Game Radar", "WTFast", "UU boost", "ROG_First", "OpenNAT (Game Profile)"],
+  "Alexa": true,
+  "AiProtection": ["AiProtection Pro", "Router Security Assessment", "Malicious site blocking", "Two-Way IPS", "Infected Device Prevention and Blocking"],
+  "Parental Control": {
+    "Chức năng": ["Parental Control", "Customized Internet schedule"],
+    "Max profile": 64,
+    "Max content filter": 64
+  },
+  "Traffic Control": ["Adaptive QoS", "Bandwidth Monitor", "Bandwidth limiter", "Traditional QoS", "Traffic Monitor", "Traffic Analyzer"],
+  "Wireless": ["IPv6", "MU-MIMO", "WiFi Encryption: WPA3/WPA2/WPA Personal & Enterprise", "UTF-8 SSID", "Guest Network", "WPS", "Wi-Fi MAC address filter", "Wireless scheduler", "Airtime fairness", "RADIUS Client", "Universal beamforming"],
+  "WAN": ["Explicit beamforming", "Internet connection Type", "Dual WAN", "WAN Aggregation", "3G/4G LTE dongle", "Port forwarding", "Port triggering", "DMZ", "DDNS", "NAT Passthrough", "Let's Encrypt", "Safe browsing", "DNS-over-TLS"],
+  "LAN": ["DHCP Server", "IGMP snooping", "IPTV", "LAN Link Aggregation", "Manual IP assignment"],
+  "VPN": ["VPN Client: L2TP, OVPN, PPTP, WireGuard", "VPN Server: IPSec, OVPN, PPTP, WireGuard", "VPN Fusion"],
+  "USB application": ["File System: HFS+, NTFS, vFAT, ext2/3/4", "Safely Remove Disk", "AiCloud", "Download Master", "AiDisk", "Media Server", "Time Machine", "Samba Server", "FTP Server", "Shared Folder privileges"],
+  "Administration": ["Operating mode: Router, AiMesh node, Access point, Repeater, Media bridge", "OS: ASUSWRT", "Free OS upgrade", "Firewall", "Max Firewall keyword/network/URL filter", "Wake on LAN", "SSH", "Backup/Restore configuration", "Diagnosis tools", "Feedback system", "System log", "New Device Notification", "Login Captcha", "Connection Diagnosis", "Security Scan", "Auto Firmware Update"]
+}
+,
+"linksys-max-stream-e9452": {
+  "Sản phẩm": "MAX-STREAM E9452-AH",
+  "Thương hiệu": "Linksys",
+  "Chuẩn WIFI": "WiFi 6",
+  "Số thiết bị tối đa": 55,
+  "Tốc độ (Mbps)": 5400,
+  "Băng thông": {
+    "2.4GHz": 600,
+    "5GHz": 4800
+  },
+  "CPU": {
+    "Số nhân": 3,
+    "Tần số": "1.2GHz"
+  },
+  "RAM": "512MB",
+  "Số antenna": 4,
+  "MU-MIMO": true,
+  "Hỗ trợ MESH": "Linksys EasyMesh",
+  "Cổng LAN": {
+    "Số cổng": 4,
+    "Tốc độ": "1Gbps"
+  },
+  "Cổng WAN": {
+    "Tốc độ": "1Gbps"
+  },
+  "Cổng kết nối khác": ["USB 3.0 x1"]
+
+
+},
+"asus-gt-ax6000-rog-rapture": {
+  "Sản phẩm": "GT-AX6000 ROG Rapture",
+  "Thương hiệu": "Asus",
+  "Chuẩn WIFI": "WiFi 6",
+  "Tốc độ": "6000 Mbps",
+  "Băng thông": {"2.4GHz": 1148, "5GHz-1": 4804, "5GHz-2": 4804},
+  "CPU": "2 nhân 2.0GHz",
+  "RAM": "1GB DDR4",
+  "Antenna": 8,
+  "MU-MIMO": true,
+  "AiProtection": "Pro",
+  "AiMesh": true,
+  "LAN": "4 x Gigabit",
+  "WAN": ["1 x 2.5G", "1 x 10G"],
+  "USB": ["USB 3.2 Gen1 x1", "USB 2.0 x1"]
+}
+,
+"webcam-10wac9901": {
+  "Model": "10WAC9901",
+  "Độ phân giải": "1080p60",
+  "Ống kính": {
+    "Loại": "AF Lens (Lấy nét tự động)",
+    "Tiêu cự": "24mm",
+    "Khẩu độ": "f/2.4",
+    "Góc nhìn": "84°"
+  },
+  "Dây cáp": "-",
+  "Chuẩn kết nối": "Detachable Wired USB-C",
+  "Phụ kiện": ["Cáp USB-C to A"]
+}
+,
+"webcam-logitech-mx-brio": {
+  "Tên sản phẩm": "Logitech MX Brio 4K Ultra HD",
+  "Màu sắc": "Xám",
+  "Độ phân giải": "4K Ultra HD",
+  "Khung hình": "30/60 FPS",
+  "Ống kính": {
+    "Loại": "Autofocus",
+    "Góc nhìn": "90°"
+  },
+  "Chuẩn kết nối": "USB 2.0 / USB 3.0",
+  "Tính năng khác": ["HDR", "RightLight 3", "Zoom kỹ thuật số"]
+}
+
+
+
+
 
 
 
