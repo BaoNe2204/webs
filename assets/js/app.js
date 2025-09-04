@@ -1,5 +1,4 @@
 
-// ============ Tabzy giữ nguyên ============
 const tabs3 = new Tabzy("#sliding-tabs", { onChange: updateActiveLine });
 function updateActiveLine() {
   const activeTab = tabs3.currentTab;
