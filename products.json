@@ -600,52 +600,108 @@
   ],
   "slide6": [
     {
-      "id": "dell-xps-13",
-      "title": "Dell XPS 13",
+      "id": "loa-edifier-qr65",
+      "title": "Loa BLUETOOTH EDIFIER QR65 White",
       "link": "./product-detail.html",
-      "image": "./assets/img/pro2.jpg",
+      "image": "https://gland.vn/media/product/14872_7564_loa_bluetooth_edifier_qr65_white.png",
+"images": [
+  "https://gland.vn/media/product/14872_7564_loa_bluetooth_edifier_qr65_white.png"
+]
+
+,
       "tags": [
-        "RAM 16 GB",
-        "SSD 512 GB"
+        "Bluetooth",
+        "60Hz-20KHz"
       ],
-      "price": "38.990.000đ",
-      "oldPrice": "43.990.000đ",
-      "discount": "-11%",
+      "price": "6.199.000 đ",
+      "oldPrice": "6.990.000đ",
+      "discount": "-12%",
       "score": "4.8",
       "sold": "2,7k"
     },
     {
-      "id": "hp-envy-x360-13",
-      "title": "HP Envy x360 13",
+      "id": "loa-gravastar-mars-pro",
+      "title": "LOA GRAVASTAR MARS PRO - MÀU TRẮNG",
       "link": "./product-detail.html",
-      "image": "./assets/img/pro3.jpg",
-      "tags": [
-        "RAM 16 GB",
-        "SSD 512 GB",
-        "OLED"
+      "image": "https://gland.vn/media/product/14214_73484_loa_gravastar_mars_pro_trang_2.jpg",
+      "images": [
+        "https://gland.vn/media/product/14214_73484_loa_gravastar_mars_pro_trang_2.jpg",
+        "https://gland.vn/media/product/14214_73484_loa_gravastar_mars_pro_trang_1.jpg",
+        "https://gland.vn/media/product/14214_73484_loa_gravastar_mars_pro_trang_7.jpg",
+        "https://gland.vn/media/product/14214_73484_loa_gravastar_mars_pro_trang_11.jpg"
       ],
-      "price": "28.490.000đ",
-      "oldPrice": "31.990.000đ",
-      "discount": "-11%",
+      "tags": [
+        "Bluetooth 5.0",
+        "20W"
+      ],
+      "price": "5.899.000 đ",
+      "oldPrice": "5.999.000đ",
+      "discount": "-2%",
       "score": "4.6",
       "sold": "2,0k"
     },
     {
-      "id": "asus-zenbook-14-oled",
-      "title": "ASUS Zenbook 14 OLED",
+      "id": "loa-harman-kardon-soundsticks-4",
+      "title": "Loa Harman Kardon SOUNDSTICKS 4 - Màu đen",
       "link": "./product-detail.html",
-      "image": "./assets/img/pro1.jpg",
-      "tags": [
-        "RAM 16 GB",
-        "SSD 1 TB",
-        "OLED"
+      "image": "https://gland.vn/media/product/13204_68322_loa_harman_kardon_soundsticks_4_mau_den_2.jpg",
+      "images": [
+        "https://gland.vn/media/product/13204_68322_loa_harman_kardon_soundsticks_4_mau_den_2.jpg",
+        "https://gland.vn/media/product/13204_68322_loa_harman_kardon_soundsticks_4_mau_den_5.jpg",
+        "https://gland.vn/media/product/13204_68322_loa_harman_kardon_soundsticks_4_mau_den_1.jpg"
       ],
-      "price": "29.990.000đ",
-      "oldPrice": "33.490.000đ",
-      "discount": "-10%",
+      "tags": [
+        "40Hz-20KHz",
+        "Bluetooth 4.2"
+      ],
+      "price": "6.499.000 đ",
+      "oldPrice": "6.799.000đ",
+      "discount": "-5%",
       "score": "4.8",
       "sold": "3,0k"
+    },
+    {
+      "id": "micro-asus-rog-carnyx",
+      "title": "Micro ASUS ROG Carnyx - Chính hãng",
+      "link": "./product-detail.html",
+      "image": "https://gland.vn/media/product/15091_z5546503260540_443858cc09af7531b188d55d07f3d40d.jpg",
+      
+        "images": [
+          "https://gland.vn/media/product/15091_z5546503260540_443858cc09af7531b188d55d07f3d40d.jpg",
+          "https://gland.vn/media/product/15091_z5546503238992_0ecf746c4fc4be11d6c8bc7938f1a843.jpg",
+          "https://gland.vn/media/product/15091_z5546503260727_0ec0f4747417bfb766d4022f5531f66b.jpg",
+          "https://gland.vn/media/product/15091_z5546503260731_313fbafcd70780e33ecf28e60beab87c.jpg"
+        ],
+      "tags": [
+        "20Hz - 20kHz",
+        "ROG"
+      ],
+      "price": "4.699.000 đ ",
+      "oldPrice": "4.999.000đ",
+      "discount": "-7%",
+      "score": "4.5",
+      "sold": "6,0k"
+    },
+    {
+      "id": "micro-razer-seiren-v3-chroma",
+      "title": "Micro Razer Seiren V3 Chroma - RGB USB",
+      "link": "./product-detail.html",
+      "image": "https://gland.vn/media/product/15324_81192_microphone_razer_seiren_v3_chroma_rgb_usb_microphone_with_tap_to_mute_frml_packaging_rz19_05060100_r3m1_2.jpg",
+      
+        "images": [
+          "https://gland.vn/media/product/15324_81192_microphone_razer_seiren_v3_chroma_rgb_usb_microphone_with_tap_to_mute_frml_packaging_rz19_05060100_r3m1_2.jpg"
+        ],
+      "tags": [
+        "20Hz - 20kHz",
+        "RGB"
+      ],
+      "price": "3.299.000 đ ",
+      "oldPrice": "3.499.000đ",
+      "discount": "-6%",
+      "score": "4.4",
+      "sold": "7,8k"
     }
+    
   ],
   "slide7": [
     {
@@ -836,7 +892,7 @@
     },
     {
       "id": "laptop-r7-6800h-rtx3050",
-      "title": "Laptop Gaming Asus Rog Strix G15 G513RC HN038W",
+      "title": "Laptop Gaming Asus Rog Strix G15 G513RC HN038W - Chính hãng",
       "price": "19.990.000 ₫ ",
       "oldPrice": "29.990.000 ₫",
       "discount": "-33%",
@@ -855,7 +911,7 @@
     },
     {
       "id": "laptop-r5-7535hs-rx6550m",
-      "title": "Laptop Gaming MSI Bravo 15 B7ED-010VN - Chính hãng",
+      "title": "Laptop Gaming MSI Bravo 15 B7ED-010VN 16GB/512GB - Chính hãng",
       "price": "13.990.000 ₫",
       "oldPrice": "18.490.000 ₫",
       "discount": "-24%",
@@ -873,7 +929,7 @@
     },
     {
       "id": "laptop-i5-12450hx-rtx4050",
-      "title": "Laptop Gaming Lenovo LOQ 15IRX9 (83DV00D5VN) ",
+      "title": "Laptop Gaming Lenovo LOQ 15IRX9 (83DV00D5VN) - Chính hãng ",
       "price": "22,990,000 ₫",
       "oldPrice": "27,990,000 ₫",
       "discount": "-18%",
