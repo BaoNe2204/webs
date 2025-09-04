@@ -43,7 +43,7 @@
       ],
       "price": "117.790.000 ₫",
       "oldPrice": "200.000.000 ₫",
-      "discount": "47.7%",
+      "discount": "-47.7%",
       "score": "4.9 ",
       "sold": "14,7k"
     },
@@ -162,214 +162,440 @@
   ],
   "slide2": [
     {
-      "id": "laptop-lenovo-ideapad-slim-5",
-      "title": "Laptop Lenovo IdeaPad Slim 5",
+      "id": "psu-asus-rog-thor-1200w-plat3",
+      "title": "PSU Asus ROG THOR 1200W Platinum III ",
       "link": "./product-detail.html",
-      "image": "./assets/img/pro2.jpg",
+      "image": "https://gland.vn/media/product/15921_z6313720448744_f76bf2926e7b5d414815318778298716.jpg",
+     "images": [
+  "https://gland.vn/media/product/15921_z6313720448744_f76bf2926e7b5d414815318778298716.jpg",
+  "https://gland.vn/media/product/15921_z6313720433849_9cd336535d9e2e19dad5a6b81372f653.jpg",
+  "https://gland.vn/media/product/15921_z6313720448747_25f2e8f3999f336e3aca51ae4c0d921e.jpg",
+  "https://gland.vn/media/product/15921_z6313720448743_d79f1afb7b91b98468c1cd01c5ceadca.jpg"
+]
+
+,
       "tags": [
-        "RAM 8 GB",
-        "SSD 512 GB"
+        "1200W",
+        "ROG"
       ],
-      "price": "13.490.000đ",
-      "oldPrice": "14.990.000đ",
-      "discount": "-10%",
+      "price": "12.299.000 đ ",
+      "oldPrice": "13.999.000đ",
+      "discount": "-13%",
       "score": "4.2",
       "sold": "3,8k"
     },
     {
-      "id": "macbook-m2-13_6inch",
-      "title": "MacBook Air M2 8CPU 8GPU 16GB 256GB  Apple Việt Nam",
+      "id": "ram-32gb-ddr5-4800",
+      "title": "Ram Laptop Kingston 32GB DDR5 4800MHz",
       "link": "./product-detail.html",
-      "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/v/n/vn0d33_1.jpg",
+      "image": "https://cdn.hoanghamobile.vn/i/preview-h-V2/Uploads/2024/09/13/kingston-kvr48s40bd8-32-1.png",
       "images": [
-  "https://cdn2.cellphones.com.vn/x/media/catalog/product/v/n/vn0d33_1.jpg?_gl=1*jqyjqf*_gcl_au*MTM5NjMwMTAyOS4xNzU1ODY1ODgx*_ga*MTYxNTgyMDk3Mi4xNzMyODgyMDAx*_ga_QLK8WFHNK9*czE3NTU5NjEzNTIkbzYkZzEkdDE3NTU5NjIwNDgkajU0JGwwJGgxNTYzNzI2Njk2",
-  "https://cdn2.cellphones.com.vn/x/media/catalog/product/v/n/vnb70f_1.jpg?_gl=1*jqyjqf*_gcl_au*MTM5NjMwMTAyOS4xNzU1ODY1ODgx*_ga*MTYxNTgyMDk3Mi4xNzMyODgyMDAx*_ga_QLK8WFHNK9*czE3NTU5NjEzNTIkbzYkZzEkdDE3NTU5NjIwNDgkajU0JGwwJGgxNTYzNzI2Njk2",
-  "https://cdn2.cellphones.com.vn/x/media/catalog/product/v/n/vn_mac_1_2.jpg?_gl=1*jqyjqf*_gcl_au*MTM5NjMwMTAyOS4xNzU1ODY1ODgx*_ga*MTYxNTgyMDk3Mi4xNzMyODgyMDAx*_ga_QLK8WFHNK9*czE3NTU5NjEzNTIkbzYkZzEkdDE3NTU5NjIwNDgkajU0JGwwJGgxNTYzNzI2Njk2",
-  "https://cdn2.cellphones.com.vn/x/media/catalog/product/v/n/vn_mac_2_2.jpg?_gl=1*jqyjqf*_gcl_au*MTM5NjMwMTAyOS4xNzU1ODY1ODgx*_ga*MTYxNTgyMDk3Mi4xNzMyODgyMDAx*_ga_QLK8WFHNK9*czE3NTU5NjEzNTIkbzYkZzEkdDE3NTU5NjIwNDgkajU0JGwwJGgxNTYzNzI2Njk2",
-  "https://cdn2.cellphones.com.vn/x/media/catalog/product/v/n/vn380f_1.jpg",
-  "https://cdn2.cellphones.com.vn/x/media/catalog/product/v/n/vn7269_1.jpg"
+  "https://cdn.hoanghamobile.vn/i/preview-h-V2/Uploads/2024/09/13/kingston-kvr48s40bd8-32-1.png",
+  "https://cdn.hoanghamobile.vn/i/preview-h-V2/Uploads/2024/09/13/kingston-kvr48s40bd8-32-2.png"
 ],
 
       "tags": [
-        "RAM 16 GB",
-        "256GB"
+        "DDR5",
+        "32GB"
       ],
-      "price": "19.590.000đ",
-      "oldPrice": "24.990.000đ",
-      "discount": "-22%",
+      "price": "2.650.000 ₫ ",
+      "oldPrice": "3.899.000 ₫",
+      "discount": "-32%",
       "score": "4.9",
       "sold": "12,4k"
     },
     {
-      "id": "acer-aspire-7",
-      "title": "Acer Aspire 7",
+      "id": "mainboard-gigabyte-b850-aorus-elite-wifi7",
+      "title": "Mainboard GIGABYTE B850 AORUS ELITE WIFI7",
       "link": "./product-detail.html",
-      "image": "./assets/img/pro1.jpg",
+      "image": "https://gland.vn/media/product/16357_z6957313440313_771d18d98ba85caa0e955b6eeb12c8a7.jpg",
+      "images": [
+  "https://gland.vn/media/product/16357_z6957313440313_771d18d98ba85caa0e955b6eeb12c8a7.jpg",
+  "https://gland.vn/media/product/16357_z6957313457654_9972894f43c7e25e21bd7dad6166b1d3.jpg",
+  "https://gland.vn/media/product/16357_z6957313457444_11c43b279ffecafc3eacd1ccbd316bfb.jpg"
+]
+,
       "tags": [
-        "RAM 16 GB",
-        "SSD 512 GB"
+        "Wifi 7",
+        "Aorus"
       ],
-      "price": "16.490.000đ",
-      "oldPrice": "18.990.000đ",
-      "discount": "-13%",
+      "price": "6.599.000 đ",
+      "oldPrice": "6.999.000đ",
+      "discount": "-6%",
       "score": "4.4",
       "sold": "4,1k"
+    },
+    {
+      "id": "vga-msi-rtx5060ti-ventus-3x-oc-16gb",
+      "title": "VGA MSI RTX 5060 Ti 16GB VENTUS 3X OC GDDR7",
+      "link": "./product-detail.html",
+      "image": "https://gland.vn/media/product/16345_52032_vga_msi_rtx_5060_ti_16gb_ventus.jpg",
+      "images": [
+  "https://gland.vn/media/product/16345_52032_vga_msi_rtx_5060_ti_16gb_ventus.jpg",
+  "https://gland.vn/media/product/16345_90627_card_man_hinh_msi_rtx_5060_ti_16g_ventus_3x_oc__1_.jpg",
+  "https://gland.vn/media/product/16345_90627_card_man_hinh_msi_rtx_5060_ti_16g_ventus_3x_oc__4_.jpg"
+]
+
+,
+      "tags": [
+        "5060 Ti",
+        "16GB"
+      ],
+      "price": "15.599.000 đ  ",
+      "oldPrice": "17.999.000đ",
+      "discount": "-14%",
+      "score": "4.6",
+      "sold": "4,9k"
+    },
+    {
+      "id": "case-x2-luxury-ultra",
+      "title": "Vỏ Case VSP X2 LUXURY ULTRA - ATX ĐEN",
+      "link": "./product-detail.html",
+      "image": "https://gland.vn/media/product/15931_z6331855027275_adead446b996f65f7e09e1cb79c10e71.jpg",
+      "images": [
+  "https://gland.vn/media/product/15931_z6331855027275_adead446b996f65f7e09e1cb79c10e71.jpg",
+  "https://gland.vn/media/product/15931_z6331855027237_fa57b030aaa2304bc4221b6cb6a91c79.jpg",
+  "https://gland.vn/media/product/15931_z6331855027220_7b2f05c1a99614fcebfbdebbd9686cbf.jpg",
+  "https://gland.vn/media/product/15931_z6331855027274_e2de657e232e5348738453f038540f6d.jpg",
+  "https://gland.vn/media/product/15931_z6331855027238_f1ee53ea178a9a194369b86193cf3908.jpg"
+]
+
+
+,
+      "tags": [
+        "Gaming case",
+        "VSP"
+      ],
+      "price": "899.000 đ ",
+      "oldPrice": "1.099.000đ",
+      "discount": "-19%",
+      "score": "4.7",
+      "sold": "4,5k"
     }
   ],
   "slide3": [
     {
-      "id": "msi-modern-15",
-      "title": "MSI Modern 15",
+      "id": "monitor-asus-rog-swift-pg32ucdp",
+      "title": "Màn hình ASUS ROG Swift PG32UCDP (31.5inch/OLED4K/240Hz)",
       "link": "./product-detail.html",
-      "image": "./assets/img/pro2.jpg",
+      "image": "https://gland.vn/media/product/15996_",
+      "images": [
+        "https://gland.vn/media/product/15996_",
+  "https://gland.vn/media/product/15996_15115_81367_man_hinh_asus_rog_swift_pg32ucdm_4.jpg",
+  "https://gland.vn/media/product/15996_15115_81367_man_hinh_asus_rog_swift_pg32ucdm_3.jpg"
+]
+,
       "tags": [
-        "RAM 16 GB",
-        "SSD 512 GB"
+        "240Hz",
+        "OLED 4K"
       ],
-      "price": "15.990.000đ",
-      "oldPrice": "17.490.000đ",
-      "discount": "-9%",
+      "price": "37.999.000 đ",
+      "oldPrice": "41.999.000đ",
+      "discount": "-10%",
       "score": "4.3",
       "sold": "2,6k"
     },
     {
-      "id": "asus-vivobook-14-oled",
-      "title": "ASUS Vivobook 14 OLED",
+      "id": "monitor-viewsonic-va1655-3",
+      "title": "Màn hình di động ViewSonic VA1655-3 (15.6 inch/FHD/IPS/60Hz/7ms)",
       "link": "./product-detail.html",
-      "image": "./assets/img/pro3.jpg",
+      "image": "https://gland.vn/media/product/16210_z6767999371976_33a22b2918f6cfd0efe99eefe1b5c655.jpg",
+      "images": [
+  "https://gland.vn/media/product/16210_z6767999371976_33a22b2918f6cfd0efe99eefe1b5c655.jpg",
+  "https://gland.vn/media/product/16210_z6767999394411_2088f47ff4c4773db8d580551db0c0f7.jpg",
+  "https://gland.vn/media/product/16210_z6767999394235_d123af0aa14a9e6910b237122b46ccd5.jpg"
+]
+,
       "tags": [
-        "RAM 8 GB",
-        "SSD 512 GB"
+        "60Hz",
+        "FHD"
       ],
-      "price": "17.490.000đ",
-      "oldPrice": "19.990.000đ",
-      "discount": "-13%",
+      "price": "2.999.000 đ",
+      "oldPrice": "6.899.000đ",
+      "discount": "-57%",
       "score": "4.7",
       "sold": "6,9k"
     },
     {
-      "id": "hp-pavilion-14",
-      "title": "HP Pavilion 14",
+      "id": "monitor-vsp-v2704s-27",
+      "title": "Màn hình VSP V2704S   (27 inch /FHD/IPS/75Hz/5ms/Black)",
       "link": "./product-detail.html",
-      "image": "./assets/img/pro1.jpg",
+      "image": "https://gland.vn/media/product/15983_73650_man_hinh_vsp_v24704s_1.jpg",
+      "images": [
+  "https://gland.vn/media/product/15983_73650_man_hinh_vsp_v24704s_1.jpg",
+  "https://gland.vn/media/product/15983_73650_man_hinh_vsp_v24704s_4.jpg",
+  "https://gland.vn/media/product/15983_73650_man_hinh_vsp_v24704s_3.jpg"
+],
+
       "tags": [
-        "RAM 16 GB",
-        "SSD 512 GB"
+        "75Hz",
+        "FHD"
       ],
-      "price": "18.990.000đ",
-      "oldPrice": "21.490.000đ",
-      "discount": "-12%",
+      "price": "2.099.000 đ",
+      "oldPrice": "2.999.000đ",
+      "discount": "-31%",
       "score": "4.5",
       "sold": "3,3k"
+    },
+    {
+      "id": "monitor-lg-32ur500k-b",
+      "title": "Màn hình LG 32UR500K-B (31.5 inch/UHD/VA/60Hz/5ms)",
+      "link": "./product-detail.html",
+      "image": "https://gland.vn/media/product/15919_88401_man_hinh_lg_ultrafine_32ur500k_b_2.jpg",
+     "images": [
+  "https://gland.vn/media/product/15919_88401_man_hinh_lg_ultrafine_32ur500k_b_2.jpg",
+  "https://gland.vn/media/product/15919_88401_man_hinh_lg_ultrafine_32ur500k_b_5.jpg",
+  "https://gland.vn/media/product/15919_88401_man_hinh_lg_ultrafine_32ur500k_b_4.jpg"
+]
+,
+
+      "tags": [
+        "60Hz",
+        "UHD"
+      ],
+      "price": "2.099.000 đ",
+      "oldPrice": "2.999.000đ",
+      "discount": "-11%",
+      "score": "4.3",
+      "sold": "3,8k"
+    },
+    {
+      "id": "monitor-cooler-master-gm238-ffs  ",
+      "title": "Màn hình Cooler Master GM238-FFS 23.8 inch IPS FHD 144Hz",
+      "link": "./product-detail.html",
+      "image": "https://gland.vn/media/product/14128_45371_m__n_h__nh_m__y_t__nh_cooler_master_gm238_ffs_23_8_inch_ips_fhd_144hz.jpg",
+     "images": [
+     " https://gland.vn/media/product/14128_45371_m__n_h__nh_m__y_t__nh_cooler_master_gm238_ffs_23_8_inch_ips_fhd_144hz.jpg"
+]
+,
+
+      "tags": [
+        "144Hz",
+        "FHD"
+      ],
+      "price": "3.299.000 đ",
+      "oldPrice": "4.899.000đ",
+      "discount": "-33%",
+      "score": "4.4",
+      "sold": "3,2k"
     }
   ],
   "slide4": [
     {
-      "id": "lenovo-loq-15",
-      "title": "Lenovo LOQ 15",
+      "id": "keyboard-logitech-pro-x-tkl-rapid",
+      "title": "Bàn phím cơ HE Logitech PRO X TKL RAPID (Màu Đen)",
       "link": "./product-detail.html",
-      "image": "./assets/img/pro2.jpg",
+      "image": "https://gland.vn/media/product/16310_88120_ban_phim_he_logitech_pro_x_tkl_rapid_mau_den_1.jpg",
+      "images": [
+  "https://gland.vn/media/product/16310_88120_ban_phim_he_logitech_pro_x_tkl_rapid_mau_den_1.jpg",
+  "https://gland.vn/media/product/16310_88120_ban_phim_he_logitech_pro_x_tkl_rapid_mau_den_4.jpg",
+  "https://gland.vn/media/product/16310_88120_ban_phim_he_logitech_pro_x_tkl_rapid_mau_den_5.jpg"
+]
+,
       "tags": [
-        "RAM 16 GB",
-        "SSD 512 GB",
-        "RTX 4050"
+        "RGB",
+        "Logitech"
       ],
-      "price": "27.990.000đ",
-      "oldPrice": "31.990.000đ",
-      "discount": "-13%",
+      "price": "3.499.000 đ",
+      "oldPrice": "4.999.000đ",
+      "discount": "-31%",
       "score": "4.6",
       "sold": "1,9k"
     },
     {
-      "id": "acer-nitro-5",
-      "title": "Acer Nitro 5",
+      "id": "mouse-corsair-darkstar-rgb",
+      "title": "Chuột không dây Corsair DARKSTAR RGB _ CH-931A011-AP",
       "link": "./product-detail.html",
-      "image": "./assets/img/pro3.jpg",
+      "image": "https://gland.vn/media/product/15573_77415_chuot_khong_day_corsair_darkstar_rgb___ch_931a011_ap_1.jpg",
+      "images": [
+  "https://gland.vn/media/product/15573_77415_chuot_khong_day_corsair_darkstar_rgb___ch_931a011_ap_1.jpg",
+  "https://gland.vn/media/product/15573_77415_chuot_khong_day_corsair_darkstar_rgb___ch_931a011_ap_3.jpg",
+  "https://gland.vn/media/product/15573_77415_chuot_khong_day_corsair_darkstar_rgb___ch_931a011_ap_2.jpg"
+]
+,
       "tags": [
-        "RAM 16 GB",
-        "SSD 512 GB",
-        "RTX 3050"
+        "RGB",
+        "Corsair"
       ],
-      "price": "22.990.000đ",
-      "oldPrice": "25.990.000đ",
-      "discount": "-12%",
+      "price": "3.199.000 đ",
+      "oldPrice": "3.990.000đ",
+      "discount": "-20%",
       "score": "4.4",
       "sold": "4,8k"
     },
     {
-      "id": "asus-tuf-gaming-f15",
-      "title": "ASUS TUF Gaming F15",
+      "id": "asus-rog-azoth-nx",
+      "title": "Bàn phím cơ ASUS ROG AZOTH NX Đen Red Switch (Wireless/Bluetooth)",
       "link": "./product-detail.html",
-      "image": "./assets/img/pro1.jpg",
+      "image": "https://gland.vn/media/product/15547_71809_ban_phim_gaming_khong_day_asus_rog_azoth_nx_den_red_switch_logo.jpg",
+      "images": [
+  "https://gland.vn/media/product/15547_71809_ban_phim_gaming_khong_day_asus_rog_azoth_nx_den_red_switch_logo.jpg",
+  "https://gland.vn/media/product/15547_71809_ban_phim_gaming_khong_day_asus_rog_azoth_nx_den_red_switch_wireless_bluetooth_usb_oled_scr_90mp0316_bkua01_5.jpg",
+  "https://gland.vn/media/product/15547_71809_ban_phim_gaming_khong_day_asus_rog_azoth_nx_den_red_switch_wireless_bluetooth_usb_oled_scr_90mp0316_bkua01_2.jpg"
+]
+,
       "tags": [
-        "RAM 16 GB",
-        "SSD 512 GB",
-        "RTX 4060"
+        "RGB",
+        "Asus",
+        "Red Switch"
       ],
-      "price": "29.490.000đ",
-      "oldPrice": "33.990.000đ",
-      "discount": "-13%",
+      "price": "6.799.000 đ",
+      "oldPrice": "6.999.000đ",
+      "discount": "-3%",
       "score": "4.7",
       "sold": "2,2k"
+    },
+    {
+      "id": "asus-rog-harpe-ace-aimlab-white",
+      "title": "Chuột Gaming không dây Asus ROG Harpe Ace Aim Lab Edition-Moonlight ",
+      "link": "./product-detail.html",
+      "image": "https://gland.vn/media/product/15266_76736_chuot_gaming_co_day_asus_rog_harpe_ace_aim_lab_edition_moonlight_white___90mp02w0_bmua10_2.jpg",
+   "images": [
+  "https://gland.vn/media/product/15266_76736_chuot_gaming_co_day_asus_rog_harpe_ace_aim_lab_edition_moonlight_white___90mp02w0_bmua10_2.jpg",
+  "https://gland.vn/media/product/15266_76736_chuot_gaming_co_day_asus_rog_harpe_ace_aim_lab_edition_moonlight_white___90mp02w0_bmua10_5.jpg",
+  "https://gland.vn/media/product/15266_76736_chuot_gaming_co_day_asus_rog_harpe_ace_aim_lab_edition_moonlight_white___90mp02w0_bmua10_3.jpg"
+]
+
+,
+      "tags": [
+        "Gaming",
+        "ROG"
+      ],
+      "price": "2.799.000 đ",
+      "oldPrice": "2.999.000đ",
+      "discount": "-7%",
+      "score": "4.7",
+      "sold": "2,7k"
+    },
+    {
+      "id": "logitech-pro-x-superlight-2-white",
+      "title": "CHUỘT GAMING KHÔNG DÂY LOGITECH PRO X SUPERLIGHT 2  ",
+      "link": "./product-detail.html",
+      "image": "https://gland.vn/media/product/14443_76326_chuot_gaming_khong_day_logitech_pro_x_superlight_2_lightspeed_white_2.jpg",
+   "images": [
+  "https://gland.vn/media/product/14443_76326_chuot_gaming_khong_day_logitech_pro_x_superlight_2_lightspeed_white_2.jpg",
+  "https://gland.vn/media/product/14443_76326_chuot_gaming_khong_day_logitech_pro_x_superlight_2_lightspeed_white_6.jpg",
+  "https://gland.vn/media/product/14443_76326_chuot_gaming_khong_day_logitech_pro_x_superlight_2_lightspeed_white_1.jpg"
+]
+
+
+,
+      "tags": [
+        "Gaming",
+        "Logitech pro"
+      ],
+      "price": "3.099.000 đ",
+      "oldPrice": "3.599.000đ",
+      "discount": "-14%",
+      "score": "4.9",
+      "sold": "10,2k"
     }
   ],
   "slide5": [
     {
-      "id": "macbook-m3max-14_2inch",
-      "title": "MacBook Pro 14 inch M3 Max 96GB - 512GB Sạc 96W Apple Việt Nam",
-      "images": [
-  "https://cdn2.cellphones.com.vn/x/media/catalog/product/m/a/macbook-pro-16-inch-m3-max-2023_1__5.png",
-  "https://cdn2.cellphones.com.vn/x/media/catalog/product/m/a/macbook-pro-16-inch-m3-max-2023_4__5.png",
-  "https://cdn2.cellphones.com.vn/x/media/catalog/product/m/a/macbook-pro-16-inch-m3-max-2023_5__5.png",
-  "https://cdn2.cellphones.com.vn/x/media/catalog/product/m/a/macbook-pro-16-inch-m3-max-2023_8__5.png",
-  "https://cdn2.cellphones.com.vn/x/media/catalog/product/m/a/macbook-pro-16-inch-m3-max-2023_2__5.png",
-  "https://cdn2.cellphones.com.vn/x/media/catalog/product/m/a/macbook-pro-16-inch-m3-max-2023_3__5.png",
-  "https://cdn2.cellphones.com.vn/x/media/catalog/product/m/a/macbook-pro-16-inch-m3-max-2023_10__5.png",
-  "https://cdn2.cellphones.com.vn/x/media/catalog/product/m/a/macbook-pro-16-inch-m3-max-2023_6__5.png",
-  "https://cdn2.cellphones.com.vn/x/media/catalog/product/m/a/macbook-pro-16-inch-m3-max-2023_9__5.png"
-],
-
+      "id": "asus-gt-ax11000-pro",
+      "title": "Router ASUS ROG Rapture GT-AX11000 PRO ",
+  "images": [
+  "https://gland.vn/media/product/14999_76386_router_asus_gt_ax11000_pro___8_.jpg",
+  "https://gland.vn/media/product/14999_76386_router_asus_gt_ax11000_pro___7_.jpg",
+  "https://gland.vn/media/product/14999_76386_router_asus_gt_ax11000_pro___4_.jpg"
+]
+,
       "link": "./product-detail.html",
-      "image": "https://cdn2.cellphones.com.vn/x/media/catalog/product/m/a/macbook-pro-16-inch-m3-max-2023_1__5.png",
+      "image": "https://gland.vn/media/product/14999_76386_router_asus_gt_ax11000_pro___8_.jpg",
       "tags": [
-        "RAM 96 GB",
-        "512GB"
+        "Wifi 6",
+        "Gaming router"
       ],
-      "price": "89.990.000đ",
-      "oldPrice": "95.990.000đ",
-      "discount": "-10%",
+      "price": "9.999.000 đ",
+      "oldPrice": "15.990.000đ",
+      "discount": "-38%",
       "score": "4.9",
       "sold": "8,1k"
     },
     {
-      "id": "surface-laptop-5",
-      "title": "Surface Laptop 5",
+      "id": "linksys-max-stream-e9452",
+      "title": "ROUTER Linksys E9452-AH 2-Pack MAX-STREAM ",
       "link": "./product-detail.html",
-      "image": "./assets/img/pro3.jpg",
+      "image": "https://gland.vn/media/product/15639_85503_bo_phat_wifi_6_linksys_e9452_ah_2_pack_max_stream_chuan_ax_ax5400mbps_wifi_mesh_55_user_cu_dep_full_box_gach_serial.jpg",
+      "images": [
+  "https://gland.vn/media/product/15639_85503_bo_phat_wifi_6_linksys_e9452_ah_2_pack_max_stream_chuan_ax_ax5400mbps_wifi_mesh_55_user_cu_dep_full_box_gach_serial.jpg",
+  "https://gland.vn/media/product/15639_85503_bo_phat_wifi_6_linksys_e9452_ah_2_pack_max_stream_chuan_ax_ax5400mbps_wifi_mesh_55_user_cu_dep_full_box_gach_serial__2_.jpg"
+]
+,
       "tags": [
-        "RAM 16 GB",
-        "SSD 512 GB"
+        "Wifi Mesh",
+        "5400Mbps"
       ],
-      "price": "31.990.000đ",
-      "oldPrice": "35.990.000đ",
-      "discount": "-11%",
+      "price": "3.999.000 đ",
+      "oldPrice": "4.999.000đ",
+      "discount": "-21%",
       "score": "4.6",
       "sold": "1,5k"
     },
     {
-      "id": "lg-gram-16",
-      "title": "LG Gram 16",
+      "id": "asus-gt-ax6000-rog-rapture",
+      "title": "Router Asus GT-AX6000 ROG Rapture Gaming",
       "link": "./product-detail.html",
-      "image": "./assets/img/pro1.jpg",
+      "image": "https://gland.vn/media/product/11662_65693_bo_phat_wifi_6_asus_gt_ax6000_rog_rapture_gaming_ax6000mbps__4_.jpg",
+      "images": [
+  "https://gland.vn/media/product/11662_65693_bo_phat_wifi_6_asus_gt_ax6000_rog_rapture_gaming_ax6000mbps__4_.jpg",
+  "https://gland.vn/media/product/11662_65693_bo_phat_wifi_6_asus_gt_ax6000_rog_rapture_gaming_ax6000mbps__3_.jpg"
+],
+
       "tags": [
-        "RAM 16 GB",
-        "SSD 1 TB"
+        "6000Mbps",
+        "Gaming"
       ],
-      "price": "36.990.000đ",
-      "oldPrice": "40.990.000đ",
-      "discount": "-10%",
+      "price": "8.999.000 đ",
+      "oldPrice": "11.899.000đ",
+      "discount": "-25%",
       "score": "4.7",
       "sold": "1,1k"
+    },
+    {
+      "id": "webcam-10wac9901",
+      "title": "Webcam Elgato Facecam MK.2 (10WAC9901)",
+      "link": "./product-detail.html",
+      "image": "https://gland.vn/media/product/15610_85454_thiet_bi_truyen_hinh_anh_elgato_facecam_mk_2_10wac9901.jpg",
+"images": [
+  "https://gland.vn/media/product/15610_85454_thiet_bi_truyen_hinh_anh_elgato_facecam_mk_2_10wac9901.jpg",
+  "https://gland.vn/media/product/15610_85454_thiet_bi_truyen_hinh_anh_elgato_facecam_mk_2_10wac9901_2.jpg",
+  "https://gland.vn/media/product/15610_85454_thiet_bi_truyen_hinh_anh_elgato_facecam_mk_2_10wac9901_1.jpg"
+]
+
+,
+      "tags": [
+        "MK.2",
+        "1080p60"
+      ],
+      "price": "3.899.000 đ",
+      "oldPrice": "5.699.000đ",
+      "discount": "-32%",
+      "score": "4.7",
+      "sold": "2,9k"
+    },
+    {
+      "id": "webcam-logitech-mx-brio",
+      "title": "Webcam Logitech Mx Brio 4K Ultra HD - Màu xám",
+      "link": "./product-detail.html",
+      "image": "https://gland.vn/media/product/15426_82008_webcam_logitech_mx_brio_4k_ultra_hd_mau_xam.jpg",
+"images": [
+  "https://gland.vn/media/product/15426_82008_webcam_logitech_mx_brio_4k_ultra_hd_mau_xam.jpg",
+  "https://gland.vn/media/product/15426_82008_webcam_logitech_mx_brio_4k_ultra_hd_mau_xam_4.jpg"
+]
+
+
+,
+      "tags": [
+        "30/60Fps",
+        "4K Ultra HD"
+      ],
+      "price": "4.099.000 đ",
+      "oldPrice": "5.999.000đ",
+      "discount": "-32%",
+      "score": "4.5",
+      "sold": "2,6k"
     }
   ],
   "slide6": [
