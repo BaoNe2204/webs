@@ -176,9 +176,9 @@
     const listBig = $(".prod-preview__list");
     const listThumb = $(".prod-preview__thumbs");
     const titleEl = $(".prod-info__heading");
-    const totalEl = $(".prod-info__price");        
-    const taxEl = $(".prod-info__tax");         
-    const priceEl = $(".prod-info__total-price");  
+    const totalEl = $(".prod-info__price");
+    const taxEl = $(".prod-info__tax");
+    const priceEl = $(".prod-info__total-price");
     const addBtn = $(".prod-info__add-to-cart");
 
     let data;
@@ -239,7 +239,7 @@
     }
 
     // ===== Giá, giảm giá & thuế =====
-    const rawPrice = toNumber(prod.price);      
+    const rawPrice = toNumber(prod.price);
     const rawOldPrice = toNumber(prod.oldPrice);
     const hasValidOld = rawOldPrice && rawOldPrice > rawPrice;
 
@@ -256,12 +256,12 @@
       if (p) {
         percentDisplay = `${Math.round(p * 100)}%`;
       } else {
-        const rate = (rawPrice && rawOldPrice) ? (rawPrice / rawOldPrice - 1) : 0; 
+        const rate = (rawPrice && rawOldPrice) ? (rawPrice / rawOldPrice - 1) : 0;
         percentDisplay = rate ? `${Math.round(rate * 100)}%` : "";
       }
     } else {
-      let discountRate = parsePercent(prod.discount); 
-      if (discountRate > 0) discountRate = -Math.abs(discountRate); 
+      let discountRate = parsePercent(prod.discount);
+      if (discountRate > 0) discountRate = -Math.abs(discountRate);
 
       if (discountRate) {
         priceAfterDiscount = Math.max(0, Math.round(rawPrice * (1 + discountRate)));
@@ -290,7 +290,7 @@
     }
     if (discountEl) {
       if (percentDisplay) {
-        discountEl.textContent = percentDisplay;   
+        discountEl.textContent = percentDisplay;
         discountEl.classList.remove("pd-hide");
       } else {
         discountEl.textContent = "";
@@ -310,9 +310,9 @@
       window.cartStore?.add({
         id: prod._id,
         name: prod.title,
-        price: priceAfterDiscount,         
+        price: priceAfterDiscount,
         img: prod.image || gallery[0],
-        qty,                                 
+        qty,
       });
 
       window.renderMiniCart?.();
@@ -406,3 +406,195 @@ updateInstallmentButtons();
       .catch(() => { });
   });
 })();
+// ===== Similar items (hardened) =====
+(function () {
+  const $ = (s, r = document) => r.querySelector(s);
+
+  function moneyVND(n) {
+    const num = typeof n === "number" ? n : parseFloat(String(n).replace(/[^\d.]/g, "")) || 0;
+    try { return num.toLocaleString("vi-VN", { style: "currency", currency: "VND" }); }
+    catch { return num.toFixed(0); }
+  }
+
+  // --- LOAD & CHUẨN HÓA products.json ---
+  async function loadProducts() {
+    // Sửa lỗi cú pháp + thử đúng đường dẫn
+    const here = location.pathname.replace(/[^/]+$/, "");
+    const origin = location.origin;
+    const candidates = [
+      `${here}products.json`,
+      `${origin}/products.json`,
+      `${origin}/webs/products.json`,
+      `${here}assets/data/products.json`,
+      `${origin}/assets/data/products.json`,
+      `./products.json`
+    ];
+
+    for (const url of candidates) {
+      try {
+        const res = await fetch(url, { cache: "no-store" });
+        if (!res.ok) throw new Error(res.status + " " + res.statusText);
+        let data = await res.json();
+
+        // Unwrap: products.json là object có nhiều mảng con (slide1..)
+        if (Array.isArray(data)) {
+          // đã là array
+        } else if (data && typeof data === "object") {
+          data = Object.values(data).reduce((acc, v) => {
+            if (Array.isArray(v)) acc.push(...v);
+            return acc;
+          }, []);
+        } else {
+          data = [];
+        }
+
+        console.log("[similar] Loaded:", url, Array.isArray(data) ? data.length : data);
+        return data;
+      } catch (e) {
+        console.warn("[similar] Can't load", url, e);
+      }
+    }
+    throw new Error("Không tải được products.json ở các path thử nghiệm");
+  }
+
+  function getCurrentProduct(products) {
+    const params = new URLSearchParams(location.search);
+    const id = params.get("id");
+    const titleText = $("#prod-title")?.textContent?.trim()?.toLowerCase() || "";
+    const brandText = $(".prod-info__brand, .product-card__brand")?.textContent?.trim()?.toLowerCase() || "";
+
+    let cur =
+      (id && products.find(p => String(p.id) === String(id))) ||
+      products.find(p => (p.title || p.name || "").toLowerCase() === titleText) ||
+      null;
+
+    if (!cur && brandText) {
+      cur = products.find(p => (p.brand || "").toLowerCase() === brandText) || null;
+    }
+    return cur;
+  }
+
+  function similarityMaker(current) {
+    const curBrand = (current.brand || "").toLowerCase();
+    const curCategory = (current.category || current.type || "").toLowerCase();
+    const curTags = (current.tags || []).map(t => (t || "").toLowerCase());
+    const priceCur = Number(current.price ?? current.finalPrice ?? 0);
+
+    return function score(p) {
+      let s = 0;
+      if ((p.brand || "").toLowerCase() === curBrand) s += 3;
+      if ((p.category || p.type || "").toLowerCase() === curCategory) s += 2;
+      const tags = (p.tags || []).map(t => (t || "").toLowerCase());
+      if (tags.some(t => curTags.includes(t))) s += 1;
+      const priceP = Number(p.price ?? p.finalPrice ?? 0);
+      if (priceCur && priceP) {
+        const diff = Math.abs(priceCur - priceP) / Math.max(priceCur, priceP);
+        if (diff < 0.15) s += 1;
+      }
+      return s;
+    };
+  }
+
+  function cardHTML(p) {
+    const detailHref = `./product-detail.html?id=${encodeURIComponent(p.id ?? "")}`;
+    const img = p.image || p.thumbnail || (Array.isArray(p.images) ? p.images[0] : "") || "./assets/img/product/item-1.png";
+    const name = p.title || p.name || "Product";
+    const brand = p.brand || "";
+    const price = p.finalPrice ?? p.price ?? 0;
+    const rating = p.rating ?? p.score ?? "4.5";
+
+    return `
+      <div class="col">
+        <article class="product-card">
+          <div class="product-card__img-wrap">
+            <a href="${detailHref}">
+              <img src="${img}" alt="${name}" class="product-card__thumb" />
+            </a>
+            <button class="like-btn product-card__like-btn" data-like-id="${p.id}">
+              <img src="./assets/icons/heart.svg" alt="" class="like-btn__icon icon" />
+              <img src="./assets/icons/heart-red.svg" alt="" class="like-btn__icon--liked" />
+            </button>
+          </div>
+          <h3 class="product-card__title">
+            <a href="${detailHref}">${name}</a>
+          </h3>
+          <p class="product-card__brand">${brand}</p>
+          <div class="product-card__row">
+            <span class="product-card__price">${moneyVND(price)}</span>
+            <img src="./assets/icons/star.svg" alt="" class="product-card__star" />
+            <span class="product-card__score">${rating}</span>
+          </div>
+        </article>
+      </div>`;
+  }
+
+  // like handler — robust với SVG/Text node
+  function initLike(grid) {
+    const KEY = "favourites";
+    const getFav = () => { try { return JSON.parse(localStorage.getItem(KEY) || "[]"); } catch { return []; } };
+    const setFav = (arr) => localStorage.setItem(KEY, JSON.stringify(arr));
+
+    const fav = new Set(getFav().map(String));
+    grid.querySelectorAll("[data-like-id]").forEach(btn => {
+      const id = btn.getAttribute("data-like-id");
+      if (fav.has(String(id))) btn.classList.add("like-btn--liked");
+    });
+
+    grid.addEventListener("click", (e) => {
+      const path = e.composedPath ? e.composedPath() : [];
+      const btn = path.find(n => n instanceof Element && n.matches?.("[data-like-id]"));
+      if (!btn) return;
+      const pid = String(btn.getAttribute("data-like-id"));
+      if (fav.has(pid)) { fav.delete(pid); btn.classList.remove("like-btn--liked"); }
+      else { fav.add(pid); btn.classList.add("like-btn--liked"); }
+      setFav([...fav]);
+    });
+  }
+
+  async function run() {
+    const grid = document.getElementById("similar-grid");
+    if (!grid) { console.warn("[similar] #similar-grid không tồn tại"); return; }
+
+    let products = [];
+    try {
+      products = await loadProducts();             // luôn trả về 1 mảng đã unwrap
+    } catch (e) {
+      console.error("[similar] Lỗi load products:", e);
+      grid.innerHTML = `<div class="col"><p style="padding:12px;color:#888">Không tải được danh sách sản phẩm.</p></div>`;
+      return;
+    }
+
+    const current = getCurrentProduct(products);
+    if (!current) {
+      console.warn("[similar] Không xác định được sản phẩm hiện tại");
+      grid.innerHTML = `<div class="col"><p style="padding:12px;color:#888">Chưa xác định sản phẩm hiện tại để gợi ý.</p></div>`;
+      return;
+    }
+
+    const score = similarityMaker(current);
+    const list = products
+      .filter(p => String(p.id) !== String(current.id))
+      .map(p => ({ p, s: score(p) }))
+      .filter(x => x.s > 0)
+      .sort((a, b) => b.s - a.s)
+      .slice(0, 6)
+      .map(x => x.p);
+
+    if (!list.length) {
+      grid.innerHTML = `<div class="col"><p style="padding:12px;color:#888">Không tìm thấy sản phẩm tương tự.</p></div>`;
+      return;
+    }
+
+    grid.innerHTML = list.map(cardHTML).join("");
+    initLike(grid);
+  }
+
+  const kick = () => { try { run(); } catch (e) { console.error(e); } };
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", kick, { once: true });
+  } else {
+    kick();
+  }
+  window.addEventListener("template-loaded", kick, { once: true });
+})();
+

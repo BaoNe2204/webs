@@ -1,4 +1,3 @@
-// assets/js/auth-local.js
 (() => {
     const USERS_KEY = "users";
     const CURRENT_USER_KEY = "currentUser";
@@ -183,18 +182,18 @@
     }
 
     renderAuthSlot();
+    document.dispatchEvent(new Event('auth-slot-updated'));
+    requestAnimationFrame(alignUserMenuArrow);
+
 
     document.addEventListener("click", (e) => {
-        const btn = e.target.closest("[data-logout]");
+        const path = e.composedPath ? e.composedPath() : [];
+        const btn = path.find(n => n instanceof Element && n.matches?.("[data-logout]"));
         if (!btn) return;
-        Auth.signOut();
-        toast("Đã đăng xuất", "success");
-        renderAuthSlot();
-        // Nếu đang ở trang cần login, đẩy về sign-in
-        if (document.body.hasAttribute("data-require-auth")) {
-            location.href = "sign-in.html";
-        }
+        Auth?.signOut?.();
+        location.href = "sign-in.html";
     });
+
     function alignUserMenuArrow() {
         const user = document.querySelector('.top-act__user');
         if (!user) return;
@@ -207,20 +206,23 @@
         const a = avatar.getBoundingClientRect();
         const i = inner.getBoundingClientRect();
         const centerX = a.left + a.width / 2;
-        const x = centerX - i.left;              
+        const x = centerX - i.left;
 
         arrow.style.left = x + 'px';
         arrow.style.transform = 'translateX(-50%)';
     }
 
     document.addEventListener('pointerenter', (e) => {
-        if (e.target.closest('.top-act__user')) {
+        const t = e.target;
+        const el = (t instanceof Element) ? t : t?.parentElement || null;
+        if (el && el.closest('.top-act__user')) {
             requestAnimationFrame(alignUserMenuArrow);
         }
     }, true);
+    ;
 
     window.addEventListener('resize', alignUserMenuArrow);
 
     document.addEventListener('auth-slot-updated', alignUserMenuArrow);
-    
+
 })();
