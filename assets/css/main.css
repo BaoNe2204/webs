@@ -1556,7 +1556,7 @@ html {
 .snowflake {
   position: fixed;
   top: -10%;
-  z-index: 9999;
+  z-index: 99999;
   font-size: 1.5em;
   color: pink;
   text-shadow: 0 0 5px #ffb6c1;
@@ -1899,11 +1899,16 @@ html {
   cursor: pointer;
 }
 .top-bar .top-act__dropdown {
-  right: -15px !important;
-  width: min(300px, 100vw) !important;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: min(300px, 100vw);
 }
 .top-bar .top-act__dropdown-arrow {
-  right: 15px !important;
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .top-bar .nav-btn {
   height: 50px;
@@ -1934,6 +1939,7 @@ html {
   display: none;
 }
 .top-bar .act-dropdown__inner {
+  top: -7px;
   position: relative;
   padding: 30px;
   border-radius: 20px;
@@ -2184,7 +2190,8 @@ html {
 .header,
 .top-bar {
   position: relative;
-  z-index: 50000; /* cao hơn mọi banner/slide */
+  z-index: 50000;
+  /* cao hơn mọi banner/slide */
 }
 
 .fuldespage {
@@ -4239,7 +4246,7 @@ html {
 }
 
 .product-showcase {
-  margin-top: 100px;
+  margin-top: 40px;
   padding: 2rem;
   background: #f9f9f9;
 }
@@ -4329,8 +4336,8 @@ html {
 }
 
 .policy {
-  margin: 20px 0px;
-  padding: 20px;
+  background: white;
+  padding: 10px;
 }
 .policy__divider {
   border: 0;
@@ -4676,187 +4683,265 @@ html {
     color: black;
   }
 }
-.price-list-cont h1 {
-  color: #1435c3;
-  font-size: 3em;
-  text-align: center;
-  margin: 2rem 0;
-  font-weight: bold;
-}
-
-.price-list-cont {
-  margin-left: 25px;
-  margin-right: 25px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-.head {
-  display: flex;
-  border: 1px solid #ddd;
-  font-family: Arial, sans-serif;
-}
-
-.head > div {
-  border-right: 1px solid #ddd;
+.wrapperPage {
   padding: 10px;
+  background: #fff;
+  margin-top: 10px;
+  border-radius: 3px;
 }
 
-.head > div:last-child {
-  border-right: none;
+.headingPage {
+  margin-bottom: 15px;
 }
 
-/* Tiêu đề */
-.head h3 {
-  font-size: 100%;
-  font-weight: bold;
-  margin: 0 0 5px 0;
+.headingPage .title {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.content-page * {
+  line-height: 1.3;
+}
+
+/* Reset nhẹ trong phạm vi .content-page (tránh ảnh hưởng global) */
+.content-page body {
+  margin: 8px;
+}
+
+.content-page th {
+  font-weight: 600;
   text-align: center;
 }
 
-.bg-form {
-  position: relative;
-  display: flex;
-  align-items: center;
+.content-page caption {
+  text-align: center;
 }
 
-.bg-form input {
+.content-page h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+.content-page h2 {
+  font-size: 1.5em;
+  margin: 0.75em 0;
+}
+
+.content-page h3 {
+  font-size: 1.17em;
+  margin: 0.83em 0;
+}
+
+.content-page h4,
+.content-page p,
+.content-page blockquote,
+.content-page ul,
+.content-page fieldset,
+.content-page form,
+.content-page ol,
+.content-page dl,
+.content-page dir,
+.content-page menu {
+  margin: 1.12em 0;
+}
+
+.content-page h5 {
+  font-size: 0.83em;
+  margin: 1.5em 0;
+}
+
+.content-page h6 {
+  font-size: 0.75em;
+  margin: 1.67em 0;
+}
+
+.content-page h1,
+.content-page h2,
+.content-page h3,
+.content-page h4,
+.content-page h5,
+.content-page h6,
+.content-page b,
+.content-page strong {
+  font-weight: 700;
+}
+
+.content-page blockquote {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.content-page i,
+.content-page cite,
+.content-page em,
+.content-page var,
+.content-page address {
+  font-style: italic;
+}
+
+.content-page pre,
+.content-page tt,
+.content-page code,
+.content-page kbd,
+.content-page samp {
+  font-family: monospace;
+}
+
+.content-page pre {
+  white-space: pre;
+}
+
+.content-page big {
+  font-size: 1.17em;
+}
+
+.content-page small,
+.content-page sub,
+.content-page sup {
+  font-size: 0.83em;
+}
+
+.content-page sub {
+  vertical-align: sub;
+}
+
+.content-page sup {
+  vertical-align: super;
+}
+
+.content-page table {
+  border-spacing: 2px;
+  border-collapse: separate;
   width: 100%;
-  padding: 6px 30px 6px 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 14px;
 }
 
-.bg-form i {
-  position: absolute;
-  right: 10px;
-  color: #1435c3;
-  cursor: pointer;
+.content-page thead,
+.content-page tbody,
+.content-page tfoot {
+  vertical-align: middle;
 }
 
-.col-xs-4 {
-  width: 33.33%;
+.content-page td,
+.content-page th,
+.content-page tr {
+  vertical-align: inherit;
 }
 
-.col-xs-8 {
-  width: 66.66%;
+.content-page s,
+.content-page strike,
+.content-page del {
+  text-decoration: line-through;
 }
 
-.col-sm-2 {
-  width: 16.66%;
+.content-page hr {
+  border: 1px inset;
 }
 
-.col-sm-6 {
-  width: 50%;
+.content-page ol,
+.content-page ul,
+.content-page dir,
+.content-page menu,
+.content-page dd {
+  margin-left: 40px;
 }
 
-.col-md-2 {
-  width: 16.66%;
+.content-page ol {
+  list-style-type: decimal;
 }
 
-.col-md-6 {
-  width: 50%;
+.content-page ul {
+  list-style-type: disc;
 }
 
-/* Khung danh sách sản phẩm */
-.bg-product__list {
-  border: 1px solid #ccc;
-  border-top: none;
-  font-family: Arial, sans-serif;
-  font-size: 14px;
+.content-page ol ul,
+.content-page ul ol,
+.content-page ul ul,
+.content-page ol ol {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
-/* Tiêu đề danh mục */
-.bg-product__list .name {
-  background: #1435c3; /* đỏ */
-  color: #fff;
-  padding: 8px 12px;
+.content-page {
+  line-height: 1.2;
 }
 
-/* --- LIST --- */
-.pd-item {
+.content-page figure {
+  margin: 1em 40px;
+}
+
+.breadcrumbs {
   display: flex;
+  gap: 8px;
+  padding: 16px 0;
+  padding-left: 20px;
+}
+
+.breadcrumbs__link {
+  display: inline-flex;
   align-items: center;
-  border-bottom: 1px solid #ddd;
-  padding: 8px 0;
+  gap: 6px;
 }
 
-/* Cột chung */
-.pd-item > div {
-  padding: 6px 10px;
-  border-right: 1px solid #ddd;
+.breadcrumbs__link--current {
+  font-weight: 600;
+  pointer-events: none;
 }
 
-.pd-item > div:last-child {
-  border-right: none;
+/* Tối ưu iframe map cho mobile */
+.map-embed {
+  width: 100%;
+  max-width: 900px;
+  height: 450px;
+  border: 0;
 }
 
-/* Xen kẽ màu */
-.pd-item:nth-child(even) {
-  background: #f3f2ff;
+.map-embed-wrap {
+  text-align: center;
+  overflow: hidden;
 }
 
-.pd-item:nth-child(odd) {
+/*====================== 404 page =======================*/
+.page_404 {
+  padding: 40px 0;
   background: #fff;
+  font-family: "Arvo", serif;
 }
 
-/* Mã SP */
-.pd-item .sku {
-  font-weight: bold;
+.page_404 img {
+  width: 100%;
 }
 
-/* Tên sản phẩm */
-.pd-item .title a {
-  color: #000;
-  text-decoration: none;
+.four_zero_four_bg {
+  background-image: url(https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif);
+  height: 400px;
+  background-position: center;
 }
 
-.pd-item .title a:hover {
-  text-decoration: underline;
+.text-center-404 {
+  font-size: 8rem;
+  font-weight: 900;
+  letter-spacing: 10px;
+  margin: 0;
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
 }
 
-/* Giá */
-.pd-item .price span {
-  font-weight: bold;
-  color: #000;
+.four_zero_four_bg h3 {
+  font-size: 80px;
 }
 
-/* Bảo hành */
-.pd-item .bh span {
-  color: #000;
+.link_404 {
+  color: #fff !important;
+  padding: 10px 20px;
+  background: #39ac31;
+  margin: 20px 0;
+  display: inline-block;
+  border-radius: 20px;
 }
 
-/* --- MOBILE (gom lại 1 khối) --- */
-@media (max-width: 768px) {
-  .pd-item {
-    display: block;
-    padding: 10px;
-  }
-  .pd-item > div {
-    border-right: none;
-    padding: 3px 0;
-  }
-  /* Ẩn cột giá & bảo hành desktop */
-  .pd-item .price,
-  .pd-item .bh {
-    display: none;
-  }
-  /* Hiện info-mobile */
-  .pd-item .info-mobile {
-    display: block;
-    margin-top: 5px;
-    font-size: 13px;
-    color: #333;
-  }
+.contant_box_404 {
+  margin-top: -50px;
 }
-/* --- DESKTOP --- */
-@media (min-width: 769px) {
-  /* Ẩn info-mobile khi desktop */
-  .pd-item .info-mobile {
-    display: none;
-  }
-}
+
 .home {
   margin-bottom: 50px;
 }
@@ -5302,6 +5387,9 @@ html {
   line-height: 142.857%;
 }
 
+.prod-tab {
+  margin-top: 30px;
+}
 .prod-tab__list {
   display: flex;
   align-items: center;
@@ -5847,9 +5935,6 @@ html {
   flex-direction: column;
   min-height: 80vh;
   padding-bottom: 50px;
-}
-.checkout-page__breadcrumbs {
-  background: var(--checkout-breadcrumbs-bg);
 }
 
 .checkout-container {

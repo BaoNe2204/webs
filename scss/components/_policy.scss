@@ -1,14 +1,12 @@
 .policy {
-    margin: 20px 0px;
-    padding: 20px;
-  // Đoạn gạch ngăn cách
+  background: white;
+  padding: 10px;
   &__divider {
     border: 0;
     border-top: 1px solid #e9e9ee;
     margin: 32px 0;
   }
 
-  // Heading chính (III, IV, V…)
   &__h3 {
     font-size: 2rem;
     font-weight: 700;

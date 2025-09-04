@@ -1,5 +1,4 @@
 
-// ============ Tabzy giữ nguyên ============
 const tabs3 = new Tabzy("#sliding-tabs", { onChange: updateActiveLine });
 function updateActiveLine() {
   const activeTab = tabs3.currentTab;
@@ -220,7 +219,7 @@ document.addEventListener('click', (e) => {
   const decBtn = e.target.closest('.btn-qty.dec');
   const incBtn = e.target.closest('.btn-qty.inc');
   if (decBtn || incBtn) {
-    e.stopPropagation(); 
+    e.stopPropagation();
     const id = (decBtn?.dataset.id || incBtn?.dataset.id || '').trim();
     if (!id) return;
     cartStore.update(id, decBtn ? -1 : +1);
@@ -316,3 +315,22 @@ let timer = setInterval(function () {
   document.getElementById("minutes").innerHTML = String(minutes).padStart(2, '0');
   document.getElementById("seconds").innerHTML = String(seconds).padStart(2, '0');
 }, 1000);
+document.querySelectorAll(
+  '.table-reponsiveee td, .table-reponsiveee tr, .table-reponsiveee th, .table-reponsiveee tbody'
+).forEach(el => {
+  el.removeAttribute('style');
+  el.removeAttribute('class');
+});
+
+document.querySelectorAll('.table-reponsiveee table').forEach(table => {
+  table.classList.add('table', 'table-striped', 'table-bordered');
+  const parent = table.parentElement;
+  const alreadyWrapped = parent && parent.classList.contains('table-responsive');
+  if (!alreadyWrapped) {
+    const wrapper = document.createElement('div');
+    wrapper.classList.add('table-responsive');
+    parent.insertBefore(wrapper, table);
+    wrapper.appendChild(table);
+  }
+});
+
