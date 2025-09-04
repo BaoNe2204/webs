@@ -1503,6 +1503,74 @@
   "Chuẩn kết nối": "USB 2.0 / USB 3.0",
   "Tính năng khác": ["HDR", "RightLight 3", "Zoom kỹ thuật số"]
 }
+,
+"loa-edifier-qr65": {
+  "Tên sản phẩm": "Edifier QR65",
+  "Loại": "Loa Bluetooth",
+  "Màu sắc": "Trắng",
+  "Kết nối": ["Bluetooth", "AUX", "USB"],
+  "Công suất": "Đang cập nhật",
+  "Tính năng": ["Điều khiển cảm ứng", "Pin tích hợp", "Hỗ trợ micro"]
+}
+,
+"loa-gravastar-mars-pro": {
+  "Tên sản phẩm": "GravaStar Mars Pro",
+  "Loại": "Loa Bluetooth đặt bàn, di động, trang trí",
+  "Phiên bản": "Quốc tế",
+  "Chất liệu": "Hợp kim kẽm",
+  "LED": "RGB",
+  "Công suất": "20W",
+  "Kết nối": ["Bluetooth 5.0", "AUX"],
+  "Kích thước": "7.5\"H x 7.1\"L x 7.9\"W",
+  "Màu sắc": ["Trắng", "Vàng (War Damage)", "Phiên bản đặc biệt"],
+  "Nguồn điện": "Pin sạc, chơi nhạc lên đến 10 giờ (âm lượng 50%)",
+  "Phụ kiện": ["HDSD", "Thông tin pháp lý", "Cáp sạc Type-C"]
+}
+,
+"loa-harman-kardon-soundsticks-4": {
+  "Tên sản phẩm": "Harman Kardon SOUNDSTICKS 4",
+  "Loại": "Loa Bluetooth để bàn, loa vi tính",
+  "Phiên bản": "PGI",
+  "Cấu trúc âm thanh": "2.1 (1 x Bass 5.25 inch, 2 x loa vệ tinh 4 x 1.4 inch)",
+  "Tần số đáp ứng": "40Hz - 20kHz",
+  "Signal to Noise Ratio": "80dB",
+  "Công suất": "140W (Sub 100W, Loa vệ tinh 40W)",
+  "Kết nối": ["Bluetooth 4.2", "AUX 3.5mm"],
+  "Nguồn điện": "220V",
+  "Kích thước": {
+    "Loa sub": "231 x 276 x 231 mm",
+    "Loa vệ tinh": "271 x 84 x 84 mm"
+  },
+  "Trọng lượng": "4.432 kg",
+  "Màu sắc": ["Trắng", "Đen"],
+  "Phụ kiện": ["Dây điện các loại", "Hướng dẫn sử dụng"]
+}
+,
+"micro-asus-rog-carnyx": {
+  "Tên sản phẩm": "ASUS ROG Carnyx",
+  "Loại": "Microphone gaming USB/XLR",
+  "Kết nối": ["USB-C", "XLR"],
+  "Độ nhạy": "Đang cập nhật",
+  "Tần số đáp ứng": "20Hz - 20kHz",
+  "Độ trễ": "Đang cập nhật",
+  "Đặc trưng": ["Kết hợp RGB AuraSync", "Đa hướng thu âm", "Hỗ trợ Phantom Power"],
+  "Chất liệu": "Nhôm",
+  "Trọng lượng": "Đang cập nhật",
+  "Phụ kiện": ["Chân micro", "Cáp USB-C", "Hướng dẫn sử dụng"]
+}
+,
+"micro-razer-seiren-v3-chroma": {
+  "Tên sản phẩm": "Razer Seiren V3 Chroma",
+  "Loại": "Microphone USB",
+  "Kết nối": ["USB-C"],
+  "Đặc trưng": ["RGB Chroma", "Tap-to-Mute", "Cardioid Pickup Pattern"],
+  "Tần số đáp ứng": "20Hz - 20kHz",
+  "Độ nhạy": "Đang cập nhật",
+  "Trở kháng": "32Ω",
+  "Chất liệu": "Kim loại",
+  "Trọng lượng": "Đang cập nhật",
+  "Phụ kiện": ["Chân Micro tích hợp", "Cáp USB-C", "Hướng dẫn sử dụng"]
+}
 
 
 
